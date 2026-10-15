@@ -152,9 +152,7 @@ local function onUpdateNeeded(protocol, signature)
 end
 
 local function updateLabelText()
-	enterGame:setText("Journey Onwards")
-	enterGame:getChildById("emailLabel"):setText("Email:")
-	enterGame:getChildById("rememberEmailBox"):setText("Remember Email")
+	enterGame:getChildById("loginTitle"):setText("FAÇA SEU LOGIN")
 end
 
 function EnterGame.init()
@@ -182,6 +180,7 @@ function EnterGame.init()
 	end
 
 	updateLabelText()
+	EclipseLogin.init(enterGame)
 
 	local emailEdit = enterGame:getChildById("accountNameTextEdit")
 	local passwordEdit = enterGame:getChildById("accountPasswordTextEdit")
@@ -252,10 +251,10 @@ end
 
 function EnterGame.showPanels()
 	if g_modules.getModule("client_bottommenu"):isLoaded() then
-		modules.client_bottommenu.show()
+		modules.client_bottommenu.hide()
 	end
 
-	modules.client_topmenu.show()
+	modules.client_topmenu.hide()
 end
 
 function EnterGame.loadStartupData()
@@ -272,6 +271,7 @@ function EnterGame.firstShow()
 end
 
 function EnterGame.terminate()
+	EclipseLogin.terminate()
 	Keybind.delete("Misc.", "Change Character")
 
 	if clientBox then
@@ -514,8 +514,6 @@ function EnterGame.show()
 
 	local background = modules.client_background.getBackground()
 
-	-- serverLogo (the ported client logo) removed from background.otui at the user's request - the guard
-	-- stays in case our own logo returns in this spot
 	if background and background.serverLogo then
 		background.serverLogo:show()
 	end
@@ -526,6 +524,12 @@ function EnterGame.show()
 	enterGame:show()
 	enterGame:raise()
 	enterGame:focus()
+	EclipseLogin.resize()
+	if enterGame:getChildById("accountNameTextEdit"):getText() == "" then
+		enterGame:getChildById("accountNameTextEdit"):focus()
+	else
+		enterGame:getChildById("accountPasswordTextEdit"):focus()
+	end
 	g_effects.fadeIn(enterGame, 300)
 end
 
@@ -892,15 +896,9 @@ end
 
 function EnterGame.setUniqueServer(host, port, protocol, windowWidth, windowHeight)
 	local clientVersion = tonumber(protocol)
-	local rememberEmailBox = enterGame:getChildById("rememberEmailBox")
-
-	windowWidth = windowWidth or 280
-
-	enterGame:setWidth(windowWidth)
-
-	windowHeight = windowHeight or 198
-
-	enterGame:setHeight(windowHeight)
+	local frame = enterGame:getChildById("loginFrame")
+	frame:setWidth(windowWidth or 320)
+	frame:setHeight(windowHeight or 360)
 	g_game.setClientVersion(clientVersion)
 	g_game.setProtocolVersion(g_game.getClientProtocolVersion(clientVersion))
 end

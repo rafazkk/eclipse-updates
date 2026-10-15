@@ -1,211 +1,414 @@
-EnterGameWindow < MainWindow
-  !text: tr('Journey Onwards')
-  size: 280 200
-  color: $var-text-cip-color-grey
-  font: $var-cip-font
-  text-offset: 0 1
-  padding-left: 15
+EclipseLabel < UILabel
+  font: verdana-11px-antialised
+  color: #d5cde1
+  phantom: true
+  focusable: false
 
-EnterGameButton < Button
-  width: 64
+EclipsePanel < UIWidget
+  image-source: /images/eclipse-login/panel
+  image-border: 24
+  image-smooth: true
+  focusable: false
 
-EnterGameWindow
-  id: enterGame
-  draggable: false
-  size: 280 200
-  image-source: /images/ui/popupwindow
-  @onEnter: EnterGame.doLogin()
+EclipseButton < UIButton
+  height: 36
+  font: Verdana Bold-11px
+  color: #e7d7b4
+  image-source: /images/eclipse-login/button-secondary
+  image-border: 8
+  image-border-left: 24
+  image-border-right: 24
+  image-smooth: true
+  text-offset: 0 0
+  padding: 0
+  cursor: pointer
+  $hover !disabled:
+    color: #ffffff
+    image-color: #dcc3ff
+  $pressed:
+    text-offset: 0 1
+    image-color: #a18bb5
+  $disabled:
+    opacity: 0.5
 
-  Label
-    id: emailLabel
-    !text: tr('Email:') 
+EclipseNavButton < EclipseButton
+  text-offset: 12 0
+  font: Verdana-9px-antialiased
+  UIWidget
+    id: actionIcon
+    size: 23 23
+    anchors.left: parent.left
+    anchors.verticalCenter: parent.verticalCenter
+    margin-left: 12
+    image-smooth: true
+    phantom: true
+
+EclipseInput < UITextEdit
+  height: 29
+  font: verdana-11px-antialised
+  color: #ede7f4
+  background-color: #090512ed
+  border-width: 1
+  border-color: #673198
+  padding-left: 29
+  padding-right: 7
+  padding-top: 4
+  selection-color: #ffffffff
+  selection-background-color: #642da0
+  placeholder-color: #9688ad
+  $focus:
+    border-color: #b27bf0
+
+EclipseCheckBox < CheckBox
+  font: Verdana-9px-antialiased
+  color: #b9afc8
+  image-color: #c196f4
+  height: 16
+  text-offset: 18 0
+
+EclipseNewsItem < UIWidget
+  height: 74
+  focusable: false
+  UIWidget
+    id: newsIcon
+    size: 33 33
     anchors.left: parent.left
     anchors.top: parent.top
-    color: $var-text-cip-color
-    font: $var-cip-font
-    margin-top: -4
-    margin-left: -2
-    text-offset: 2 0
+    image-smooth: true
+    phantom: true
+  EclipseLabel
+    id: newsTitle
+    anchors.left: newsIcon.right
+    anchors.right: parent.right
+    anchors.top: parent.top
+    margin-left: 10
+    height: 30
+    text-wrap: true
+    font: Verdana Bold-11px
+    color: #d4b86e
+  EclipseLabel
+    id: newsDate
+    anchors.left: newsTitle.left
+    anchors.right: parent.right
+    anchors.top: newsTitle.bottom
+    height: 10
+    font: verdana-8px-rounded
+    color: #9b86b1
+  EclipseLabel
+    id: newsDescription
+    anchors.left: newsTitle.left
+    anchors.right: parent.right
+    anchors.top: newsDate.bottom
+    height: 34
+    font: Verdana-9px-antialiased
+    text-align: topLeft
+    text-wrap: true
 
-  Label
+UIWindow
+  id: enterGame
+  anchors.fill: parent
+  focusable: true
+  draggable: false
+  @onEnter: EnterGame.doLogin()
+
+  EclipseLabel
+    id: versionLabel
+    text: TIBIA 15.00\nOTCLIENT
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-top: 22
+    margin-left: 24
+    size: 180 40
+    color: #e4c798
+
+  EclipseLabel
+    text: GRANDES AVENTURAS\nCOMEÇAM COM UM\nÚNICO PASSO...
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 22
+    margin-right: 24
+    size: 175 48
+    text-align: topRight
+    font: Verdana-9px-antialiased
+
+  EclipsePanel
+    id: loginFrame
+    size: 320 360
+    anchors.horizontalCenter: parent.horizontalCenter
+    anchors.verticalCenter: parent.verticalCenter
+    margin-top: 55
+    phantom: true
+
+  EclipseLabel
+    id: loginTitle
+    text: FAÇA SEU LOGIN
+    anchors.top: loginFrame.top
+    anchors.horizontalCenter: loginFrame.horizontalCenter
+    margin-top: 27
+    size: 240 22
+    font: sans-bold-16px
+    text-align: center
+
+  EclipseLabel
+    id: emailLabel
+    text: E-mail
+    visible: false
+
+  EclipseLabel
     id: passwordLabel
-    !text: tr('Password:')
-    anchors.left: emailLabel.left
-    anchors.top: emailLabel.bottom
-    margin-top: 17
-    color: $var-text-cip-color
-    font: $var-cip-font
-    text-offset: 2 0
+    text: Senha
+    visible: false
 
-  TextQtHideToggleBox
-    id: accountEmailVisibilityBox
-    anchors.right: accountPasswordTextEdit.right
-    anchors.verticalCenter: emailLabel.verticalCenter
-
-    UICheckBox
-      id: accountEmailVisibilityToggle
-      size: 18 18
-      anchors.horizontalCenter: parent.horizontalCenter
-      anchors.verticalCenter: parent.verticalCenter
-      image-rect: 0 0 18 18
-      margin-right: 1
-      image-source: /images/ui/hide_eye_small
-      @onCheckChange: |
-        self:getParent():getParent():getChildById('accountNameTextEdit'):setTextHidden(not self:isChecked())
-        self:getParent():getParent():getChildById('accountNameTextEdit'):setTextWrap(false)
-
-      $!checked:
-        image-clip: 0 0 18 18
-
-      $checked:
-        image-clip: 0 18 18 18
-
-  HiddenTextQtEdit
+  EclipseInput
     id: accountNameTextEdit
-    anchors.left: accountPasswordTextEdit.left
-    anchors.right: accountEmailVisibilityBox.left
-    margin-right: -2
-    anchors.verticalCenter: emailLabel.verticalCenter
-    font: $var-cip-font
-    padding-left: 2
-    padding-right: 1
-    padding-top: 3
-    text-offset: 3 0
+    placeholder: Seu e-mail
+    anchors.left: loginFrame.left
+    anchors.right: loginFrame.right
+    anchors.top: loginFrame.top
+    margin-left: 30
+    margin-right: 30
+    margin-top: 65
 
-  HiddenTextQtEdit
+  UIWidget
+    image-source: /images/eclipse-login/account
+    size: 15 18
+    anchors.left: accountNameTextEdit.left
+    anchors.verticalCenter: accountNameTextEdit.verticalCenter
+    margin-left: 9
+    phantom: true
+
+  EclipseInput
     id: accountPasswordTextEdit
-    anchors.right: parent.right
-    anchors.left: passwordLabel.right
-    anchors.verticalCenter: passwordLabel.verticalCenter
-    font: $var-cip-font
-    margin-left: 5
-    padding-top: 3
+    placeholder: Senha
+    text-hidden: true
+    anchors.left: accountNameTextEdit.left
+    anchors.right: accountNameTextEdit.right
+    anchors.top: accountNameTextEdit.bottom
+    margin-top: 8
 
-  QtCheckBox
+  UIWidget
+    image-source: /images/eclipse-login/password
+    size: 15 20
+    anchors.left: accountPasswordTextEdit.left
+    anchors.verticalCenter: accountPasswordTextEdit.verticalCenter
+    margin-left: 9
+    phantom: true
+
+  EclipseCheckBox
     id: rememberEmailBox
-    !text: tr('Remember Email')
-    !tooltip: tr('Remember email when starts client')
-    anchors.left: passwordLabel.left
-    anchors.right: parent.right
+    text: Lembrar de mim
+    anchors.left: accountNameTextEdit.left
     anchors.top: accountPasswordTextEdit.bottom
-    margin-top: 10
-    margin-left: 2
-    text-offset: 16 0
-    color: $var-text-cip-color
-    font: $var-cip-font
-    @onCheckChange: |
-      self:getParent():getChildById('rememberEmailTip'):setOn(self:isChecked())
-
-  UIWidget
-    id: rememberEmailTip
-    image-source: /images/icons/show_gui_help_grey
-    !specialtooltip: 'Be aware that your email address will be stored on your configuration file "config.otml" if you activate this option.'
-    anchors.right: accountNameTextEdit.right
-    margin-right: -19
-    margin-top: 1
-    anchors.verticalCenter: rememberEmailBox.verticalCenter
-    visible: false
-
-    $on:
-      visible: true
-
-    $!on:
-      visible: false
-
-  QtCheckBox
-    id: rememberPasswordBox
-    !text: tr('Remember Password')
-    !tooltip: tr('Remember password when starts client')
-    anchors.left: passwordLabel.left
-    anchors.right: parent.right
-    anchors.top: rememberEmailBox.bottom
-    margin-top: 7
-    margin-left: 2
-    color: $var-text-cip-color
-    font: $var-cip-font
-    text-offset: 16 0
-    @onCheckChange: |
-      self:getParent():getChildById('rememberPasswordTip'):setOn(self:isChecked())
-
-  UIWidget
-    id: rememberPasswordTip
-    image-source: /images/icons/show_gui_help_grey
-    !specialtooltip: 'Be aware that your Password address will be stored on your configuration file "config.otml" if you activate this option.'
-    anchors.right: accountNameTextEdit.right
-    anchors.verticalCenter: rememberPasswordBox.verticalCenter
-    margin-right: -19
-    margin-top: 1
-    visible: false
-    $on:
-      visible: true
-    $!on:
-      visible: false
+    margin-top: 8
+    width: 125
+    tooltip: Salva seu e-mail neste computador.
 
   UIButton
-    !text: tr('Forgot password and/or email')
     id: Forgot_password_email
-    font: Verdana-11px-lowspace-underline
-    text-align: left
+    text: Esqueceu sua senha?
+    font: verdana-8px-rounded
+    color: #a375d8
+    size: 114 16
+    anchors.right: accountPasswordTextEdit.right
+    anchors.top: rememberEmailBox.top
+    @onClick: EclipseLogin.openLink('recoverAccount')
+    $hover:
+      color: #d6b1ff
+
+  EclipseCheckBox
+    id: rememberPasswordBox
+    text: Salvar senha
     anchors.left: rememberEmailBox.left
-    anchors.right: parent.right
+    anchors.top: rememberEmailBox.bottom
+    margin-top: 3
+    width: 125
+    tooltip: Opcional. Salva a senha usando a proteção existente do client. Evite em computadores compartilhados.
+
+  EclipseButton
+    id: loginButton
+    text: ENTRAR
+    font: sans-bold-16px
+    image-source: /images/eclipse-login/button-primary
+    height: 42
+    anchors.left: accountNameTextEdit.left
+    anchors.right: accountNameTextEdit.right
     anchors.top: rememberPasswordBox.bottom
-    color: $var-text-cip-color
-    margin-top: 6
-    margin-left: 1
-    @onClick: g_platform.openUrl(Services.websites)
-    @onSetup: | 
-        if Services and Services.websites then
-            self:setVisible(true)
-        else
-            self:setVisible(false)
-            self:hide()
-        end
-
-  HorizontalSeparator
-    anchors.left: parent.left
-    anchors.right: parent.right
-    anchors.top: Forgot_password_email.bottom
-    margin-top: 15
-    margin-left: 1
-
-  QtButton
-    !text: tr('Login')
-    anchors.right: parent.right
-    anchors.top: prev.bottom
-    margin-top: 11
-    margin-right: -1
-    text-offset: 0 1
-    size: 88 21
+    margin-top: 12
     @onClick: EnterGame.doLogin()
-    color: #FFFFFF
 
-  QtButton
+  UIWidget
+    anchors.left: loginButton.left
+    anchors.right: loginButton.right
+    anchors.top: loginButton.bottom
+    margin-top: 20
+    height: 1
+    background-color: #7b633670
+    phantom: true
+
+  EclipseButton
     id: btnCreateNewAccount
-    !text: tr('Create New Account')
-    anchors.left: parent.left
-    anchors.top: prev.top
-    text-offset: 0 1
-    size: 110 21
-    color: #FFFFFF
+    text: CRIAR CONTA
+    anchors.left: loginButton.left
+    anchors.right: loginButton.right
+    anchors.top: loginButton.bottom
+    margin-top: 37
+    @onClick: EclipseLogin.createAccount()
 
-    @onClick: |
-      self:disable()
-      createWidgetAccount()
+  EclipseButton
+    id: discordButton
+    size: 34 29
+    image-border-left: 8
+    image-border-right: 8
+    anchors.top: btnCreateNewAccount.bottom
+    anchors.horizontalCenter: loginFrame.horizontalCenter
+    margin-top: 12
+    margin-left: -23
+    icon: /images/icons/icon_discord
+    icon-size: 18 18
+    tooltip: Discord
+    @onClick: EclipseLogin.openLink('discord')
 
-    @onSetup: | 
-      if Services and Servers_init and table.size(Servers_init) == 1 and Services.createAccount then
-        self:setVisible(true)
-      else
-        self:setVisible(false)
-      end
+  EclipseButton
+    id: youtubeButton
+    size: 34 29
+    image-border-left: 8
+    image-border-right: 8
+    anchors.top: discordButton.top
+    anchors.left: discordButton.right
+    margin-left: 12
+    icon: /images/icons/icon_youtube
+    icon-size: 18 18
+    tooltip: YouTube
+    @onClick: EclipseLogin.openLink('youtube')
 
-
-  Label
+  EclipseLabel
     id: serverInfoLabel
-    font: verdana-11px-rounded
-    anchors.top: prev.top
-    anchors.left: parent.left
+    anchors.left: loginButton.left
+    anchors.right: loginButton.right
+    anchors.top: loginButton.bottom
     margin-top: 6
-    color: green
-    text-auto-resize: true
+    height: 14
+    font: verdana-8px-rounded
+    text-align: center
+    color: #bda6d4
 
+  EclipsePanel
+    id: newsFrame
+    size: 280 340
+    padding: 20
+    anchors.left: parent.left
+    anchors.verticalCenter: parent.verticalCenter
+    margin-left: 45
+    margin-top: -20
+    EclipseLabel
+      id: newsHeading
+      text: ÚLTIMAS NOTÍCIAS
+      anchors.top: parent.top
+      anchors.left: parent.left
+      anchors.right: parent.right
+      height: 24
+      font: Verdana Bold-13px
+      color: #cca0e7
+    EclipseNewsItem
+      id: news1
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: newsHeading.bottom
+      margin-top: 8
+    EclipseNewsItem
+      id: news2
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: news1.bottom
+      margin-top: 6
+    EclipseNewsItem
+      id: news3
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: news2.bottom
+      margin-top: 6
+    EclipseButton
+      text: VER TODAS AS NOTÍCIAS
+      font: verdana-8px-rounded
+      height: 30
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.bottom: parent.bottom
+      @onClick: EclipseLogin.showNews()
+
+  EclipsePanel
+    id: actionsFrame
+    size: 158 236
+    padding: 12
+    anchors.right: parent.right
+    anchors.verticalCenter: parent.verticalCenter
+    margin-right: 24
+    margin-top: 95
+    EclipseNavButton
+      id: statusButton
+      text: STATUS
+      anchors.top: parent.top
+      anchors.left: parent.left
+      anchors.right: parent.right
+      @onClick: EclipseLogin.showStatus()
+    EclipseNavButton
+      id: optionsButton
+      text: OPÇÕES
+      anchors.top: statusButton.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 7
+      @onClick: modules.client_options.show()
+    EclipseNavButton
+      id: cinematicsButton
+      text: CINEMÁTICAS
+      anchors.top: optionsButton.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 7
+      @onClick: EclipseLogin.openLink('cinematics')
+    EclipseNavButton
+      id: websiteButton
+      text: WEBSITE
+      anchors.top: cinematicsButton.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 7
+      @onClick: EclipseLogin.openLink('website')
+    EclipseNavButton
+      id: exitButton
+      text: SAIR
+      anchors.top: websiteButton.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 7
+      @onClick: g_app.exit()
+
+  EclipseLabel
+    text: ECLIPSE
+    color: #c08de7
+    font: sans-bold-16px
+    size: 250 22
+    anchors.left: parent.left
+    anchors.bottom: parent.bottom
+    margin-left: 24
+    margin-bottom: 31
+  EclipseLabel
+    text: UM MUNDO EM CONSTANTE EVOLUÇÃO
+    color: #a991b9
+    font: verdana-8px-rounded
+    size: 260 16
+    anchors.left: parent.left
+    anchors.bottom: parent.bottom
+    margin-left: 24
+    margin-bottom: 15
+  EclipseLabel
+    id: onlinePlayersLabel
+    text: Jogadores online: não informado
+    font: Verdana-9px-antialiased
+    size: 240 18
+    text-align: right
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    margin-right: 24
+    margin-bottom: 15

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "files": [
     {
       "path": "PlayTC_gl_x64.exe",
@@ -20118,6 +20118,84 @@
       "url": "client/data/images/clienticon.png",
       "size": 78603,
       "sha256": "fed86af35812d6a0f8ad04b83cb36c37b1c5a9f098caddd64d8ce02cf2f5688f"
+    },
+    {
+      "path": "data/images/eclipse-login/account.png",
+      "url": "client/data/images/eclipse-login/account.png",
+      "size": 647,
+      "sha256": "a148920c736c85c19ee52043b4f1dad0beaceffbfdb62b0441b24b6893446465"
+    },
+    {
+      "path": "data/images/eclipse-login/button-primary.png",
+      "url": "client/data/images/eclipse-login/button-primary.png",
+      "size": 9598,
+      "sha256": "41191dec4e3a7ed4969ec62462ee65b970f269cf1a44660d51b71feb4081c1f5"
+    },
+    {
+      "path": "data/images/eclipse-login/button-secondary.png",
+      "url": "client/data/images/eclipse-login/button-secondary.png",
+      "size": 7551,
+      "sha256": "cb0186ae7b2305efa17c2e6c9be367f922d1db5119b80b9505dcf46f8494f1f3"
+    },
+    {
+      "path": "data/images/eclipse-login/cinematics.png",
+      "url": "client/data/images/eclipse-login/cinematics.png",
+      "size": 2002,
+      "sha256": "ba0d04dd2cf20ae4d77a20ddd7446b02d6eae726d8b2090796376e37a236dfb4"
+    },
+    {
+      "path": "data/images/eclipse-login/exit.png",
+      "url": "client/data/images/eclipse-login/exit.png",
+      "size": 1793,
+      "sha256": "dbee9c231f4a2feaa4ec8b4bff0bea0860bf3afd516dd33611f217973430287c"
+    },
+    {
+      "path": "data/images/eclipse-login/news-battle.png",
+      "url": "client/data/images/eclipse-login/news-battle.png",
+      "size": 3033,
+      "sha256": "3c2d1606acd16ab37ea95a81b8fca19249597fd91276e3dc860b22eb5efd49a4"
+    },
+    {
+      "path": "data/images/eclipse-login/news-gift.png",
+      "url": "client/data/images/eclipse-login/news-gift.png",
+      "size": 2661,
+      "sha256": "98c64aa6b5211e6315c81a0162f14d96db68b3e6187e5ee612ba981414cee2fb"
+    },
+    {
+      "path": "data/images/eclipse-login/news-welcome.png",
+      "url": "client/data/images/eclipse-login/news-welcome.png",
+      "size": 3122,
+      "sha256": "ef2ae11796b97ba9656c7ced301b1e2c80e22cc919f6ed8d21cf70b2cdf9bfa4"
+    },
+    {
+      "path": "data/images/eclipse-login/options.png",
+      "url": "client/data/images/eclipse-login/options.png",
+      "size": 1948,
+      "sha256": "09315563cf9ce5673abcf5b84d5f7dc643f8459826acf5011f74a2b4d2165441"
+    },
+    {
+      "path": "data/images/eclipse-login/panel.png",
+      "url": "client/data/images/eclipse-login/panel.png",
+      "size": 51630,
+      "sha256": "1d85c3775a6a63a5819dd3a3aad7976db8f562aded706b7cdeeb5aaeb407b70c"
+    },
+    {
+      "path": "data/images/eclipse-login/password.png",
+      "url": "client/data/images/eclipse-login/password.png",
+      "size": 725,
+      "sha256": "321808b548f0cbfd850f565529b54e1f2cc7dc277e7f3d125ab51ca7bf4c509d"
+    },
+    {
+      "path": "data/images/eclipse-login/user.png",
+      "url": "client/data/images/eclipse-login/user.png",
+      "size": 1563,
+      "sha256": "8f8bb38abb8965134c7fc7c817fe0041993609e361d60a3f218f0f7d129418eb"
+    },
+    {
+      "path": "data/images/eclipse-login/website.png",
+      "url": "client/data/images/eclipse-login/website.png",
+      "size": 2097,
+      "sha256": "8ae48bdec86841c0acf5102352cd77fa1d78282f5673c9de53bdbd9524e6410a"
     },
     {
       "path": "data/images/eclipse_logo.png",
@@ -97342,8 +97420,8 @@
     {
       "path": "modules/client_background/background.otui",
       "url": "client/modules/client_background/background.otui",
-      "size": 970,
-      "sha256": "3dba8b5e5385415172999248d94b68a57b67c2d1a4e8aa2303d9c14d16f5d27b"
+      "size": 968,
+      "sha256": "8dc516f183a6b48ef79f16a647967cc1d5df3b3cfe2ff49ad7ca941222f92f57"
     },
     {
       "path": "modules/client_bottommenu/bottommenu.lua",
@@ -97412,22 +97490,34 @@
       "sha256": "6dbbc8b348870c68712d455d925f41b7ee9ce2bcf06727801770054871cb1f5b"
     },
     {
+      "path": "modules/client_entergame/eclipse.lua",
+      "url": "client/modules/client_entergame/eclipse.lua",
+      "size": 5737,
+      "sha256": "7ba96aae88dfb51dfd0e0fb1f3b3c736ffe03888f4a4f74a57246fd7b8d2f457"
+    },
+    {
+      "path": "modules/client_entergame/eclipse_config.lua",
+      "url": "client/modules/client_entergame/eclipse_config.lua",
+      "size": 192,
+      "sha256": "0d1389b0c1ca9c360a5d4534cf56774c2f2cd978a008514030f54e817a5d3c9a"
+    },
+    {
       "path": "modules/client_entergame/entergame.lua",
       "url": "client/modules/client_entergame/entergame.lua",
-      "size": 20984,
-      "sha256": "54ded5ac0758a25edeaa3890b03e1cb7486470a95c291b1aac7d35aa2f6e86d7"
+      "size": 20922,
+      "sha256": "cfab046f016c1d8a45a5522ed2d9566165157773bd469997f6a42153ac061774"
     },
     {
       "path": "modules/client_entergame/entergame.otmod",
       "url": "client/modules/client_entergame/entergame.otmod",
-      "size": 354,
-      "sha256": "c34f835e2898a1727745a7544b2556b7e61d2cd839a668c5b01dd435337560dd"
+      "size": 379,
+      "sha256": "68aa06296cb410c2172983499e4ba2f5335f49951a0ef602b8556a8d384e1fa6"
     },
     {
       "path": "modules/client_entergame/entergame.otui",
       "url": "client/modules/client_entergame/entergame.otui",
-      "size": 5562,
-      "sha256": "b6fbe655c5896140e539d26dc282d6b666d61fb253b46fdd1097cdda14100547"
+      "size": 10093,
+      "sha256": "8925cb55c2671d75e95d19646c32580e257cc06b05af1597b7f8cf0e85fe8f7b"
     },
     {
       "path": "modules/client_entergame/twofactor.otui",
