@@ -1,0 +1,7 @@
+Module
+  name: game_screenshot
+  author: game_screenshot
+  sandboxed: true
+  scripts: [ game_screenshot ]
+  @onLoad: screenshotController:init()
+  @onUnload: screenshotController:terminate()

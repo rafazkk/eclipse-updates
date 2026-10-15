@@ -1,0 +1,8 @@
+Module
+  name: client_locales
+  description: Translates texts to selected language
+  author: baxnie, edubart
+  sandboxed: true
+  scripts: [ locales ]
+  @onLoad: init()
+  @onUnload: terminate()

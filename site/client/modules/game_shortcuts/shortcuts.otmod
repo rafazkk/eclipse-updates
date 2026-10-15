@@ -1,0 +1,8 @@
+Module
+  name: game_shortcuts
+  description: Mobile Shortcuts
+  author: SkullZ OTS
+  sandboxed: true
+  scripts: [ shortcuts ]
+  @onLoad: init()
+  @onUnload: terminate()

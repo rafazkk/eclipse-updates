@@ -1,0 +1,10 @@
+Module
+  name: game_skills
+  description: Manage skills window
+  author: baxnie, edubart
+  sandboxed: true
+  scripts: [ skills ]
+  @onLoad: init()
+  @onUnload: terminate()
+  dependencies:
+    - game_interface

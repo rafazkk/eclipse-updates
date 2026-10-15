@@ -1,0 +1,8 @@
+Module
+  name: game_playerdeath
+  description: Manage player deaths
+  author: BeniS, edubart
+  sandboxed: true
+  scripts: [ playerdeath ]
+  @onLoad: deathController:init()
+  @onUnload: deathController:terminate()

@@ -1,0 +1,8 @@
+Module
+  name: game_viplist
+  description: Manage vip list window
+  author: baxnie, edubart
+  sandboxed: true
+  scripts: [ viplist ]
+  @onLoad: controllerVip:init()
+  @onUnload: controllerVip:terminate()

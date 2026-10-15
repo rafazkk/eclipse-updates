@@ -1,0 +1,7 @@
+Module
+  name: game_offlinetraining
+  description: Offline Training
+  author: PlayTC
+  scripts: [ game_offlinetraining ]
+  @onLoad: init()
+  @onUnload: terminate()

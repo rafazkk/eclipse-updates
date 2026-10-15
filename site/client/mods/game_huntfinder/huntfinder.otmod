@@ -1,0 +1,9 @@
+Module
+  name: game_huntfinder
+  description: RubinOT huntfinder
+  author: R!ck && ZLukSrT#8740 && Christianlb
+  sandboxed: true
+  dependencies: [ game_interface, game_realminimap ]
+  scripts: [ huntfinder, classes/map, classes/configuration, classes/hunt, classes/listpanel, classes/huntinfopanel ]
+  @onLoad: HuntFinder.init()
+  @onUnload: HuntFinder.terminate()

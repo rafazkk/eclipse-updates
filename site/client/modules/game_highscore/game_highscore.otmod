@@ -1,0 +1,8 @@
+Module
+  name: game_highscore
+  description: game_highscore
+  author: game_highscore
+  sandboxed: true
+  scripts: [ game_highscore ]
+  @onLoad: highscoreController:init()
+  @onUnload: highscoreController:terminate()

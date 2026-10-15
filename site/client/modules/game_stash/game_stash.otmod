@@ -1,0 +1,9 @@
+Module
+  name: game_stash
+  description: Global supply stash system
+  author: Aluisio Penna
+  sandboxed: false
+  dependencies: [ game_containers ]
+  scripts: [ game_stash ]
+  @onLoad: init()
+  @onUnload: terminate()

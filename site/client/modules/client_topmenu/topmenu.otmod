@@ -1,0 +1,8 @@
+Module
+  name: client_topmenu
+  description: Create the top menu
+  author: edubart
+  scripts: [ topmenu ]
+  sandboxed: true
+  @onLoad: init()
+  @onUnload: terminate()

@@ -1,0 +1,11 @@
+Module
+  name: client_mods
+  description: Mod loader
+  author: OTClient Team
+  sandboxed: true
+  load-later:
+    - game_buttons
+    - game_itemselector
+    - client_textedit
+    - game_memorial
+    - game_search_locker

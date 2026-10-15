@@ -1,0 +1,8 @@
+Module
+  name: game_ruleviolation
+  description: Rule violation interface (Ctrl+Y)
+  author: andrefaramir
+  sandboxed: true
+  scripts: [ ruleviolation ]
+  @onLoad: init()
+  @onUnload: terminate()

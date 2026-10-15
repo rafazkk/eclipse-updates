@@ -1,0 +1,74 @@
+MainWindow
+  id: minimapWindow
+  visible: false
+  size: 800 600
+  !text: tr('Minimap')
+  text-align: top
+  text-offset: 0 4
+  @onEscape: modules.game_realminimap.onClose()
+
+  Panel
+    anchors.fill: parent
+    margin: 5
+
+    Minimap
+      id: realMinimap
+      anchors.fill: parent
+      margin-bottom: 100
+      border: 0 red
+      @onHoverPosition: |
+        function(self, mapPos)
+          local posLabel = self:getParent():getChildById("posLabel")
+          posLabel:setText(string.format("x: %d, y: %d, z: %d, scale: x%f", mapPos.x, mapPos.y, mapPos.z, self:getScale()))
+        end
+
+    UIWidget
+      id: posLabel
+      anchors.bottom: parent.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-bottom: 80
+
+    HorizontalScrollBar
+      id: countScrollBar
+      width: 100
+      anchors.horizontalCenter: prev.horizontalCenter
+      anchors.top: prev.bottom
+      focusable: false
+      margin-top: 5
+      minimum: 0
+      maximum: 10
+      value: 5
+      step: 1
+      @onValueChange: |
+        function(self)
+          self:getParent().realMinimap:setZoom(self:getValue() - 5)
+        end
+
+    Button
+      id: changeView
+      anchors.top: prev.bottom
+      anchors.horizontalCenter: prev.horizontalCenter
+      margin-top: 5
+      !text: tr("Change View")
+      @onClick: |
+        function(self)
+          local map = self:getParent().realMinimap
+          if map:isSatelliteMode() then
+            map:setSatelliteMode(false)
+          else
+            local camera = map:getCameraPosition()
+            if g_satelliteMap and g_satelliteMap.hasChunksForView(camera.z) then
+              map:setSatelliteMode(true)
+            else
+              print("[game_realminimap] Satellite map assets are not installed; keeping the standard minimap.")
+            end
+          end
+        end
+
+    Button
+      id: close
+      anchors.bottom: parent.bottom
+      anchors.horizontalCenter: parent.horizontalCenter
+      !text: tr("Close")
+      @onClick: function(self) self:getParent():getParent():onEscape() end

@@ -1,0 +1,8 @@
+Module
+  name: client_terminal
+  description: Read-only terminal for viewing client log output
+  author: edubart
+  scripts: [ terminal ]
+  sandboxed: true
+  @onLoad: init()
+  @onUnload: terminate()

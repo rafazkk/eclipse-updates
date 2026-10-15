@@ -1,0 +1,8 @@
+Module
+  name: game_cooldown
+  description: Spellcooldowns
+  author: OTClient team
+  sandboxed: true
+  scripts: [ cooldown ]
+  @onLoad: init()
+  @onUnload: terminate()

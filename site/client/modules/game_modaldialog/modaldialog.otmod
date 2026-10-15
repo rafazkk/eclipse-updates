@@ -1,0 +1,9 @@
+Module
+  name: game_modaldialog
+  description: Show and process modal dialogs
+  author: Summ
+  sandboxed: true
+  dependencies: [ game_interface ]
+  scripts: [ modaldialog ]
+  @onLoad: init()
+  @onUnload: terminate()

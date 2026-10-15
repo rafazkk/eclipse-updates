@@ -1,0 +1,8 @@
+Module
+  name: game_playermount
+  description: Manage player mounts
+  author: BeniS
+  sandboxed: true
+  scripts: [ playermount ]
+  @onLoad: init()
+  @onUnload: terminate()
