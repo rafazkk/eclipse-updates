@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     {
       "path": "PlayTC_gl_x64.exe",
@@ -102166,14 +102166,14 @@
     {
       "path": "mods/game_huntfinder/huntfinder.otui",
       "url": "client/mods/game_huntfinder/huntfinder.otui",
-      "size": 34868,
-      "sha256": "d8f3ea86a9a7ee5c94c22e20814f96d0f574fa82b1a95cba1f52934eabd3f1b9"
+      "size": 33623,
+      "sha256": "1c5cfe50797183ed3968fd676a3c3dc3f064ed4687522ba11da97a1a094c69c7"
     },
     {
       "path": "mods/game_huntfinder/styles/huntfinder.otui",
       "url": "client/mods/game_huntfinder/styles/huntfinder.otui",
-      "size": 34676,
-      "sha256": "257afd06a5e07bfdf4b825538620594473cc9324ae309ee531eaff3e667d1545"
+      "size": 33434,
+      "sha256": "da53be399a226372fa95e9c380f3aed8bb4692e6daf36e9baf75ba2d634905f1"
     },
     {
       "path": "mods/game_huntfinder/styles/monsters.json",
