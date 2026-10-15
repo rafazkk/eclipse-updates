@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "files": [
     {
       "path": "PlayTC_gl_x64.exe",
@@ -19100,6 +19100,18 @@
       "sha256": "7fed32f52fc7e1e7b16915c9fce16f3100ca324bf56ea4ede35260a8a90d003b"
     },
     {
+      "path": "data/fonts/ttf/Cinzel-OFL.txt",
+      "url": "client/data/fonts/ttf/Cinzel-OFL.txt",
+      "size": 4382,
+      "sha256": "f5a242cf68ad6ebd0603b3359a74c593ca080318a681035be5296ba2c6b04ae6"
+    },
+    {
+      "path": "data/fonts/ttf/Cinzel-Regular.ttf",
+      "url": "client/data/fonts/ttf/Cinzel-Regular.ttf",
+      "size": 76868,
+      "sha256": "11a4a8e7a57ab7202b8f41620cb06433e3cb41f83bf6a6dec97e5201b1c6d96b"
+    },
+    {
       "path": "data/fonts/ttf/TerminusTTF-4.49.3.ttf",
       "url": "client/data/fonts/ttf/TerminusTTF-4.49.3.ttf",
       "size": 500668,
@@ -20144,6 +20156,12 @@
       "sha256": "ba0d04dd2cf20ae4d77a20ddd7446b02d6eae726d8b2090796376e37a236dfb4"
     },
     {
+      "path": "data/images/eclipse-login/discord.png",
+      "url": "client/data/images/eclipse-login/discord.png",
+      "size": 1613,
+      "sha256": "b90d7e895bb000cc6778faaa6f9c794a32e1c38606c2bacf52b321a08976a924"
+    },
+    {
       "path": "data/images/eclipse-login/exit.png",
       "url": "client/data/images/eclipse-login/exit.png",
       "size": 1793,
@@ -20196,6 +20214,12 @@
       "url": "client/data/images/eclipse-login/website.png",
       "size": 2097,
       "sha256": "8ae48bdec86841c0acf5102352cd77fa1d78282f5673c9de53bdbd9524e6410a"
+    },
+    {
+      "path": "data/images/eclipse-login/youtube.png",
+      "url": "client/data/images/eclipse-login/youtube.png",
+      "size": 1450,
+      "sha256": "1c08efc39e77bb94ae9e0844fcfad62f97531399958a3025e8d4ee6617709fbf"
     },
     {
       "path": "data/images/eclipse_logo.png",
@@ -97420,8 +97444,8 @@
     {
       "path": "modules/client_background/background.otui",
       "url": "client/modules/client_background/background.otui",
-      "size": 968,
-      "sha256": "8dc516f183a6b48ef79f16a647967cc1d5df3b3cfe2ff49ad7ca941222f92f57"
+      "size": 1075,
+      "sha256": "fb50adc0c52a2099aa4605d322b914f641d4cd9c5226aa44df1e418f02fd8658"
     },
     {
       "path": "modules/client_bottommenu/bottommenu.lua",
@@ -97468,14 +97492,14 @@
     {
       "path": "modules/client_entergame/characterlist.lua",
       "url": "client/modules/client_entergame/characterlist.lua",
-      "size": 26662,
-      "sha256": "6ef1092311d770fc6f1fbf8f5e250b972cfebf7ee7aa515a0a33c06e704113c9"
+      "size": 26688,
+      "sha256": "5104ec218e96fa58e50569f923fb7355ee7779936c9c172a83eaa65c17d99a21"
     },
     {
       "path": "modules/client_entergame/characterlist.otui",
       "url": "client/modules/client_entergame/characterlist.otui",
-      "size": 15479,
-      "sha256": "de2aebcf8dc4999ae237249628213c589198549a4a53463ef7c9548de3d491ee"
+      "size": 16669,
+      "sha256": "29da5584dac409d9c41621ffc1d400d8c01b12078636a59eb91f7d988c60d9cf"
     },
     {
       "path": "modules/client_entergame/createAccount.lua",
@@ -97492,20 +97516,20 @@
     {
       "path": "modules/client_entergame/eclipse.lua",
       "url": "client/modules/client_entergame/eclipse.lua",
-      "size": 5737,
-      "sha256": "7ba96aae88dfb51dfd0e0fb1f3b3c736ffe03888f4a4f74a57246fd7b8d2f457"
+      "size": 7827,
+      "sha256": "db4ce6f1a6113c409ff73f2d28887a52229f2deac2a59b6494684126ad5b20ca"
     },
     {
       "path": "modules/client_entergame/eclipse_config.lua",
       "url": "client/modules/client_entergame/eclipse_config.lua",
-      "size": 192,
-      "sha256": "0d1389b0c1ca9c360a5d4534cf56774c2f2cd978a008514030f54e817a5d3c9a"
+      "size": 210,
+      "sha256": "8ccf6af1d38d730bf0433ec034349b62a61dfcfc8fa63a92658fd7a85c71b1de"
     },
     {
       "path": "modules/client_entergame/entergame.lua",
       "url": "client/modules/client_entergame/entergame.lua",
-      "size": 20922,
-      "sha256": "cfab046f016c1d8a45a5522ed2d9566165157773bd469997f6a42153ac061774"
+      "size": 20949,
+      "sha256": "995279baafe05ba8561acd14fc9ab0d4684963ce1f917105e050d2972d1adab7"
     },
     {
       "path": "modules/client_entergame/entergame.otmod",
@@ -97516,8 +97540,8 @@
     {
       "path": "modules/client_entergame/entergame.otui",
       "url": "client/modules/client_entergame/entergame.otui",
-      "size": 10093,
-      "sha256": "8925cb55c2671d75e95d19646c32580e257cc06b05af1597b7f8cf0e85fe8f7b"
+      "size": 10981,
+      "sha256": "4249d8c84cc8cc6355f8d05b0043533fbba7c1769485ecb8f7964aee4105126a"
     },
     {
       "path": "modules/client_entergame/twofactor.otui",

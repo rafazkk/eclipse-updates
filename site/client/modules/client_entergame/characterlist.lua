@@ -705,7 +705,7 @@ function CharacterList.create(characters, account, otui)
 					local name = getWorldTypeName(value)
 
 					if name then
-						subWidget:setText(string.format("(%s)", name))
+						subWidget:setText(EclipseLogin.toClientText(string.format("(%s)", name)))
 					end
 				else
 					local text = value
@@ -716,7 +716,7 @@ function CharacterList.create(characters, account, otui)
 						text = string.format(subWidget.baseText, text)
 					end
 
-					subWidget:setText(text)
+					subWidget:setText(EclipseLogin.toClientText(text))
 				end
 			end
 		end
@@ -827,7 +827,7 @@ function CharacterList.create(characters, account, otui)
 
 	if recoverySetupLabel then
 		if recoveryIncomplete then
-			recoverySetupLabel:setText(tr("You need to complete the recovery setup process!"))
+			recoverySetupLabel:setText(EclipseLogin.toClientText("Complete a configuração de recuperação da conta!"))
 			recoverySetupLabel:setVisible(true)
 			recoverySetupLabel:setHeight(24)
 			recoverySetupLabel:setMarginBottom(5)
@@ -842,15 +842,15 @@ function CharacterList.create(characters, account, otui)
 	local status = ""
 
 	if account.status == AccountStatus.Frozen then
-		status = tr(" (Frozen)")
+		status = " (congelada)"
 	elseif account.status == AccountStatus.Suspended then
-		status = tr(" (Suspended)")
+		status = " (suspensa)"
 	end
 
 	local premiumButton = charactersWindow:getChildById("getPremiumButton")
 
 	if account.subStatus == SubscriptionStatus.Free then
-		accountStatusLabel:setText(("%s%s"):format(tr("Free Account"), status))
+		accountStatusLabel:setText("Conta gratuita" .. status)
 
 		if accountStatusIcon ~= nil then
 			accountStatusIcon:setImageSource("/images/game/entergame/nopremium")
@@ -861,11 +861,11 @@ function CharacterList.create(characters, account, otui)
 		end
 	elseif account.subStatus == SubscriptionStatus.Premium then
 		if account.premDays == 0 or account.premDays == 65535 then
-			accountStatusLabel:setText(("%s%s"):format(tr("Gratis Premium Account"), status))
+			accountStatusLabel:setText("Conta premium gratuita" .. status)
 		else
 			local color = account.premDays >= 10 and "#c0c0c0" or "#f86060"
 
-			accountStatusLabel:setColoredText(("%s%s"):format(tr("{Premium Account, #c0c0c0} {(%s days left), " .. color .. "}", account.premDays), status))
+			accountStatusLabel:setColoredText(("{Conta premium, #c0c0c0} {(%s dias restantes), %s}%s"):format(account.premDays, color, status))
 		end
 
 		if accountStatusIcon ~= nil then

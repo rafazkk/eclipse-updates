@@ -6,7 +6,8 @@ EclipseLoginConfig = {
     discord = '',
     youtube = '',
     cinematics = '',
-    news = ''
+    news = '',
+    premium = ''
   },
   news = {}
 }

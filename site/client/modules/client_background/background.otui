@@ -15,6 +15,12 @@ Panel
 
   focusable: false
 
+  UIWidget
+    id: eclipseVeil
+    anchors.fill: parent
+    background-color: #07031338
+    phantom: true
+
   // Logo do servidor - Eclipse: The Awakening
   UIWidget
     id: serverLogo

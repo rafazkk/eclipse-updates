@@ -1,5 +1,6 @@
 EclipseLabel < UILabel
-  font: verdana-11px-antialised
+  ttf-font: /fonts/ttf/Verdana.ttf
+  ttf-font-size: 12
   color: #d5cde1
   phantom: true
   focusable: false
@@ -12,7 +13,8 @@ EclipsePanel < UIWidget
 
 EclipseButton < UIButton
   height: 36
-  font: Verdana Bold-11px
+  ttf-font: /fonts/ttf/verdana-bold.ttf
+  ttf-font-size: 12
   color: #e7d7b4
   image-source: /images/eclipse-login/button-secondary
   image-border: 8
@@ -33,7 +35,8 @@ EclipseButton < UIButton
 
 EclipseNavButton < EclipseButton
   text-offset: 12 0
-  font: Verdana-9px-antialiased
+  ttf-font: /fonts/ttf/Verdana.ttf
+  ttf-font-size: 11
   UIWidget
     id: actionIcon
     size: 23 23
@@ -44,8 +47,9 @@ EclipseNavButton < EclipseButton
     phantom: true
 
 EclipseInput < UITextEdit
-  height: 29
-  font: verdana-11px-antialised
+  height: 31
+  ttf-font: /fonts/ttf/Verdana.ttf
+  ttf-font-size: 12
   color: #ede7f4
   background-color: #090512ed
   border-width: 1
@@ -60,14 +64,15 @@ EclipseInput < UITextEdit
     border-color: #b27bf0
 
 EclipseCheckBox < CheckBox
-  font: Verdana-9px-antialiased
+  ttf-font: /fonts/ttf/Verdana.ttf
+  ttf-font-size: 10
   color: #b9afc8
   image-color: #c196f4
   height: 16
   text-offset: 18 0
 
 EclipseNewsItem < UIWidget
-  height: 74
+  height: 64
   focusable: false
   UIWidget
     id: newsIcon
@@ -82,9 +87,10 @@ EclipseNewsItem < UIWidget
     anchors.right: parent.right
     anchors.top: parent.top
     margin-left: 10
-    height: 30
+    height: 20
     text-wrap: true
-    font: Verdana Bold-11px
+    ttf-font: /fonts/ttf/verdana-bold.ttf
+    ttf-font-size: 11
     color: #d4b86e
   EclipseLabel
     id: newsDate
@@ -92,7 +98,8 @@ EclipseNewsItem < UIWidget
     anchors.right: parent.right
     anchors.top: newsTitle.bottom
     height: 10
-    font: verdana-8px-rounded
+    ttf-font: /fonts/ttf/Verdana.ttf
+    ttf-font-size: 9
     color: #9b86b1
   EclipseLabel
     id: newsDescription
@@ -100,7 +107,8 @@ EclipseNewsItem < UIWidget
     anchors.right: parent.right
     anchors.top: newsDate.bottom
     height: 34
-    font: Verdana-9px-antialiased
+    ttf-font: /fonts/ttf/Verdana.ttf
+    ttf-font-size: 10
     text-align: topLeft
     text-wrap: true
 
@@ -112,16 +120,7 @@ UIWindow
   @onEnter: EnterGame.doLogin()
 
   EclipseLabel
-    id: versionLabel
-    text: TIBIA 15.00\nOTCLIENT
-    anchors.top: parent.top
-    anchors.left: parent.left
-    margin-top: 22
-    margin-left: 24
-    size: 180 40
-    color: #e4c798
-
-  EclipseLabel
+    id: adventureTagline
     text: GRANDES AVENTURAS\nCOMEÇAM COM UM\nÚNICO PASSO...
     anchors.top: parent.top
     anchors.right: parent.right
@@ -129,14 +128,15 @@ UIWindow
     margin-right: 24
     size: 175 48
     text-align: topRight
-    font: Verdana-9px-antialiased
+    ttf-font: /fonts/ttf/Verdana.ttf
+    ttf-font-size: 10
 
   EclipsePanel
     id: loginFrame
-    size: 320 360
+    size: 291 360
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
-    margin-top: 55
+    margin-top: 60
     phantom: true
 
   EclipseLabel
@@ -144,9 +144,10 @@ UIWindow
     text: FAÇA SEU LOGIN
     anchors.top: loginFrame.top
     anchors.horizontalCenter: loginFrame.horizontalCenter
-    margin-top: 27
+    margin-top: 32
     size: 240 22
-    font: sans-bold-16px
+    ttf-font: /fonts/ttf/Cinzel-Regular.ttf
+    ttf-font-size: 18
     text-align: center
 
   EclipseLabel
@@ -184,7 +185,7 @@ UIWindow
     anchors.left: accountNameTextEdit.left
     anchors.right: accountNameTextEdit.right
     anchors.top: accountNameTextEdit.bottom
-    margin-top: 8
+    margin-top: 9
 
   UIWidget
     image-source: /images/eclipse-login/password
@@ -199,14 +200,16 @@ UIWindow
     text: Lembrar de mim
     anchors.left: accountNameTextEdit.left
     anchors.top: accountPasswordTextEdit.bottom
-    margin-top: 8
+    margin-top: 10
     width: 125
     tooltip: Salva seu e-mail neste computador.
+    @onCheckChange: EclipseLogin.updatePasswordOption()
 
   UIButton
     id: Forgot_password_email
     text: Esqueceu sua senha?
-    font: verdana-8px-rounded
+    ttf-font: /fonts/ttf/Verdana.ttf
+    ttf-font-size: 10
     color: #a375d8
     size: 114 16
     anchors.right: accountPasswordTextEdit.right
@@ -218,22 +221,25 @@ UIWindow
   EclipseCheckBox
     id: rememberPasswordBox
     text: Salvar senha
+    visible: false
     anchors.left: rememberEmailBox.left
     anchors.top: rememberEmailBox.bottom
     margin-top: 3
     width: 125
     tooltip: Opcional. Salva a senha usando a proteção existente do client. Evite em computadores compartilhados.
+    @onCheckChange: EclipseLogin.updatePasswordOption()
 
   EclipseButton
     id: loginButton
     text: ENTRAR
-    font: sans-bold-16px
+    ttf-font: /fonts/ttf/Cinzel-Regular.ttf
+    ttf-font-size: 18
     image-source: /images/eclipse-login/button-primary
     height: 42
     anchors.left: accountNameTextEdit.left
     anchors.right: accountNameTextEdit.right
-    anchors.top: rememberPasswordBox.bottom
-    margin-top: 12
+    anchors.top: rememberEmailBox.bottom
+    margin-top: 23
     @onClick: EnterGame.doLogin()
 
   UIWidget
@@ -248,38 +254,48 @@ UIWindow
   EclipseButton
     id: btnCreateNewAccount
     text: CRIAR CONTA
+    ttf-font: /fonts/ttf/Cinzel-Regular.ttf
+    ttf-font-size: 13
     anchors.left: loginButton.left
     anchors.right: loginButton.right
     anchors.top: loginButton.bottom
-    margin-top: 37
+    margin-top: 42
     @onClick: EclipseLogin.createAccount()
 
   EclipseButton
     id: discordButton
-    size: 34 29
-    image-border-left: 8
-    image-border-right: 8
+    size: 26 26
+    image-source: /images/eclipse-login/discord
+    image-border: 0
+    image-border-left: 0
+    image-border-right: 0
     anchors.top: btnCreateNewAccount.bottom
     anchors.horizontalCenter: loginFrame.horizontalCenter
-    margin-top: 12
-    margin-left: -23
-    icon: /images/icons/icon_discord
-    icon-size: 18 18
+    margin-top: 13
+    margin-left: -36
     tooltip: Discord
     @onClick: EclipseLogin.openLink('discord')
 
   EclipseButton
     id: youtubeButton
-    size: 34 29
-    image-border-left: 8
-    image-border-right: 8
+    size: 26 26
+    image-source: /images/eclipse-login/youtube
+    image-border: 0
+    image-border-left: 0
+    image-border-right: 0
     anchors.top: discordButton.top
-    anchors.left: discordButton.right
-    margin-left: 12
-    icon: /images/icons/icon_youtube
-    icon-size: 18 18
+    anchors.horizontalCenter: loginFrame.horizontalCenter
+    margin-left: 36
     tooltip: YouTube
     @onClick: EclipseLogin.openLink('youtube')
+
+  UIWidget
+    image-source: /images/eclipse-login/news-welcome
+    size: 26 25
+    anchors.top: discordButton.top
+    anchors.horizontalCenter: loginFrame.horizontalCenter
+    margin-top: 2
+    phantom: true
 
   EclipseLabel
     id: serverInfoLabel
@@ -288,18 +304,19 @@ UIWindow
     anchors.top: loginButton.bottom
     margin-top: 6
     height: 14
-    font: verdana-8px-rounded
+    ttf-font: /fonts/ttf/Verdana.ttf
+    ttf-font-size: 10
     text-align: center
     color: #bda6d4
 
   EclipsePanel
     id: newsFrame
-    size: 280 340
+    size: 263 310
     padding: 20
     anchors.left: parent.left
     anchors.verticalCenter: parent.verticalCenter
     margin-left: 45
-    margin-top: -20
+    margin-top: -32
     EclipseLabel
       id: newsHeading
       text: ÚLTIMAS NOTÍCIAS
@@ -307,7 +324,8 @@ UIWindow
       anchors.left: parent.left
       anchors.right: parent.right
       height: 24
-      font: Verdana Bold-13px
+      ttf-font: /fonts/ttf/Cinzel-Regular.ttf
+      ttf-font-size: 17
       color: #cca0e7
     EclipseNewsItem
       id: news1
@@ -328,9 +346,11 @@ UIWindow
       anchors.top: news2.bottom
       margin-top: 6
     EclipseButton
+      id: allNewsButton
       text: VER TODAS AS NOTÍCIAS
-      font: verdana-8px-rounded
-      height: 30
+      ttf-font: /fonts/ttf/Cinzel-Regular.ttf
+      ttf-font-size: 11
+      height: 24
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.bottom: parent.bottom
@@ -385,18 +405,22 @@ UIWindow
       @onClick: g_app.exit()
 
   EclipseLabel
+    id: eclipseBrand
     text: ECLIPSE
     color: #c08de7
-    font: sans-bold-16px
+    ttf-font: /fonts/ttf/Cinzel-Regular.ttf
+    ttf-font-size: 23
     size: 250 22
     anchors.left: parent.left
     anchors.bottom: parent.bottom
     margin-left: 24
     margin-bottom: 31
   EclipseLabel
+    id: eclipseTagline
     text: UM MUNDO EM CONSTANTE EVOLUÇÃO
     color: #a991b9
-    font: verdana-8px-rounded
+    ttf-font: /fonts/ttf/Verdana.ttf
+    ttf-font-size: 9
     size: 260 16
     anchors.left: parent.left
     anchors.bottom: parent.bottom
@@ -405,7 +429,8 @@ UIWindow
   EclipseLabel
     id: onlinePlayersLabel
     text: Jogadores online: não informado
-    font: Verdana-9px-antialiased
+    ttf-font: /fonts/ttf/Verdana.ttf
+    ttf-font-size: 10
     size: 240 18
     text-align: right
     anchors.right: parent.right

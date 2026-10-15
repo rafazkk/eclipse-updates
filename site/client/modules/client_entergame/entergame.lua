@@ -152,7 +152,7 @@ local function onUpdateNeeded(protocol, signature)
 end
 
 local function updateLabelText()
-	enterGame:getChildById("loginTitle"):setText("FAÇA SEU LOGIN")
+	enterGame:getChildById("loginTitle"):setText(EclipseLogin.toClientText("FAÇA SEU LOGIN"))
 end
 
 function EnterGame.init()
@@ -897,7 +897,7 @@ end
 function EnterGame.setUniqueServer(host, port, protocol, windowWidth, windowHeight)
 	local clientVersion = tonumber(protocol)
 	local frame = enterGame:getChildById("loginFrame")
-	frame:setWidth(windowWidth or 320)
+	frame:setWidth(windowWidth or 291)
 	frame:setHeight(windowHeight or 360)
 	g_game.setClientVersion(clientVersion)
 	g_game.setProtocolVersion(g_game.getClientProtocolVersion(clientVersion))
