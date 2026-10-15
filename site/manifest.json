@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "files": [
     {
       "path": "PlayTC_gl_x64.exe",
@@ -1030,14 +1030,14 @@
     {
       "path": "data/assets/images/game/actionbar/slot-actionbar-empty.png",
       "url": "client/data/assets/images/game/actionbar/slot-actionbar-empty.png",
-      "size": 2072,
-      "sha256": "67b16be888883663ac592eea57a625e9fbe2e90090138201dbd1cd1935f9df38"
+      "size": 1909,
+      "sha256": "1d23980c19fce344aa0847d4115048273dee1048c91fcdb75e819f4a215797e6"
     },
     {
       "path": "data/assets/images/game/actionbar/slot-actionbar-filled.png",
       "url": "client/data/assets/images/game/actionbar/slot-actionbar-filled.png",
-      "size": 2652,
-      "sha256": "14babc64840b275611c5572d0a7fd6bdf8d71ac6ff5cc678717f32b2ff2cba1f"
+      "size": 2405,
+      "sha256": "b8e430600abcec4a719e8376c39de11ba0a11ec9ee6d7758fdb7c30c94caf78c"
     },
     {
       "path": "data/assets/images/game/actionbar/slot-disabled.png",
@@ -20266,8 +20266,8 @@
     {
       "path": "data/images/game/actionbar/actionbarslot.png",
       "url": "client/data/images/game/actionbar/actionbarslot.png",
-      "size": 2139,
-      "sha256": "ce3ee3a5f684f8e0d09cf24461aea33d77e3b0f726a2a6d066a62fd37fb0dcbf"
+      "size": 1909,
+      "sha256": "1d23980c19fce344aa0847d4115048273dee1048c91fcdb75e819f4a215797e6"
     },
     {
       "path": "data/images/game/actionbar/arrow-disabled.png",
@@ -20506,8 +20506,8 @@
     {
       "path": "data/images/game/actionbar/item-background.png",
       "url": "client/data/images/game/actionbar/item-background.png",
-      "size": 2072,
-      "sha256": "67b16be888883663ac592eea57a625e9fbe2e90090138201dbd1cd1935f9df38"
+      "size": 1909,
+      "sha256": "1d23980c19fce344aa0847d4115048273dee1048c91fcdb75e819f4a215797e6"
     },
     {
       "path": "data/images/game/actionbar/lenshelp-icon-arrow-left.png",
@@ -20560,20 +20560,20 @@
     {
       "path": "data/images/game/actionbar/slot-actionbar-empty.png",
       "url": "client/data/images/game/actionbar/slot-actionbar-empty.png",
-      "size": 2072,
-      "sha256": "67b16be888883663ac592eea57a625e9fbe2e90090138201dbd1cd1935f9df38"
+      "size": 1909,
+      "sha256": "1d23980c19fce344aa0847d4115048273dee1048c91fcdb75e819f4a215797e6"
     },
     {
       "path": "data/images/game/actionbar/slot-actionbar-filled.png",
       "url": "client/data/images/game/actionbar/slot-actionbar-filled.png",
-      "size": 2652,
-      "sha256": "14babc64840b275611c5572d0a7fd6bdf8d71ac6ff5cc678717f32b2ff2cba1f"
+      "size": 2405,
+      "sha256": "b8e430600abcec4a719e8376c39de11ba0a11ec9ee6d7758fdb7c30c94caf78c"
     },
     {
       "path": "data/images/game/actionbar/slot-actionbar.png",
       "url": "client/data/images/game/actionbar/slot-actionbar.png",
-      "size": 2072,
-      "sha256": "67b16be888883663ac592eea57a625e9fbe2e90090138201dbd1cd1935f9df38"
+      "size": 1909,
+      "sha256": "1d23980c19fce344aa0847d4115048273dee1048c91fcdb75e819f4a215797e6"
     },
     {
       "path": "data/images/game/actionbar/slot-disabled.png",
@@ -97498,8 +97498,8 @@
     {
       "path": "modules/client_entergame/characterlist.otui",
       "url": "client/modules/client_entergame/characterlist.otui",
-      "size": 16644,
-      "sha256": "fb1999a6a95c2b91a441e7cf89e86496da4d395bba23c0e476984309d76cd844"
+      "size": 16579,
+      "sha256": "d2e596db0babef8c3441cf9ec8e8cae8380659334a3047931dff85bd52c5e9bc"
     },
     {
       "path": "modules/client_entergame/createAccount.lua",
@@ -97516,8 +97516,8 @@
     {
       "path": "modules/client_entergame/eclipse.lua",
       "url": "client/modules/client_entergame/eclipse.lua",
-      "size": 7827,
-      "sha256": "db4ce6f1a6113c409ff73f2d28887a52229f2deac2a59b6494684126ad5b20ca"
+      "size": 7939,
+      "sha256": "2ff5b2569a5e50ecfda2d126ece55f93ec1a8c0e234b0a040a5bda9e88448b2d"
     },
     {
       "path": "modules/client_entergame/eclipse_config.lua",
@@ -97540,8 +97540,8 @@
     {
       "path": "modules/client_entergame/entergame.otui",
       "url": "client/modules/client_entergame/entergame.otui",
-      "size": 10956,
-      "sha256": "c07288573051bb680cb860b1549fc2ac4a88f63b81caa9258416eda9682d2ef4"
+      "size": 10780,
+      "sha256": "d88a3f25908cd68f2f466b964385e0a65293cef91ef930e1380a37d545fd8776"
     },
     {
       "path": "modules/client_entergame/twofactor.otui",
@@ -98074,8 +98074,8 @@
     {
       "path": "modules/corelib/ui/uiminiwindowcontainer.lua",
       "url": "client/modules/corelib/ui/uiminiwindowcontainer.lua",
-      "size": 14247,
-      "sha256": "ceecf7a7fc6e6da46ff900f92e12b0c29db997c2dbb1cd787c77289b692b3c7f"
+      "size": 15141,
+      "sha256": "d52b5004b5d241443235a0badc212263b0f062e165f818e5a36d69735ec93b24"
     },
     {
       "path": "modules/corelib/ui/uimodalmanager.lua",

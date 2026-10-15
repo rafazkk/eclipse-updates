@@ -71,6 +71,35 @@ local function ensureSidebarFreeSpaceWidget(container)
 	return widget
 end
 
+local function updateEclipseBrand(container, filler, freeHeight)
+	if container:getId() ~= "gameLeftPanel" then
+		return
+	end
+
+	local brand = filler:getChildById("eclipseSidebarBrand")
+	local brandWidth = math.min(148, math.max(0, filler:getWidth() - 20))
+	if freeHeight < 108 or brandWidth < 80 then
+		if brand then
+			brand:hide()
+		end
+		return
+	end
+
+	if not brand then
+		brand = g_ui.createWidget("UIWidget", filler)
+		brand:setId("eclipseSidebarBrand")
+		brand:setImageSource("/images/eclipse_logo")
+		brand:setImageSmooth(true)
+		brand:setPhantom(true)
+		brand:setFocusable(false)
+		brand:addAnchor(AnchorHorizontalCenter, "parent", AnchorHorizontalCenter)
+		brand:addAnchor(AnchorVerticalCenter, "parent", AnchorVerticalCenter)
+	end
+
+	brand:setSize({ width = brandWidth, height = math.floor(brandWidth * 79 / 148 + 0.5) })
+	brand:show()
+end
+
 function UIMiniWindowContainer:scheduleSidebarFreeSpaceRefresh()
 	if self._sidebarFreeSpaceRefreshScheduled or self._sidebarFreeSpaceRefreshing then
 		return
@@ -149,6 +178,7 @@ function UIMiniWindowContainer:refreshSidebarFreeSpace()
 	filler:setWidth(math.max(0, self:getWidth() - self:getPaddingLeft() - self:getPaddingRight()))
 	filler:setHeight(freeHeight)
 	filler:show()
+	updateEclipseBrand(self, filler, freeHeight)
 	finish()
 end
 

@@ -17,7 +17,6 @@ EclipseButton < UIButton
   ttf-font-size: 12
   color: #e7d7b4
   image-source: /images/eclipse-login/button-secondary
-  image-border: 0
   image-repeated: false
   image-smooth: true
   text-offset: 0 0
@@ -120,13 +119,14 @@ UIWindow
 
   EclipseLabel
     id: adventureTagline
-    text: GRANDES AVENTURAS\nCOMEÇAM COM UM\nÚNICO PASSO...
+    text: GRANDES AVENTURAS
     anchors.top: parent.top
     anchors.right: parent.right
     margin-top: 22
     margin-right: 24
-    size: 175 48
-    text-align: topRight
+    size: 195 52
+    text-align: center
+    text-wrap: true
     ttf-font: /fonts/ttf/Verdana.ttf
     ttf-font-size: 10
 
@@ -265,9 +265,6 @@ UIWindow
     id: discordButton
     size: 26 26
     image-source: /images/eclipse-login/discord
-    image-border: 0
-    image-border-left: 0
-    image-border-right: 0
     anchors.top: btnCreateNewAccount.bottom
     anchors.horizontalCenter: loginFrame.horizontalCenter
     margin-top: 13
@@ -279,9 +276,6 @@ UIWindow
     id: youtubeButton
     size: 26 26
     image-source: /images/eclipse-login/youtube
-    image-border: 0
-    image-border-left: 0
-    image-border-right: 0
     anchors.top: discordButton.top
     anchors.horizontalCenter: loginFrame.horizontalCenter
     margin-left: 36

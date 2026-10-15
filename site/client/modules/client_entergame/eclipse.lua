@@ -149,10 +149,11 @@ end
 
 function EclipseLogin.init(widget)
   screen = widget
-  for _, id in ipairs({ 'adventureTagline', 'newsHeading', 'allNewsButton', 'eclipseTagline', 'onlinePlayersLabel' }) do
+  for _, id in ipairs({ 'newsHeading', 'allNewsButton', 'eclipseTagline', 'onlinePlayersLabel' }) do
     local label = screen:recursiveGetChildById(id)
     label:setText(EclipseLogin.toClientText(label:getText()))
   end
+  screen:getChildById('adventureTagline'):setText(EclipseLogin.toClientText('GRANDES AVENTURAS\nCOMEÇAM COM UM\nÚNICO PASSO...'))
   local actions = screen:getChildById('actionsFrame')
   for name, icon in pairs({ statusButton = 'user', optionsButton = 'options', cinematicsButton = 'cinematics', websiteButton = 'website', exitButton = 'exit' }) do
     local button = actions:getChildById(name)

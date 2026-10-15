@@ -1,6 +1,5 @@
 EclipseCharacterButton < UIButton
   image-source: /images/eclipse-login/button-secondary
-  image-border: 0
   image-repeated: false
   ttf-font: /fonts/ttf/Cinzel-Regular.ttf
   ttf-font-size: 12
@@ -485,9 +484,7 @@ UIWindow
     anchors.right: parent.right
     anchors.bottom: separator.top
     margin-bottom: 12
-    image-border: 8
-    image-border-left: 24
-    image-border-right: 24
+    image-repeated: false
     cursor: pointer
     image-source: /images/eclipse-login/button-secondary
     size: 110 27
