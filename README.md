@@ -3,10 +3,12 @@
 Esta área pública contém somente os arquivos distribuídos aos jogadores.
 O projeto original e o código-fonte C++ continuam no repositório privado.
 
-Os arquivos em `site/` são gerados automaticamente pelo repositório principal
-após uma atualização aprovada. A URL do manifesto público, depois de ativar
-GitHub Pages, será `https://rafazkk.github.io/eclipse-updates/manifest.json`.
+Os arquivos em `site/` são preparados pelo repositório principal. O pacote
+inicial já está disponível no GitHub Pages:
+`https://rafazkk.github.io/eclipse-updates/manifest.json`.
 Não faça alterações manuais em `site/`: a publicação seguinte substitui seu conteúdo.
 
-O manifesto ainda não foi publicado. Não distribua um launcher configurado
-com esse endereço até a página e os downloads estarem disponíveis.
+A publicação automática de novas versões depende de aprovar o workflow no
+repositório privado e configurar ali o segredo `ECLIPSE_UPDATES_TOKEN`, restrito
+somente a este repositório público com permissão `Contents: Read and write`.
+O launcher não usa esse segredo: os downloads são públicos por HTTPS.
