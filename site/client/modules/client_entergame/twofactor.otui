@@ -57,7 +57,7 @@ TwoFactorWindow
     margin-right: -1
     text-offset: 0 1
     size: 41 21
-    color: #FFFFFF
+    color: #f1e6d0
     @onClick: EnterGame.cancelTwoFactor()
 
   QtButton
@@ -68,5 +68,5 @@ TwoFactorWindow
     margin-right: 6
     text-offset: 0 1
     size: 41 21
-    color: #FFFFFF
+    color: #f1e6d0
     @onClick: EnterGame.submitTwoFactor()

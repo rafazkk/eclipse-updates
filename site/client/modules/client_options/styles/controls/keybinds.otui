@@ -15,17 +15,17 @@ KeybindsTableRow < UITableRow
   layout: horizontalBox
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
 KeybindsTableColumn < Label
-  color: #c0c0c0
+  color: #dac7a2
   text-align: left
   focusable: false
   text-offset: 2 2
   font: verdana-11px-monochrome
 
 EditableKeybindsTableColumn < Label
-  color: #c0c0c0
+  color: #dac7a2
   text-align: left
   focusable: false
   text-offset: 2 2
@@ -43,7 +43,7 @@ EditableKeybindsTableColumn < Label
     visible: false
 
 EditableHotkeysTableColumn < Label
-  color: #c0c0c0
+  color: #dac7a2
   text-align: left
   focusable: false
   text-offset: 18 2
@@ -77,7 +77,7 @@ KeybindsTableHeaderColumn < UITableHeaderColumn
   text-offset: 1 0
   text-align: left
   height: 14
-  color: #c0c0c0
+  color: #dac7a2
   background: #363636
 
 UIWidget
@@ -100,7 +100,7 @@ UIWidget
 
     CipsoftButton
       id: add
-      color: #ffffff
+      color: #f1e6d0
       size: 30 20
       text-offset: 0 1
       !text: tr("Add")
@@ -108,7 +108,7 @@ UIWidget
 
     CipsoftButton
       id: copy
-      color: #ffffff
+      color: #f1e6d0
       size: 35 20
       text-offset: 0 1
       !text: tr("Copy")
@@ -116,7 +116,7 @@ UIWidget
 
     CipsoftButton
       id: rename
-      color: #ffffff
+      color: #f1e6d0
       size: 45 20
       text-offset: 0 1
       !text: tr("Rename")
@@ -124,7 +124,7 @@ UIWidget
 
     CipsoftButton
       id: remove
-      color: #ffffff
+      color: #f1e6d0
       size: 45 20
       text-offset: 0 1
       !text: tr("Remove")
@@ -170,7 +170,7 @@ UIWidget
         text-horizontal-auto-resize: true
         !text: tr("Chat Mode On")
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         margin-bottom: -5
         margin-left: -2
         text-offset: 15 -4
@@ -180,7 +180,7 @@ UIWidget
         text-horizontal-auto-resize: true
         !text: tr("Chat Mode Off")
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         margin-bottom: -5
         margin-left: 16
         text-offset: 15 -4
@@ -210,7 +210,7 @@ UIWidget
     Label
       text-offset: -1 5
       font: $var-cip-font-lowspace
-      color: #c0c0c0
+      color: #dac7a2
       !text: tr('Type to search for a hotkey: ')
 
     TextEdit
@@ -314,6 +314,6 @@ UIWidget
       width: 43
       margin-top: 6
       !text: tr('Reset')
-      color: #ffffff
+      color: #f1e6d0
       text-offset: 0 1
       @onClick : resetActions()

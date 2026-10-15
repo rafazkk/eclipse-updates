@@ -50,7 +50,7 @@ largeToggleButton < UIButton
 TopBarBlueButton < UIButton
   size: 108 20
   font: cipsoftFont
-  color: #dfdfdfff
+  color: #dac7a2ff
   text-offset: 0 1
   image-source: /images/ui/button-blue-up
   image-border: 1

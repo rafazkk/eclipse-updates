@@ -173,7 +173,7 @@ MiniWindow
     margin-right: 50
     font: verdana-11px-monochrome
     height: 13
-    color: #ffffffe7
+    color: #f1e6d0e7
     !text: tr('Battle List')
 
   Panel
@@ -249,7 +249,7 @@ MiniWindow
     margin-left: 4
     margin-top: -1
     height: 2
-    color: #cccccc
+    color: #dac7a2
 
   MiniWindowContents
     id: contentsPanel
@@ -294,10 +294,10 @@ BattleListMenuOption < ThickCheckBox
   padding: 3 6
 
   $hover:
-    background-color: #ffffff1a
+    background-color: #2b193f1a
 
   $disabled:
-    color: #c0c0c0ff
+    color: #dac7a2ff
 
 BattleListMenuButton < UIButton
   text-align: left
@@ -308,10 +308,10 @@ BattleListMenuButton < UIButton
   margin-left: 5
 
   $hover:
-    background-color: #ffffff1a
+    background-color: #2b193f1a
 
   $disabled:
-    color: #c0c0c0ff
+    color: #dac7a2ff
 
 BattleListSubMenu < PopupMenu
   id: battleListSubMenu

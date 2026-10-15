@@ -14,7 +14,7 @@ WorldWidget < UIWidget
 
   Label
     id: details
-    color: #aaaaaa
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     font: verdana-11px-monochrome
@@ -23,7 +23,7 @@ WorldWidget < UIWidget
     text-offset: 2 0
 
     $on:
-      color: #ffffff
+      color: #f1e6d0
 
 PanelCreateYourAccount < Panel
   id: searchTemplate
@@ -306,10 +306,10 @@ MainWindow
         text-offset: 1 1
 
       $disabled:
-        color: #dfdfdf88
+        color: #dac7a288
         opacity: 0.8
       $!disabled:
-        color: #ffffff
+        color: #f1e6d0
         opacity: 1
     HorizontalSeparator
       margin-top: 5
@@ -416,32 +416,32 @@ MainWindow
       Panel
         id: textEditEmail
 
-        background-color: #C0C0C0
+        background-color: #2b193f
         border: 1 black
         visible: false
         height: 20
         visible:false
-        color: #3F3F3F
+        color: #a295b7
         text-vertical-auto-resize: true
         text-wrap:true
       Panel
         id: textEditRepeatPassword
-        background-color: #C0C0C0
+        background-color: #2b193f
         border: 1 black
         height: 20
         margin-top: 46
         visible:false
-        color: #3F3F3F
+        color: #a295b7
         text-vertical-auto-resize: true
         text-wrap:true
       Panel
         id: textEditCharacter
         &test: panelCharacterName
-        background-color: #C0C0C0
+        background-color: #2b193f
         border: 1 black
         margin-top: 125
         visible:false
-        color: #3F3F3F
+        color: #a295b7
         text-vertical-auto-resize: true
         text-wrap:true
 
@@ -453,7 +453,7 @@ MainWindow
       margin-top: 20
       size: 260 100
       layout: verticalBox
-      background-color: #C0C0C0
+      background-color: #2b193f
       border: 1 black
       visible: false
       Panel
@@ -461,7 +461,7 @@ MainWindow
         layout: horizontalBox
         Label
           text-auto-resize: true
-          color: #3F3F3F
+          color: #a295b7
           text: Password Requirements
           text-offset: 5 5
       Panel
@@ -481,7 +481,7 @@ MainWindow
 
         Label
           text-auto-resize: true
-          color: #3F3F3F
+          color: #a295b7
           text: 10 - 29 Characters
           text-offset: 10 2
 
@@ -502,7 +502,7 @@ MainWindow
 
         Label
           text-auto-resize: true
-          color: #3F3F3F
+          color: #a295b7
           text: No invalid Character
           text-offset: 10 2
 
@@ -523,7 +523,7 @@ MainWindow
 
         Label
           text-auto-resize: true
-          color: #3F3F3F
+          color: #a295b7
           text: At least one lower case letter (a-z)
           text-offset: 10 2
       Panel
@@ -543,7 +543,7 @@ MainWindow
 
         Label
           text-auto-resize: true
-          color: #3F3F3F
+          color: #a295b7
           text: At least one upper case letter (A-Z)
           text-offset: 10 2
       Panel
@@ -563,7 +563,7 @@ MainWindow
 
         Label
           text-auto-resize: true
-          color: #3F3F3F
+          color: #a295b7
           text: At least one number(0-9)
           text-offset: 10 2
   Panel
@@ -624,7 +624,7 @@ MainWindow
 
       TextList
         id: textListAllWorlds
-        background-color: #404040
+        background-color: #100a1d
         anchors.top: prev.bottom
         anchors.left: parent.left
         anchors.bottom: parent.bottom
@@ -642,7 +642,7 @@ MainWindow
       MiniPanel
         id: worldInfo
         text: World Name
-        background-color: #404040
+        background-color: #100a1d
         anchors.top: panelSelectworldAndPvp.bottom
         anchors.left: textListAllWorlds.right
         anchors.right: parent.right
@@ -658,13 +658,13 @@ MainWindow
 
           Label
             width: 110
-            color: #dfdfdf
+            color: #dac7a2
             text: Player Online:
 
           Label
             id: PlayersOnline
             text-auto-resize: true
-            color: #dfdfdf
+            color: #dac7a2
 
         Panel
           height: 14
@@ -673,13 +673,13 @@ MainWindow
 
           Label
             width: 110
-            color: #dfdfdf
+            color: #dac7a2
             text: PvP Type:
 
           Label
             id: PvPType
             text-auto-resize: true
-            color: #dfdfdf
+            color: #dac7a2
 
         Panel
           height: 14
@@ -688,13 +688,13 @@ MainWindow
 
           Label
             width: 110
-            color: #dfdfdf
+            color: #dac7a2
             text: World Locations:
 
           Label
             id: Region
             text-auto-resize: true
-            color: #dfdfdf
+            color: #dac7a2
 
         Panel
           height: 14
@@ -703,13 +703,13 @@ MainWindow
 
           Label
             width: 110
-            color: #dfdfdf
+            color: #dac7a2
             text: Creation Date
 
           Label
             id: CreationDate
             text-auto-resize: true
-            color: #dfdfdf
+            color: #dac7a2
 
         Panel
           height: 14
@@ -718,13 +718,13 @@ MainWindow
 
           Label
             width: 110
-            color: #dfdfdf
+            color: #dac7a2
             text: BattleEye Status:
 
           Label
             id: BattlEyeActivationTimestamp
             text-auto-resize: true
-            color: #dfdfdf
+            color: #dac7a2
 
         Panel
           height: 14
@@ -733,13 +733,13 @@ MainWindow
 
           Label
             width: 110
-            color: #dfdfdf
+            color: #dac7a2
             text: Premium Only:
 
           Label
             id: PremiumOnly
             text-auto-resize: true
-            color: #dfdfdf
+            color: #dac7a2
 
         Panel
           height: 14
@@ -748,13 +748,13 @@ MainWindow
 
           Label
             width: 110
-            color: #dfdfdf
+            color: #dac7a2
             text: Transfer Type:
 
           Label
             id: TransferType
             text-auto-resize: true
-            color: #dfdfdf
+            color: #dac7a2
 
     HorizontalSeparator
       id:separadorThee

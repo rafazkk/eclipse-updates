@@ -50,7 +50,7 @@ ShooterSpellAssignPreview < Panel
     margin-left: 5
     margin-top: -4
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-auto-resize: true
 
   Label
@@ -61,7 +61,7 @@ ShooterSpellAssignPreview < Panel
     margin-left: 5
     margin-top: 1
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-auto-resize: true
 
 MainWindowHigh
@@ -69,7 +69,7 @@ MainWindowHigh
   !text: tr('Add Attack Spell')
   size: 503 530
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   @onEscape: modules.game_helper.closeShooterAssignWindow()
   @onEnter: modules.game_helper.shooterAssignOk()
@@ -174,7 +174,7 @@ MainWindowHigh
       margin-left: 5
       @onSetup: self:setChecked(false)
       text-offset: 15 0
-      color: #c0c0c0
+      color: #dac7a2
       font: $var-cip-font-new
       @onCheckChange: modules.game_helper.onShooterAssignLearntChange()
 

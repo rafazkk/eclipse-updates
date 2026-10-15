@@ -126,7 +126,7 @@ MainWindowHigh
     margin-top: -7
     !text: tr('Highscores Filter')
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     text-align: center
     text-offset: 0 -50
     image-source: /images/ui/t2pixel-up-frame-borderimage
@@ -324,7 +324,7 @@ MainWindowHigh
     anchors.right: filters.right
     height: 16
     margin-top: 6
-    background-color: #363636
+    background-color: #100a1d
 
     UIWidget
       id: rank

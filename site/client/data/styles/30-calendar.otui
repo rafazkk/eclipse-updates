@@ -14,7 +14,7 @@ CalendarEvent < UIWidget
   Label
     id: text
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-alignt: left
     text-offset: 1 0
     anchors.fill: parent
@@ -26,14 +26,14 @@ CalendarDayNoTopSep < UICalendar
   UIWidget
     id: fill
     anchors.fill: parent
-    background-color: #484848ff
+    background-color: #100a1dff
     phantom: true
 
     $on:
-      background-color: #484848ff
+      background-color: #100a1dff
 
     $!on:
-      background-color: #414141ff
+      background-color: #100a1dff
 
   UIWidget
     id: columnRightSeparator
@@ -63,7 +63,7 @@ CalendarDayNoTopSep < UICalendar
     Label
       id: day
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       anchors:top: parent.top
       anchors.left: parent.left
       height: 15
@@ -116,14 +116,14 @@ CalendarDay < UICalendar
   UIWidget
     id: fill
     anchors.fill: parent
-    background-color: #484848ff
+    background-color: #100a1dff
     phantom: true
 
     $on:
-      background-color: #484848ff
+      background-color: #100a1dff
 
     $!on:
-      background-color: #414141ff
+      background-color: #100a1dff
 
   HorizontalSeparatorFlat
     height: 2
@@ -159,7 +159,7 @@ CalendarDay < UICalendar
     Label
       id: day
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       anchors:top: parent.top
       anchors.left: parent.left
       height: 15
@@ -210,8 +210,8 @@ CalendarTopMark < UICalendar
   height: 16
   text-align: center
   text-offset: 0 -1
-  background-color: #363636ff
-  color: #c0c0c0
+  background-color: #100a1dff
+  color: #dac7a2
   font: $var-cip-font
   focusable: false
 

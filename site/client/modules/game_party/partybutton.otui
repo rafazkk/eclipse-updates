@@ -26,7 +26,7 @@ PartyButton < CreatureButton
     anchors.left: spacer.right
     anchors.right: partyShield.left
     anchors.top: creature.top
-    color: #888888
+    color: #a295b7
     margin-left: 2
     margin-right: 4
     phantom: true

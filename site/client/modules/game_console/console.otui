@@ -7,7 +7,7 @@ ConsoleLabel < UITextEdit
   text-wrap: true
   text-auto-resize: true
   selection-color: #ffffff
-  selection-background-color: #808080
+  selection-background-color: #563276
   change-cursor-image: false
   cursor-visible: false
   editable: false
@@ -22,7 +22,7 @@ ConsolePhantomLabel < UILabel
   text-wrap: true
   text-auto-resize: true
   selection-color: #111416
-  selection-background-color: #808080
+  selection-background-color: #563276
 
 ConsoleTabBar < MoveableTabBar
   height: 14
@@ -66,7 +66,7 @@ ConsoleTabBarButton < UIButton
   size: 96 18
   image-source: /images/ui/console_button
   image-clip: 0 18 96 18
-  color: #7f7f7fff
+  color: #a295b7ff
   font: $var-cip-font-outline
   &ignoreTextResize: true
   anchors.top: parent.top
@@ -76,11 +76,11 @@ ConsoleTabBarButton < UIButton
 
   $checked:
     image-clip: 0 0 96 18
-    color: #dfdfdfff
+    color: #dac7a2ff
 
   $on !checked:
     image-clip: 0 18 96 18
-    color: #7f7f7fff
+    color: #a295b7ff
 
 Panel
   id: consolePanel
@@ -344,7 +344,7 @@ Panel
     size: 96 18
     image-clip: 0 0 96 18
     icon: /images/game/console/readOnly
-    color: #dfdfdfff
+    color: #dac7a2ff
     font: $var-cip-font
     padding: 5
     tab-spacing: 0
@@ -352,11 +352,11 @@ Panel
     text-auto-resize: false
     $checked:
       image-clip: 0 0 96 18
-      color: #dfdfdfff
+      color: #dac7a2ff
 
     $on !checked:
       image-clip: 0 0 96 18
-      color: #dfdfdfff
+      color: #dac7a2ff
 
   UIButton
     id: sayModeButton
@@ -382,7 +382,7 @@ Panel
     margin-bottom: 4
     shift-navigation: true
     max-length: 255
-    color: #f4f4f4
+    color: #f1e6d0
     font: $var-cip-font-new
     height: 16
     text-align: left
@@ -395,7 +395,7 @@ Panel
   UILabel
     id: placeholderLabel
     text: Type here to chat
-    color: #888888
+    color: #a295b7
     font: verdana-11px-antialised
     anchors.left: consoleTextEdit.left
     anchors.top: consoleTextEdit.top

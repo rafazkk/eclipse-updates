@@ -10,10 +10,10 @@ UIWidget
     anchors.left: parent.left
     margin-top: 10
     margin-left: -1
-    !text: tr('Categories') .. ':' 
+    !text: tr('Categories') .. ':'
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
 
   TextList
     id: CategoryList
@@ -23,15 +23,15 @@ UIWidget
     margin-top: 28
     image-source: /images/ui/1pixel-down-frame
     image-border: 5
-    background-color: #363636
+    background-color: #100a1d
     border-width: 0
     size: 200 60
     padding-left: 1
     padding-top: 1
     padding-bottom: 1
     focusable: false
- 
-  VerticalQtScrollBar 
+
+  VerticalQtScrollBar
     id: CategoryScrollbar
     anchors.top: CategoryList.top
     anchors.right: CategoryList.right
@@ -46,11 +46,11 @@ UIWidget
     id: MidSep
     anchors.left: parent.left
     anchors.top: parent.top
-    anchors.bottom: parent.bottom 
+    anchors.bottom: parent.bottom
     margin-top: 10
     margin-bottom:30
     margin-left: 210
- 
+
   fakeCheckBox
     id: LevelButton
     size: 49 21
@@ -61,7 +61,7 @@ UIWidget
     !text: tr("Level")
     text-align: center
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     @onCheckChange: modules.game_cyclopedia.Cyclopedia.levelFilter(self:isChecked())
 
   fakeCheckBox
@@ -73,7 +73,7 @@ UIWidget
     !text: tr("Voc.")
     text-align: center
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     @onCheckChange: modules.game_cyclopedia.Cyclopedia.vocationFilter(self:isChecked())
 
   fakeCheckBox
@@ -85,28 +85,28 @@ UIWidget
     !text: tr("1H")
     text-align: center
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     @onCheckChange: modules.game_cyclopedia.Cyclopedia.handFilter(self:isChecked(), false)
     $disabled:
       opacity: 1.0
       image-color: #ffffff
-      color: #b4b4b4
+      color: #dac7a2
 
   fakeCheckBox
     id: H2Button
-    size: 48 21 
+    size: 48 21
     anchors.left: H1Button.right
     anchors.top: LevelButton.top
     margin-left: 4
     !text: tr("2H")
     text-align: center
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     @onCheckChange: modules.game_cyclopedia.Cyclopedia.handFilter(false, self:isChecked())
     $disabled:
       opacity: 1.0
       image-color: #ffffff
-      color: #b4b4b4
+      color: #dac7a2
 
   ComboBox
     id: ItemFilter
@@ -116,7 +116,7 @@ UIWidget
     margin-top: 5
     padding-right: 5
     text-offset: -12 1
-    color: #c0c0c0
+    color: #dac7a2
     @onOptionChange: modules.game_cyclopedia.Cyclopedia.classificationFilter(self:getCurrentOption().data)
 
   Label
@@ -128,7 +128,7 @@ UIWidget
     !text: tr("Items") .. ':'
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
 
   Panel
     id: ItemListBase
@@ -138,7 +138,7 @@ UIWidget
     size: 200 132
     image-source: /images/ui/1pixel-down-frame
     image-border: 5
-    background-color: #404040
+    background-color: #100a1d
 
     UIScrollArea
       id: List
@@ -174,7 +174,7 @@ UIWidget
     anchors.top: ItemListBase.bottom
     image-source: /images/ui/item
     margin-top: 6
- 
+
     UIWidget
       id: Rarity
       size: 32 32
@@ -193,7 +193,7 @@ UIWidget
     !text: tr('Search') .. ':'
     text-auto-resize: true
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
   TextEdit
     id: SearchEdit
@@ -204,7 +204,7 @@ UIWidget
     //font: verdana-10px-antialiased
     padding-top: 0
     padding-right: 15
-    margin-left: 6 
+    margin-left: 6
     height: 16
     placeholder: Type to search
     placeholder-color: #6E706F
@@ -241,7 +241,7 @@ UIWidget
       !text: tr('Loot Value Source') .. ':'
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
 
     RoundedCheckBox
       id: NpcBuyCheck
@@ -252,13 +252,13 @@ UIWidget
 
       !text: tr('NPC Buy Value')
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-offset: 15 -1
       width: 130
       checked: true
       $hover !disabled:
         text-offset: 15 -1
-        color: #c0c0c0
+        color: #dac7a2
 
     RoundedCheckBox
       id: MarketCheck
@@ -268,12 +268,12 @@ UIWidget
       margin-left: 1
       !text: tr('Market Average Value')
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-offset: 15 -1
       width: 150
       $hover !disabled:
         text-offset: 15 -1
-        color: #c0c0c0
+        color: #dac7a2
 
   Label
     id: EmptyLabel
@@ -282,8 +282,8 @@ UIWidget
     margin-top: 10
     margin-left: 10
     !text: tr('Please select an item from the list to see its details here.')
-    font: $var-cip-font-new 
-    color: #C0C0C0 
+    font: $var-cip-font-new
+    color: #dac7a2
     text-auto-resize: true
 
   UIWidget
@@ -303,7 +303,7 @@ UIWidget
       !text: tr('Basic Item Details') .. ':'
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
 
     Panel
       id: DetailsBase
@@ -315,7 +315,7 @@ UIWidget
       margin-top: 6
       margin-left: 1
       height: 150
-      background-color: #363636
+      background-color: #100a1d
 
       UIScrollArea
         id: List
@@ -355,7 +355,7 @@ UIWidget
       margin-top: 29
       margin-right: -3
       height: 100
-      background-color: #404040
+      background-color: #100a1d
 
       UIScrollArea
         id: List
@@ -392,7 +392,7 @@ UIWidget
       !text: tr('Sell To') .. ':'
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
 
     Panel
       id: BuyBase
@@ -403,7 +403,7 @@ UIWidget
       image-border: 5
       margin-left: 9
       height: 100
-      background-color: #404040
+      background-color: #100a1d
 
       UIScrollArea
         id: List
@@ -440,11 +440,11 @@ UIWidget
       !text: tr('Buy From') .. ':'
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
 
     UIWidget
       id: MarketGoldPriceBase
-      anchors.top: BuyBase.bottom 
+      anchors.top: BuyBase.bottom
       anchors.right: parent.right
       margin-top: 21
       image-source: /images/ui/item66
@@ -468,7 +468,7 @@ UIWidget
         !text: tr('0')
         font: $var-cip-font-new
         text-auto-resize: true
-        color: #c0c0c0
+        color: #dac7a2
 
     Label
       id: MarketPriceLabel
@@ -479,7 +479,7 @@ UIWidget
       margin-bottom: 3
       margin-left: -1
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
 
     TextEdit
       id: OwnValueEdit
@@ -501,7 +501,7 @@ UIWidget
       !text: tr('Type to set')
       text-auto-resize: true
       color: #6E706F
- 
+
     Label
       id: OwnLootLabel
       anchors.left: SellBase.left
@@ -511,10 +511,10 @@ UIWidget
       margin-bottom: 3
       margin-left: -1
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
 
     UIWidget
-      id: ResultGoldBase 
+      id: ResultGoldBase
       anchors.top: OwnValueEdit.bottom
       anchors.right: parent.right
       margin-top: 1
@@ -545,7 +545,7 @@ UIWidget
         !text: tr('0')
         font: $var-cip-font-new
         text-auto-resize: true
-        color: #c0c0c0
+        color: #dac7a2
 
     Label
       id: ResultLabel
@@ -556,7 +556,7 @@ UIWidget
       margin-bottom: 3
       margin-left: -1
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
 
     CheckBox
       id: TrackCheck
@@ -567,7 +567,7 @@ UIWidget
       text-offset: 15 0
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
 
     CheckBox
       id: quickLootCheck
@@ -577,7 +577,7 @@ UIWidget
       margin-right: 0
       text-offset: 15 0
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-auto-resize: true
       @onSetup: |
         if modules.game_quickloot.QuickLoot.data.filter == 2 then
@@ -593,8 +593,8 @@ UIWidget
     anchors.bottom: parent.bottom
     !text: tr('Manage Containers')
     //font: verdana-bold-8px-antialiased
-    text-offset: 0 0 
-    color: #c0c0c0
+    text-offset: 0 0
+    color: #dac7a2
     @onClick: |
       modules.game_cyclopedia.toggle()
       modules.game_quickloot.QuickLoot.toggle()

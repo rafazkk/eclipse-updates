@@ -411,7 +411,7 @@ function CipImportConverter.buildPreviewText(converted, stats)
 		tr("Outfit presets from CIP (apply on login): %s", tostring(stats.outfitBridge or 0)),
 		tr("Ignored entries: %s", tostring(stats.hotkeysIgnored + stats.optionsIgnored)),
 		"",
-tr("PlayTC-only settings preserved (not modified):")
+tr("Eclipse-only settings preserved (not modified):")
 	}
 	local preserved = CipImportMappings.OTCLIENT_PRESERVED_SETTINGS or {
 		"game_helper_data.json",

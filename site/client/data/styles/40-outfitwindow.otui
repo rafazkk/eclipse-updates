@@ -18,7 +18,7 @@ MiniPanel < Panel
   padding-bottom: 6
   padding-top: 25
   padding-right: 6
-  color: #929292
+  color: #dac7a2
 
 RotateButton < UIButton
   anchors.bottom: parent.bottom
@@ -71,7 +71,7 @@ PresetButton < Panel
         if not g_game.getFeature(GamePlayerFamiliars) then
           self:hide()
         end
-  
+
   Label
     id: title
     anchors.top: presetIconRow.bottom
@@ -79,7 +79,7 @@ PresetButton < Panel
     anchors.left: parent.left
     anchors.right: parent.right
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     margin-bottom: 5
     text-align: bottom
     text-wrap: true
@@ -130,7 +130,7 @@ SelectionButton < Panel
     text-align: bottom
     text-wrap: true
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
 OutfitColorModeHead < UICheckBox
   size: 63 18
@@ -334,7 +334,7 @@ OutfitWindow < MainWindowHigh
   margin-top: 43
   text-offset: 0 2
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   @onEnter: modules.game_outfit.accept()
   @onEscape: modules.game_outfit.destroy()
 
@@ -347,7 +347,7 @@ OutfitWindow < MainWindowHigh
     text: Preview
     font: $var-cip-font-new
     text-offset: 0 2
-    color: #909090 
+    color: #dac7a2
 
     Panel
       id: options
@@ -376,7 +376,7 @@ OutfitWindow < MainWindowHigh
           margin-bottom: 1
           text-offset: 15 0
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
 
       OnePixelDownFrame
         id: showOutfit
@@ -393,7 +393,7 @@ OutfitWindow < MainWindowHigh
           margin-bottom: 1
           text-offset: 15 0
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
 
       OnePixelDownFrame
         id: showFamiliar
@@ -415,7 +415,7 @@ OutfitWindow < MainWindowHigh
           margin-bottom: 1
           text-offset: 15 0
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           @onSetup: |
             if not g_game.getFeature(GamePlayerFamiliars) then
               self:hide()
@@ -435,7 +435,7 @@ OutfitWindow < MainWindowHigh
           margin-bottom: 1
           text-offset: 15 0
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
 
     OnePixelDownFrame
       id: panel
@@ -443,7 +443,7 @@ OutfitWindow < MainWindowHigh
       anchors.left: prev.right
       size: 320 192
       padding: 1
-      margin-left: 14 
+      margin-left: 14
       margin-top: -3
       clipping: true
 
@@ -548,7 +548,7 @@ OutfitWindow < MainWindowHigh
 
         $pressed:
           image-clip: 0 20 20 20
-      
+
       RotateButton
         anchors.right: parent.right
         margin-right: 1
@@ -558,7 +558,7 @@ OutfitWindow < MainWindowHigh
 
         $pressed:
           image-clip: 20 20 20 20
-  
+
   MiniPanel
     id: configure
     anchors.top: prev.bottom
@@ -568,7 +568,7 @@ OutfitWindow < MainWindowHigh
     text: Configure
     font: $var-cip-font-new
     text-offset: 0 2
-    color: #909090
+    color: #dac7a2
     layout:
       type: verticalBox
       spacing: 5
@@ -590,7 +590,7 @@ OutfitWindow < MainWindowHigh
         margin-bottom: 1
         text-offset: 15 0
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
 
     OnePixelDownFrame
       id: addon1
@@ -608,7 +608,7 @@ OutfitWindow < MainWindowHigh
         margin-bottom: 1
         text-offset: 15 0
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
 
     OnePixelDownFrame
       id: addon2
@@ -625,7 +625,7 @@ OutfitWindow < MainWindowHigh
         margin-bottom: 1
         text-offset: 15 0
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
 
     OnePixelDownFrame
       id: mount
@@ -642,7 +642,7 @@ OutfitWindow < MainWindowHigh
         margin-bottom: 1
         text-offset: 15 0
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
 
     OnePixelDownFrame
       id: podium
@@ -660,7 +660,7 @@ OutfitWindow < MainWindowHigh
         margin-bottom: 1
         text-offset: 15 0
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
 
   MiniPanel
     id: appearance
@@ -673,7 +673,7 @@ OutfitWindow < MainWindowHigh
     text: Change Appearance
     font: $var-cip-font-new
     text-offset: 0 2
-    color: #909090
+    color: #dac7a2
 
     ScrollablePanel
       id: settings
@@ -701,9 +701,9 @@ OutfitWindow < MainWindowHigh
           text-offset: 15 0
           text: Outfit:
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           width: 85
-        
+
         OnePixelDownFrame
           id: name
           anchors.top: parent.top
@@ -712,7 +712,7 @@ OutfitWindow < MainWindowHigh
           anchors.right: parent.right
           text-offset: 0 1
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
 
       Panel
         id: mount
@@ -726,7 +726,7 @@ OutfitWindow < MainWindowHigh
           text-offset: 15 0
           text: Mount:
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           width: 85
 
         OnePixelDownFrame
@@ -737,7 +737,7 @@ OutfitWindow < MainWindowHigh
           anchors.right: parent.right
           text-offset: 0 1
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
 
       Panel
         id: familiar
@@ -756,7 +756,7 @@ OutfitWindow < MainWindowHigh
           text-offset: 15 0
           text: Familiar:
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           width: 85
           @onSetup: |
             if not g_game.getFeature(GamePlayerFamiliars) then
@@ -771,7 +771,7 @@ OutfitWindow < MainWindowHigh
           anchors.right: parent.right
           text-offset: 0 1
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           @onSetup: |
             if not g_game.getFeature(GamePlayerFamiliars) then
               self:hide()
@@ -789,9 +789,9 @@ OutfitWindow < MainWindowHigh
           text-offset: 15 0
           text: Preset:
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           width: 85
-        
+
         OnePixelDownFrame
           id: name
           anchors.top: parent.top
@@ -800,7 +800,7 @@ OutfitWindow < MainWindowHigh
           anchors.right: parent.right
           text-offset: 0 1
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
 
     Panel
       id: colorSection
@@ -907,7 +907,7 @@ OutfitWindow < MainWindowHigh
     size: 240 49
     text: Manage Presets
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     layout:
       type: horizontalBox
       spacing: 5
@@ -942,8 +942,8 @@ OutfitWindow < MainWindowHigh
     size: 240 51
     text: Filter
     font: $var-cip-font-new
-    color: #909090 
-    
+    color: #dac7a2
+
     QtCheckBox
       id: onlyMine
       anchors.verticalCenter: parent.verticalCenter
@@ -952,7 +952,7 @@ OutfitWindow < MainWindowHigh
       text-offset: 16 1
       text: "Only mine"
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       width: 84
 
     TextEdit
@@ -963,7 +963,7 @@ OutfitWindow < MainWindowHigh
       margin-bottom: 1
       margin-right: 1
       placeholder: Type to search
-      placeholder-color: #707070 
+      placeholder-color: #707070
       padding-top: 4
       padding-right: 21
 
@@ -1002,7 +1002,7 @@ OutfitWindow < MainWindowHigh
     layout:
       type: verticalBox
       spacing: 2
-  
+
   VerticalQtScrollBar
     id: presetsScroll
     anchors.top: presetsList.top
@@ -1020,9 +1020,9 @@ OutfitWindow < MainWindowHigh
     anchors.top: presetButtons.bottom
     anchors.left: presetButtons.left
     anchors.right: parent.right
-    anchors.bottom: separator.top 
+    anchors.bottom: separator.top
     margin-left: 0
-    margin-top: 8 
+    margin-top: 8
     margin-bottom: 6
     image-source: /images/ui/1pixel-down-frame
     image-border: 1
@@ -1044,7 +1044,7 @@ OutfitWindow < MainWindowHigh
         cell-spacing: 2
         flow: true
         fit-children: true
-  
+
   VerticalQtScrollBar
     id: selectionScroll
     anchors.top: selectionList.top
@@ -1069,9 +1069,9 @@ OutfitWindow < MainWindowHigh
     text: Cancel
     text-offset: 0 0
     size: 43 20
-    color: #c0c0c0
+    color: #dac7a2
     @onClick: modules.game_outfit.destroy()
-  
+
   Button
     id: acceptButton
     anchors.bottom: parent.bottom
@@ -1079,7 +1079,7 @@ OutfitWindow < MainWindowHigh
     text: Ok
     text-offset: 0 0
     size: 43 20
-    color: #c0c0c0
+    color: #dac7a2
     margin-right: 11
     @onClick: modules.game_outfit.accept()
 
@@ -1090,7 +1090,7 @@ OutfitWindow < MainWindowHigh
     text: Rename Preset
     text-offset: 0 2
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     visible: false
     anchors.centerIn: parent
     @onEscape: modules.game_outfit.cancelRenamePresetModal()
@@ -1119,7 +1119,7 @@ OutfitWindow < MainWindowHigh
       text: Cancel
       text-offset: 0 0
       size: 43 20
-      color: #c0c0c0
+      color: #dac7a2
       @onClick: modules.game_outfit.cancelRenamePresetModal()
 
     Button
@@ -1131,5 +1131,5 @@ OutfitWindow < MainWindowHigh
       text: Ok
       text-offset: 0 0
       size: 43 20
-      color: #c0c0c0
+      color: #dac7a2
       @onClick: modules.game_outfit.confirmRenamePresetModal()

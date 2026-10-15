@@ -43,7 +43,7 @@ UIWidget
       anchors.left: parent.left
       margin-left: 18
       margin-top: 5
-      color: #c0c0c0ff
+      color: #dac7a2ff
       anchors.top: prev.bottom
 
   Panel

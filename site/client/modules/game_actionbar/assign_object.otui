@@ -30,7 +30,7 @@ MainWindowHigh
   id: assignWindow
   size: 300 208
   !text: tr('Assign Object')
-  color: #909090
+  color: #dac7a2
   text-offset: 0 1
   margin-top: -1
   @onEnter: modules.game_actionbar.objectAssignOk()
@@ -51,7 +51,7 @@ MainWindowHigh
     anchors.top: prev.top
     text: Use on yourself
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     margin-left: 6
     text-offset: 15 0
@@ -63,7 +63,7 @@ MainWindowHigh
     anchors.top: prev.bottom
     text: Use on target
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     margin-top: 6
     text-offset: 15 0
@@ -75,7 +75,7 @@ MainWindowHigh
     anchors.top: prev.bottom
     text: Use with crosshair
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     margin-top: 6
     text-offset: 15 0
@@ -87,7 +87,7 @@ MainWindowHigh
     anchors.top: prev.bottom
     text: Use at cursor position
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     margin-top: 6
     text-offset: 15 0
@@ -99,7 +99,7 @@ MainWindowHigh
     anchors.top: prev.bottom
     text: Equip/Unequip
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     margin-top: 6
     text-offset: 15 0
@@ -111,7 +111,7 @@ MainWindowHigh
     anchors.top: equipCheckbox.bottom
     text: Smart mode
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     margin-top: 6
     margin-left: 17
@@ -125,7 +125,7 @@ MainWindowHigh
     anchors.top: equipCheckbox.bottom
     text: Use
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     margin-top: 6
     text-offset: 15 0

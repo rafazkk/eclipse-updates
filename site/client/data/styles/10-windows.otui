@@ -2,7 +2,7 @@ Window < UIWindow
   font: $var-cip-font
   size: 200 200
   opacity: 1
-  color: $var-text-color-disabled
+  color: $var-text-color
   text-offset: 0 6
   text-align: top
   image-source: /images/ui/window
@@ -53,7 +53,7 @@ MainLogoWindow < LogoWindow
 
 NewWindow < UIWindow
   size: 200 200
-  color: #909090
+  color: #dac7a2
   text-offset: -2 1
   image-source: /images/ui/popupwindow
   image-border: 4
@@ -76,7 +76,7 @@ StaticMainWindow < StaticWindow
 NewWindow < UIWindow
   font: $var-cip-font
   size: 200 200
-  color: #909090
+  color: #dac7a2
   text-offset: -2 1
   image-source: /images/ui/popupwindow
   image-border: 4

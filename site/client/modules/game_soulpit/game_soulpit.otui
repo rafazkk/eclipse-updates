@@ -92,7 +92,7 @@ SoulPitWindow < MainWindowHigh
       margin-right: 6
       width: 150
       height: 20
-      color: #c0c0c0
+      color: #dac7a2
       @onOptionChange: modules.game_soulpit.onShowSoulSealOptionChange(self)
       @onSetup: |
         self:addOption(tr('All'), -1)
@@ -116,11 +116,11 @@ SoulPitWindow < MainWindowHigh
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
-      background-color: #414141
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
+      background-color: #100a1d
       padding-top: 17
       padding-left: 1
       padding-bottom: 1
@@ -138,14 +138,14 @@ SoulPitWindow < MainWindowHigh
       margin-left: 5
       height: 16
       width: 292
-      background-color: #363636
+      background-color: #100a1d
 
       Label
         id: creaturesLabel
         !text: tr('Creatures')
         font: $var-cip-font
         text-auto-resize: true
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-top: -1
@@ -164,7 +164,7 @@ SoulPitWindow < MainWindowHigh
         !text: tr('Soulseals')
         font: $var-cip-font
         text-auto-resize: true
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         margin-top: -1
@@ -201,7 +201,7 @@ SoulPitWindow < MainWindowHigh
     Label
       id: creatureName
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: creatureSprite.top
       anchors.left: creatureSprite.right
       margin-top: 9

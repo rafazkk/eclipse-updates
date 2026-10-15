@@ -12,7 +12,7 @@ UIWidget
     height: 48
     image-source: /images/ui/t2pixel-up-frame-borderimage
     image-border: 10
-    color: #909090
+    color: #dac7a2
     text-offset: 0 2
     text-align: top
     !text: tr('Progress')
@@ -27,7 +27,7 @@ UIWidget
       margin-right: 60
       !text: tr('Boss Points')
       font: verdana-11px-monochrome
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
   
     ProgressBackground
@@ -73,7 +73,7 @@ UIWidget
       text-auto-resize: true
       !text: tr('')
       font: verdana-11px-monochrome
-      color: #c0c0c0
+      color: #dac7a2
 
   SlotBossSlots
     id: LeftBase
@@ -100,7 +100,7 @@ UIWidget
     !text: tr('Boosted Boss: The Source Of Co...')
     font: verdana-11px-monochrome
     margin-top: 3
-    color: #C0C0C0
+    color: #dac7a2
     text-align: center
 
   UIWidget
@@ -139,7 +139,7 @@ UIWidget
     text-auto-resize: true
     !text: tr('Total Kills')
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
 
   Label
     id: MainLabel
@@ -149,4 +149,4 @@ UIWidget
     text-align: center
     !text: tr('')
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2

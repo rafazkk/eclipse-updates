@@ -25,7 +25,7 @@ ConfirmReward < NewHeadlessWindow
       padding: 5
       focusable: false
       multi-line: true
-      background-color: #484848
+      background-color: #100a1d
       text-wrap: true
 
     VerticalScrollBar
@@ -62,10 +62,10 @@ RewardInfoSlot < UIWidget
   size: 66 66
   image-source: /images/ui/item66
   border-width: 1
-  border-color-top: #161616
-  border-color-left: #161616
-  border-color-bottom: #787878
-  border-color-right: #787878
+  border-color-top: #765385
+  border-color-left: #765385
+  border-color-bottom: #765385
+  border-color-right: #765385
   focusable: false
 
   $focus:
@@ -74,10 +74,10 @@ RewardInfoSlot < UIWidget
 
   $!focus:
     border-width: 1
-    border-color-top: #161616
-    border-color-left: #161616
-    border-color-bottom: #787878
-    border-color-right: #787878
+    border-color-top: #765385
+    border-color-left: #765385
+    border-color-bottom: #765385
+    border-color-right: #765385
 
   Item
     id: rewardItem
@@ -98,7 +98,7 @@ RewardInfoSlot < UIWidget
       margin-right: 2
       !text: ''
       font: verdana-11px-rounded
-      color: #FFFFFF
+      color: #f1e6d0
       text-auto-resize: true
   UICreature
     id: rewardOutfit
@@ -139,7 +139,7 @@ SelectRewardWindow < NewHeadlessWindow
     anchors.right: parent.right
     margin-top: 4
     margin-right: 4
-    color: #FFFFFF
+    color: #f1e6d0
     font: verdana-11px-rounded
   Panel
     id: mainPanel
@@ -152,7 +152,7 @@ SelectRewardWindow < NewHeadlessWindow
       margin-top: 15
       !text: 'Battlepass Reward - Step %d\n Click on the collect button to receive your reward.'
       font: verdana-11px-rounded
-      color: #FFFFFF
+      color: #f1e6d0
       text-align: center
       wrap: true
       text-auto-resize: true
@@ -163,7 +163,7 @@ SelectRewardWindow < NewHeadlessWindow
       margin-top: 10
       !text: tr('This reward does not have a visual representation yet.')
       font: verdana-11px-rounded
-      color: #FFFFFF
+      color: #f1e6d0
       text-align: center
       wrap: true
       text-auto-resize: true
@@ -376,7 +376,7 @@ DailyMissionWidget < UIWidget
       anchors.horizontalCenter: parent.horizontalCenter
       margin-left: -4
       font: verdana-11px-rounded
-      color: #FFFFFF
+      color: #f1e6d0
       text-auto-resize: true
   Label
     id: dailyMissionName
@@ -387,7 +387,7 @@ DailyMissionWidget < UIWidget
     margin-top: 10
     margin-left: 4
     font: verdana-11px-rounded
-    color: #FFFFFF
+    color: #f1e6d0
     text-wrap: true
     text-align: center
   Panel
@@ -410,7 +410,7 @@ DailyMissionWidget < UIWidget
       anchors.horizontalCenter: parent.horizontalCenter
       margin-top: -1
       font: verdana-11px-rounded
-      color: #FFFFFF
+      color: #f1e6d0
       text-auto-resize: true
   UIWidget
     id: dailyCompletedIcon
@@ -485,7 +485,7 @@ MissionWidget < UIWidget
       anchors.horizontalCenter: parent.horizontalCenter
       margin-left: -1
       font: verdana-11px-rounded
-      color: #FFFFFF
+      color: #f1e6d0
       text-auto-resize: true
   Label
     id: missionName
@@ -496,7 +496,7 @@ MissionWidget < UIWidget
     margin-top: 10
     margin-left: 4
     font: verdana-11px-rounded
-    color: #FFFFFF
+    color: #f1e6d0
     text-wrap: true
     text-align: center
   Panel
@@ -519,7 +519,7 @@ MissionWidget < UIWidget
       anchors.horizontalCenter: parent.horizontalCenter
       margin-top: -1
       font: verdana-11px-rounded
-      color: #FFFFFF
+      color: #f1e6d0
       text-auto-resize: true
   UIWidget
     id: completedIcon
@@ -592,7 +592,7 @@ MissionPanel < Panel
       anchors.horizontalCenter: parent.horizontalCenter
       margin-top: 2
       font: verdana-11px-rounded
-      color: #999999
+      color: #dac7a2
       text-auto-resize: true
     Panel
       id: dailyMissionsBg
@@ -642,7 +642,7 @@ MissionPanel < Panel
         anchors.horizontalCenter: parent.horizontalCenter
         !text: tr("22 Hours left")
         font: verdana-11px-rounded
-        color: #FFFFFF
+        color: #f1e6d0
         text-auto-resize: true
       UIWidget
         id: hourglassIcon
@@ -668,7 +668,7 @@ MissionPanel < Panel
       anchors.horizontalCenter: parent.horizontalCenter
       margin-top: 2
       font: verdana-11px-rounded
-      color: #999999
+      color: #dac7a2
       text-auto-resize: true
     Panel
       id: progressPanel
@@ -698,7 +698,7 @@ MissionPanel < Panel
             margin-bottom: 4
             margin-left: -3
             font: verdana-11px-rounded
-            color: #FFFFFF
+            color: #f1e6d0
             text-auto-resize: true
             text-align: center
       Label
@@ -709,7 +709,7 @@ MissionPanel < Panel
         margin-top: 7
         margin-left: 45
         font: verdana-11px-rounded
-        color: #FFFFFF
+        color: #f1e6d0
         text-auto-resize: true
       Label
         id: unlockInfo
@@ -719,7 +719,7 @@ MissionPanel < Panel
         margin-top: 5
         margin-left: 95
         font: verdana-11px-rounded
-        color: #FFFFFF
+        color: #f1e6d0
         text-auto-resize: true
         image-shader: text_staff
 
@@ -738,7 +738,7 @@ MissionPanel < Panel
         anchors.horizontalCenter: progressBarBg.horizontalCenter
         margin-bottom: 5
         font: verdana-11px-rounded
-        color: #FFFFFF
+        color: #f1e6d0
         text-auto-resize: true
       UIWidget
         id: progressBarBg
@@ -762,7 +762,7 @@ MissionPanel < Panel
           margin-left: -5
           text: 0
           font: verdana-11px-rounded
-          color: #FFFFFF
+          color: #f1e6d0
           text-auto-resize: true
       VerticalSeparator
         id: separator
@@ -779,7 +779,7 @@ MissionPanel < Panel
         anchors.horizontalCenter: seasonTimeBg.horizontalCenter
         margin-bottom: 5
         font: verdana-11px-rounded
-        color: #FFFFFF
+        color: #f1e6d0
         text-auto-resize: true
       UIWidget
         id: seasonTimeBg
@@ -804,7 +804,7 @@ MissionPanel < Panel
           margin-left: -5
           margin-top: 1
           font: verdana-11px-rounded
-          color: #FFFFFF
+          color: #f1e6d0
           text-auto-resize: true
         UIWidget
           id: seasonHourglassIcon
@@ -895,7 +895,7 @@ BlockedRewardWidget < Panel
       margin-bottom: 22
       margin-left: 2
       font: verdana-11px-rounded
-      color: #FFFFFF
+      color: #f1e6d0
       text-align: center
   UIWidget
     id: lockedBoxImage
@@ -930,7 +930,7 @@ RewardWidget < Panel
       margin-bottom: 22
       margin-left: 2
       font: verdana-11px-rounded
-      color: #FFFFFF
+      color: #f1e6d0
       text-align: center
   UIWidget
     id: rewardBoxImage
@@ -1030,16 +1030,16 @@ NewHeadlessWindow
         margin-left: 1
         margin-top: 1
         background-color: alpha
-        color: #c8c8c8
+        color: #dac7a2
         $hover !checked:
-          background-color: #ffffff22
-          color: #ffffff
+          background-color: #2b193f22
+          color: #f1e6d0
         $pressed:
-          background-color: #ffffff33
-          color: #ffffff
+          background-color: #2b193f33
+          color: #f1e6d0
         $checked:
-          background-color: #ffffff33
-          color: #ffffff
+          background-color: #2b193f33
+          color: #f1e6d0
         @onClick: loadMenu('challengesMenu')
         UIWidget
           id: challengesIcon
@@ -1058,7 +1058,7 @@ NewHeadlessWindow
           text-align: center
           text-auto-resize: true
           font: verdana-11px-rounded
-          color: #FFFFFF
+          color: #f1e6d0
           phantom: true
 
       // ================================================================
@@ -1074,16 +1074,16 @@ NewHeadlessWindow
         margin-left: 1
         margin-top: 1
         background-color: alpha
-        color: #c8c8c8
+        color: #dac7a2
         $hover !checked:
-          background-color: #ffffff22
-          color: #ffffff
+          background-color: #2b193f22
+          color: #f1e6d0
         $pressed:
-          background-color: #ffffff33
-          color: #ffffff
+          background-color: #2b193f33
+          color: #f1e6d0
         $checked:
-          background-color: #ffffff33
-          color: #ffffff
+          background-color: #2b193f33
+          color: #f1e6d0
         @onClick: loadMenu('expansionMenu')
         UIWidget
           id: expansionIcon
@@ -1101,7 +1101,7 @@ NewHeadlessWindow
           text-align: center
           text-auto-resize: true
           font: verdana-11px-rounded
-          color: #FFFFFF
+          color: #f1e6d0
           phantom: true
 
       // ================================================================
@@ -1117,16 +1117,16 @@ NewHeadlessWindow
         margin-left: 1
         margin-top: 1
         background-color: alpha
-        color: #c8c8c8
+        color: #dac7a2
         $hover !checked:
-          background-color: #ffffff22
-          color: #ffffff
+          background-color: #2b193f22
+          color: #f1e6d0
         $pressed:
-          background-color: #ffffff33
-          color: #ffffff
+          background-color: #2b193f33
+          color: #f1e6d0
         $checked:
-          background-color: #ffffff33
-          color: #ffffff
+          background-color: #2b193f33
+          color: #f1e6d0
         @onClick: loadMenu('rewardsMenu')
         UIWidget
           id: rewardsIcon
@@ -1145,7 +1145,7 @@ NewHeadlessWindow
           text-align: center
           text-auto-resize: true
           font: verdana-11px-rounded
-          color: #FFFFFF
+          color: #f1e6d0
           phantom: true
 
     Panel

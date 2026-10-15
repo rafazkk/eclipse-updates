@@ -5,7 +5,7 @@ ActionBarCooldownProgress < UIProgressRect
   size: 32 32
   phantom: true
   font: Verdana Bold-11px-outline
-  color: #dfdfdf
+  color: #dac7a2
 
 ActionSlot < UIActionSlot
   size: 34 34
@@ -15,8 +15,8 @@ ActionSlot < UIActionSlot
   margin-left: 3
   image-size: 34 34
   font: Verdana-8px-outline
-  color: #ffffff
-  border-color: #ffffff
+  color: #f1e6d0
+  border-color: #765385
   show-count: false
   always-show-count: false
   visible: false
@@ -34,7 +34,7 @@ ActionSlot < UIActionSlot
     phantom: true
     text-auto-resize: true
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
     visible: false
 
   UIWidget
@@ -78,7 +78,7 @@ ActionSlot < UIActionSlot
     text-auto-resize: true
     margin-right: 1
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
 
   Label
     id: text
@@ -88,7 +88,7 @@ ActionSlot < UIActionSlot
     text-align: center
     margin-left: -1
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
 
   Label
     id: spellParameter
@@ -101,7 +101,7 @@ ActionSlot < UIActionSlot
     text-auto-resize: false
     text-align: right
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
     visible: false
 
   UIWidget

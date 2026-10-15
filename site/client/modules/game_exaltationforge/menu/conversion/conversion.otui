@@ -8,7 +8,7 @@ ForgeActionButton < UIButton
 
 ForgePanel < Panel
   size: 153 255
-  color: #dfdfdf
+  color: #dac7a2
   text-align: top
   !text: tr('Convert Dust')
   padding-top: 21
@@ -28,7 +28,7 @@ ForgeTextWithIcon < Panel
     text-align: center
     text-auto-resize: true
     font: $var-cip-font-lowspace
-    color: #c0c0c0
+    color: #dac7a2
     margin-top: 5
     margin-left: -7
     
@@ -48,7 +48,7 @@ ForgeTextWithIcon2 < Panel
     text-align: left
     text-auto-resize: true
     font: $var-cip-font-lowspace
-    color: #c0c0c0
+    color: #dac7a2
 
   UIWidget
     id: icon
@@ -67,7 +67,7 @@ ForgeTextWithIcon2 < Panel
     text-align: left
     text-auto-resize: true
     font: $var-cip-font-lowspace
-    color: #c0c0c0
+    color: #dac7a2
 
   UIWidget
     id: icon2
@@ -331,7 +331,7 @@ ConversionWindow < Panel
       text-align: center
       text-auto-resize: true
       font: $var-cip-font-lowspace
-      color: #c0c0c0
+      color: #dac7a2
 
     ForgeTextWithIcon2
       id: ForgeTextWithIcon2
@@ -367,4 +367,4 @@ ConversionWindow < Panel
       margin-top: 2
       text-wrap: true
       font: $var-cip-font-lowspace
-      color: #c0c0c0
+      color: #dac7a2

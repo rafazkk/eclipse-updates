@@ -18,7 +18,7 @@ TableRow < UITableRow
 
   $focus:
     background-color: #294f6d
-    color: #ffffff
+    color: #f1e6d0
 
 TableColumn < Label
   width: 30
@@ -34,7 +34,7 @@ TableHeaderRow < Label
 TableHeaderColumn < UITableHeaderColumn
   font: verdana-11px-antialised
   background-color: alpha
-  color: #dfdfdfff
+  color: #dac7a2ff
   height: 23
   focusable: true
   text-offset: 0 0
@@ -54,7 +54,7 @@ TableHeaderColumn < UITableHeaderColumn
     text-offset: 1 1
 
   $disabled:
-    color: #dfdfdf88
+    color: #dac7a288
     opacity: 0.8
 
 SortableTableHeaderColumn < TableHeaderColumn

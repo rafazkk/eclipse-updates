@@ -1,7 +1,7 @@
 VipGroupBox < CheckBox
   !text: tr('Empty')
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   text-offset: 15 0
 
 IconButton < CheckBoxButton
@@ -23,14 +23,14 @@ MainWindowHigh
   size: 285 301
   !text: tr('Edit VIP')
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
 
   Label
     id: nameLabel
     text: Name
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     width: 180
@@ -48,7 +48,7 @@ MainWindowHigh
     id: selectTypeLabel
     text: Select a type:
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: separator1.bottom
     anchors.left: parent.left
     width: 180
@@ -58,7 +58,7 @@ MainWindowHigh
   Label
     !text: tr('Description') .. ':'
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: prev.bottom
     anchors.left: parent.left
     text-offset: 0 3
@@ -157,7 +157,7 @@ MainWindowHigh
   Label
     text: Enter a short description:
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: prev.bottom
     anchors.left: parent.left
     margin-left: -1
@@ -236,7 +236,7 @@ MainWindowHigh
   Label
     !text: tr('Member of the following groups:')
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom

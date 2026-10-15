@@ -17,15 +17,14 @@ EclipseButton < UIButton
   ttf-font-size: 12
   color: #e7d7b4
   image-source: /images/eclipse-login/button-secondary
-  image-border: 8
-  image-border-left: 24
-  image-border-right: 24
+  image-border: 0
+  image-repeated: false
   image-smooth: true
   text-offset: 0 0
   padding: 0
   cursor: pointer
   $hover !disabled:
-    color: #ffffff
+    color: #f1e6d0
     image-color: #dcc3ff
   $pressed:
     text-offset: 0 1

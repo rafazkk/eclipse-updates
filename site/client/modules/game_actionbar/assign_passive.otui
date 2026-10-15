@@ -19,7 +19,7 @@ PassiveAssignPreview < Panel
     margin-left: 5
     margin-top: -1
     font: $var-cip-font
-    color: #909090
+    color: #dac7a2
     text-align: left
 
 PassivePreview < UICheckBox
@@ -34,11 +34,11 @@ PassivePreview < UICheckBox
     background-color: alpha
 
   $checked:
-    background-color: #ffffff22
+    background-color: #2b193f22
 
   $disabled:
     image-color: #dfdfdf88
-    color: #dfdfdf88
+    color: #dac7a288
     opacity: 0.8
 
   UIWidget
@@ -53,7 +53,7 @@ NewMainWindow
   id: assignPassiveWindow
   size: 275 261
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   @onEscape: self:destroy()
 
@@ -87,7 +87,7 @@ NewMainWindow
       image-source: /images/ui/1pixel-down-frame
       image-border: 3
       border-width: 0
-      background-color: #404040
+      background-color: #100a1d
 
     VerticalQtScrollBar
       id: listScrollBar

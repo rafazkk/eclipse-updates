@@ -1,10 +1,10 @@
 GiftCoinsTitle < Label
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
 
 GiftCoinsLabel < Label
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
 
 StoreWindow
   id: storeWindow
@@ -46,7 +46,7 @@ StoreWindow
     id: transferPointsText
     size: 150 16
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.verticalCenter: recipient.verticalCenter
     anchors.right: parent.right
     margin: 7
@@ -125,7 +125,7 @@ StoreWindow
     !text: tr('Cancel')
     size: 43 20
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
 
   CipsoftButton
     id: buttonOk
@@ -136,13 +136,13 @@ StoreWindow
     !text: tr('Gift')
     size: 43 20
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     enabled: false
 
     $disabled:
-      color: #c0c0c0
+      color: #dac7a2
       opacity: 0.8
       change-cursor-image: false
 
     $hover !disabled:
-      color: #ffffff
+      color: #f1e6d0

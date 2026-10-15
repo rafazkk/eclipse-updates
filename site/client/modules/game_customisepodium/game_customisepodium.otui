@@ -42,7 +42,7 @@ PodiumCreatureSlot < UIButton
     text-align: bottom
     text-wrap: true
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
 FloorTile < UIWidget
   image-source: /images/ui/outfits/floor

@@ -84,7 +84,7 @@ CalendarGrid < MiniQtWindow
     anchors.top: parent.top
     !text: tr('September 2023')
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-offset: 0 1
     margin-top: 31
     height: 16
@@ -110,7 +110,7 @@ CalendarGrid < MiniQtWindow
     anchors.verticalCenter: calendarCurrentMonth.verticalCenter
     !text: '2023-11-23, 11:23 BRA'
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     margin-right: 16
     height: 16
     text-align: right
@@ -123,7 +123,7 @@ CalendarGrid < MiniQtWindow
     text-offset: -1 0
     height: 16
     text-align: left
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
 
   HorizontalSeparatorFlat
@@ -137,7 +137,7 @@ CalendarGrid < MiniQtWindow
     size: 43 20
     !text: tr('Close')
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     anchors.right: calendarWidget.right
     anchors.top: prev.bottom
     margin-top: 11

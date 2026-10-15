@@ -1,6 +1,6 @@
 BountyCreatureRow < UIWidget
   height: 36
-  background-color: #484848
+  background-color: #100a1d
   focusable: true
 
   UICreature
@@ -36,10 +36,10 @@ PreferredSlotRow < UIWidget
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
 
     UICreature
       id: slotCreature
@@ -102,10 +102,10 @@ PreferredSlotRow < UIWidget
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
 
     UICreature
       id: slotCreature
@@ -254,7 +254,7 @@ BountyTaskSlotPanel < QtPanel
     color: white
 
     $disabled:
-      color: #646464
+      color: #a295b7
 
     UICreature
       id: slotCreature
@@ -426,7 +426,7 @@ BountyTaskSlotPanel < QtPanel
     margin-left: 3
 
     $disabled:
-      color: #dfdfdf88
+      color: #dac7a288
       opacity: 0.8
       change-cursor-image: false
 
@@ -491,7 +491,7 @@ BountyTaskPanel < Panel
       height: 20
       margin-top: 7
       margin-left: 23
-      color: #c0c0c0
+      color: #dac7a2
       @onOptionChange: modules.game_taskboard.TaskBoard.BountyTask:selectDifficulty(self:getCurrentOption().text)
       @onSetup: |
         self:addOption(tr('Beginner'))
@@ -593,10 +593,10 @@ BountyTaskPanel < Panel
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
     image-source: /images/ui/background_dark
     image-border: 10
   
@@ -1108,11 +1108,11 @@ PreferredListPanel < QtPanel
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
-      background-color: #414141
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
+      background-color: #100a1d
       padding-left: 1
       padding-top: 1
       padding-bottom: 1

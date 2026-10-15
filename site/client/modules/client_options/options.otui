@@ -35,7 +35,7 @@ OptionsCategory < UIWidget
       text-auto-resize: true
       !text: tr('General Stats')
       margin-top: 1
-      color: #ffffff
+      color: #f1e6d0
       font: cipsoftFont
 
     UIWidget
@@ -71,7 +71,7 @@ OptionCheckBoxReverse < QtCheckBox
   text-horizontal-auto-resize: true
   padding-right: 18
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   @onCheckChange: modules.client_options.setOption(self:getId(), self:isChecked())
   @onSetup: modules.client_options.updateReverseCheckboxLayout(self)
   @onTextChange: modules.client_options.updateReverseCheckboxLayout(self)
@@ -83,7 +83,7 @@ OptionScaleScroll < Label
   font: $var-cip-font
   text-align: left
   text-offset: 18 0
-  color: #c0c0c0ff
+  color: #dac7a2ff
 
   HorizontalQtScrollBar
     id: valueBar
@@ -101,7 +101,7 @@ OptionScaleScrollMarked < Label
   anchors.top: parent.top
   text-align: left
   text-offset: 18 0
-  color: #c0c0c0ff
+  color: #dac7a2ff
 
   UIWidget
     id: toolTipWidget
@@ -214,7 +214,7 @@ MainWindow
     anchors.right: parent.right
     anchors.top: bottomSeparator.bottom
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     margin-top: 12
     margin-right: 3
     @onClick: modules.client_options.cancelOptions()
@@ -225,7 +225,7 @@ MainWindow
     anchors.right: prev.left
     anchors.top: prev.top
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     margin-right: 4
     @onClick: modules.client_options.applyOptions()
 
@@ -235,6 +235,6 @@ MainWindow
     anchors.right: prev.left
     anchors.top: prev.top
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     margin-right: 4
     @onClick: modules.client_options.okOptions()

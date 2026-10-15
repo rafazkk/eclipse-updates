@@ -2,7 +2,7 @@ TutorialPopupWindow < UIWindow
   id: tutorialWindow
   size: 432 427
   font: $var-cip-font
-  color: #909090
+  color: #dac7a2
   text-offset: -1 1
   image-source: /images/ui/popupwindow
   image-border: 4
@@ -31,7 +31,7 @@ TutorialPopupWindow < UIWindow
     !text: tr('Ok')
     font: cipsoftFont
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     @onClick: modules.game_tutorial.hide()

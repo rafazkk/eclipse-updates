@@ -32,7 +32,7 @@ SpellGroupIcon < UIWidget
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
     margin-top: -1
-    background-color: #000000
+    background-color: #100a1d
     opacity: 0.7
     visible: true
     phantom: true
@@ -61,7 +61,7 @@ SpellIcon < UIWidget
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
     margin-top: -1
-    background-color: #000000
+    background-color: #100a1d
     opacity: 0.7
     visible: false
     phantom: true
@@ -82,7 +82,7 @@ SpellProgressRect < UIProgressRect
     visible: false
     margin-left: 1
     margin-bottom: 1
-    background-color: #FFFFFFFF
+    background-color: #2b193fFF
     focusable: false
     phantom: true
 

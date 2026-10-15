@@ -9,7 +9,7 @@ historyData2 < UIWidget
     width: 148
     text-align: left
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     phantom: false
     margin-top: -3
     margin-left: 1
@@ -26,7 +26,7 @@ historyData2 < UIWidget
     anchors.bottom: parent.bottom
     width: 50
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-align: right
     text-offset: -3 -2
     phantom: true
@@ -41,7 +41,7 @@ historyData2 < UIWidget
     anchors.left: prev.right
     anchors.bottom: parent.bottom
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     id: Description
     width: 259
     text-align: left
@@ -119,7 +119,7 @@ ItemReward < UIWidget
     margin-top: 1
     margin-left: 5
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
   UIWidget
     id: quantity
@@ -147,21 +147,21 @@ ItemReward < UIWidget
       anchors.left: prev.right
       anchors.verticalCenter: parent.verticalCenter
       margin-left: 3
-      background-color: #2a2a2aff
+      background-color: #100a1dff
       border-width-top: 1
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
 
       Label
         id: numberValue
         anchors.fill: parent
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-align: center
         text: 0
 
@@ -184,7 +184,7 @@ ItemReward < UIWidget
     anchors.verticalCenter: parent.verticalCenter
     anchors.right: parent.right
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     margin-top: 1
     margin-right: 6
     width: 81
@@ -249,7 +249,7 @@ imgBonuses < UIWidget
     margin-bottom: -3
     text-align: center
     font: $var-cip-font-new
-    color: #ffffff
+    color: #f1e6d0
     phantom: true
     visible: false
 
@@ -262,7 +262,7 @@ OfferBuyPrice < FlatPanel
   height: 21
   text: 0
   text-align: center
-  color: #C0C0C0
+  color: #dac7a2
   icon: /images/store/coin
   icon-size: 12 12
   icon-offset-x: 88
@@ -337,7 +337,7 @@ RestingAreaTimeLeft < UIWidget
     anchors.fill: parent
     text-align: center
     font: $var-cip-font-new
-    color: #FFFFFF
+    color: #f1e6d0
     phantom: true
 
 RestingAreaJoker < UIWidget
@@ -410,7 +410,7 @@ RewardGoldContent < UIWidget
     anchors.fill: parent
     text-align: center
     font: $var-cip-font-new
-    color: #FFFFFF
+    color: #f1e6d0
     phantom: true
 
 RewardGoldCollectable < UIWidget
@@ -431,7 +431,7 @@ RewardGoldCollectable < UIWidget
     id: costStrike
     text: 1
     font: Verdana-11px-lowspace-strikeout
-    color: #707070
+    color: #a295b7
     anchors.verticalCenter: parent.verticalCenter
     anchors.right: balance.left
     margin-right: 5
@@ -443,7 +443,7 @@ RewardGoldCollectable < UIWidget
     id: balance
     text: 0
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.verticalCenter: parent.verticalCenter
     anchors.right: icon.left
     margin-right: 2
@@ -498,12 +498,12 @@ TESDTSTST < Panel
 
 TextListWithScroll < Panel
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   width: 192
   text-offset: 24 5
   text-align: topLeft
   border-width: 1
-  border-color: #00000077
+  border-color: #76538577
   height: 425
   image-border: 4
   image-border-top: 23
@@ -516,7 +516,7 @@ TextListWithScroll < Panel
     padding: 1
     width: 10
     focusable: false
-    background-color: #404040
+    background-color: #100a1d
   VerticalQtScrollBar
     id: spellsScrollBar
     anchors.top: prev.top

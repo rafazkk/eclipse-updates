@@ -26,7 +26,7 @@ ConditionListRow < UIWidget
     margin-left: 5
     margin-top: 1
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   ConditionListCheckBox
@@ -297,7 +297,7 @@ UIWidget
     Label
       id: showArcsDistanceLabel
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.left: parent.left
       anchors.verticalCenter: showArcsDistanceScroll.verticalCenter
       margin-left: 251
@@ -344,7 +344,7 @@ UIWidget
       Label
         id: showArcsOpacityLabel
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.left: parent.left
         anchors.verticalCenter: showArcsOpacityScroll.verticalCenter
         margin-left: 251
@@ -385,7 +385,7 @@ UIWidget
       id: specialConditionsLabel
       !text: tr('Special Condition')
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.left: parent.left
       anchors.top: showArcsSeparator.bottom
       margin-top: 5
@@ -424,7 +424,7 @@ UIWidget
       image-source: /images/ui/1pixel-down-frame
       image-border: 3
       border-width: 0
-      background-color: #404040
+      background-color: #100a1d
 
     VerticalQtScrollBar
       id: conditionsScrollBar

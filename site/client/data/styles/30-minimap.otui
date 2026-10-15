@@ -99,14 +99,14 @@ MinimapFlagButton < CheckBoxButton
 
 MinimapFlagWindow < MainWindowHigh
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   size: 285 176
 
   Label
     id: descriptionLabel
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     !text: tr('Enter a short description') .. ':'
     anchors.left: parent.left
     anchors.top: parent.top
@@ -124,7 +124,7 @@ MinimapFlagWindow < MainWindowHigh
   Label
     id: flagLabel
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     !text: tr('Select a type') .. ':'
     anchors.left: parent.left
     anchors.top: description.bottom

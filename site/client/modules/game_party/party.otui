@@ -137,7 +137,7 @@ MiniWindow
     margin-right: 50
     font: verdana-11px-monochrome
     height: 13
-    color: #909090
+    color: #dac7a2
     !text: tr('Party List')
 
   Panel
@@ -193,7 +193,7 @@ MiniWindow
     margin-left: 4
     margin-top: -23
     height: 2
-    color: #cccccc
+    color: #dac7a2
 
   MiniWindowContents
     id: contentsPanel
@@ -232,7 +232,7 @@ PartyListMenuOption < ThickCheckBox
   padding: 3 6
 
   $hover:
-    background-color: #ffffff1a
+    background-color: #2b193f1a
 
 PartyListSubMenu < PopupMenu
   id: partyListSubMenu

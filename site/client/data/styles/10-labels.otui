@@ -3,24 +3,24 @@ Label < UILabel
   color: $var-text-color
 
   $disabled:
-    color: #dfdfdf88
+    color: #dac7a288
 
 FlatLabel < UILabel
   font: verdana-11px-antialised
-  color: #dfdfdf
+  color: #dac7a2
   size: 86 20
   text-offset: 3 3
   image-source: /images/ui/panel_flat
   image-border: 1
 
   $disabled:
-    color: #dfdfdf88
+    color: #dac7a288
 
 MenuLabel < Label
 
 GameLabel < UILabel
   font: verdana-11px-antialised
-  color: #dfdfdf
+  color: #dac7a2
 
 CategoryItemListLabel < Label
   font: $var-cip-font
@@ -28,4 +28,4 @@ CategoryItemListLabel < Label
   background-color: alpha
   text-offset: 1 -1
   focusable: true
-  color: #c0c0c0
+  color: #dac7a2

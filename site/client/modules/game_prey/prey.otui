@@ -14,7 +14,7 @@ WildcardLabel < UIWidget
   phantom: false
   text-offset: 0 0
   $focus:
-    color: #f4f4f4
+    color: #f1e6d0
 
   UIWidget
     id: icon
@@ -36,7 +36,7 @@ WildcardPreyPanel < Panel
     image-source: /images/ui/1pixel-down-frame
     image-border: 3
     border-width: 0
-    background-color: #404040
+    background-color: #100a1d
 
     TextList
       id: monsterList
@@ -234,10 +234,10 @@ SelectCreature < Panel
     anchors.top: parent.top
     anchors.left: parent.left
     border-width: 1
-    border-color-top: #181818
-    border-color-left: #181818
-    border-color-bottom: #757575
-    border-color-right: #757575
+    border-color-top: #765385
+    border-color-left: #765385
+    border-color-bottom: #765385
+    border-color-right: #765385
     size: 204 204
 
   UICreature
@@ -259,10 +259,10 @@ NoCreaturePanel < Panel
     anchors.top: parent.top
     anchors.left: parent.left
     border-width: 1
-    border-color-top: #181818
-    border-color-left: #181818
-    border-color-bottom: #757575
-    border-color-right: #757575
+    border-color-top: #765385
+    border-color-left: #765385
+    border-color-bottom: #765385
+    border-color-right: #765385
     size: 134 134
 
     UIWidget
@@ -1020,14 +1020,14 @@ GoldLabel < Panel
     margin-right: 5
     !text: '0'
     font: Verdana-11px-lowspace-strikeout
-    color: #707070
+    color: #a295b7
     text-auto-resize: true
     visible: false
 
 PreyCreatureBox < UIWidget
   size: 68 68
   border-width: 1
-  border-color: #ffffff
+  border-color: #765385
   focusable: true
 
   UIWidget
@@ -1043,14 +1043,14 @@ PreyCreatureBox < UIWidget
     base-scale: true
 
   $checked on:
-    border-color: #ffffff
+    border-color: #765385
 
   $!checked:
     border-color: alpha
 
   $!on:
     image-color: #ffffff88
-    color: #aaaaaa88
+    color: #dac7a288
 
 PreySlotPanel < Panel
   size: 218 329
@@ -1065,7 +1065,7 @@ PreySlotPanel < Panel
     text-offset: 0 1
     text-align: center
     font: $var-cip-font
-    color: #909090
+    color: #dac7a2
 
   InactivePreyPanel
     id: inactive
@@ -1204,7 +1204,7 @@ NewMainWindow
     size: 43 20
     text: Close
     font: cipsoftFont
-    color: #FFFFFF
+    color: #f1e6d0
     @onClick: modules.game_prey.hide(true)
 
   Panel
@@ -1507,7 +1507,7 @@ PreyTracker < MiniWindow
     font: verdana-11px-monochrome
     height: 13
     !text: tr('Kill Tracker')
-    color: #9d9d9dff
+    color: #dac7a2ff
 
   MiniWindowContents
     id: contentsPanel

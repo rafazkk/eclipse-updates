@@ -28,7 +28,7 @@ TransferListItem < Item
     phantom: true
     text-auto-resize: true
     font: verdana-11px-rounded
-    color: #bfbfbf
+    color: #dac7a2
     visible: false
 
 TransferWindow < Panel
@@ -66,11 +66,11 @@ TransferWindow < Panel
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
-      background-color: #404040
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
+      background-color: #100a1d
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 22
@@ -141,11 +141,11 @@ TransferWindow < Panel
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
-      background-color: #404040
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
+      background-color: #100a1d
       anchors.top: parent.top
       anchors.right: parent.right
       margin-top: 22
@@ -477,4 +477,4 @@ TransferWindow < Panel
       margin-top: 2
       text-wrap: true
       font: $var-cip-font-lowspace
-      color: #c0c0c0
+      color: #dac7a2

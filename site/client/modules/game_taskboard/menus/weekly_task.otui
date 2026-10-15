@@ -419,7 +419,7 @@ WeeklyProgressPanel < UIWindow
   text-align: top
   image-source: /images/ui/popupwindow-sem-borda-interna
   text-offset: 0 2
-  color: #909090
+  color: #dac7a2
   image-border: 6
   image-border-top: 27
   font: $var-cip-font-new

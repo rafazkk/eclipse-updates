@@ -1,30 +1,30 @@
 IgnoreListLabel < Label
   height: 16
-  color: #c0c0c0
+  color: #dac7a2
   font: verdana-11px-monochrome
   background-color: alpha
   text-offset: 2 2
   focusable: true
   phantom: false
-  background-color: #414141
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
-    color: #f4f4f4
+    background-color: #100a1d
+    color: #f1e6d0
 
 WhiteListLabel < Label
   height: 16
-  color: #c0c0c0
+  color: #dac7a2
   font: verdana-11px-monochrome
   background-color: alpha
   text-offset: 2 2
   focusable: true
   phantom: false
-  background-color: #414141
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
-    color: #f4f4f4
+    background-color: #100a1d
+    color: #f1e6d0
 
 
 MainWindowHigh
@@ -32,7 +32,7 @@ MainWindowHigh
   !text: tr('Edit Ignore List and Whitelist')
   font: $var-cip-font-new
   text-offset: 0 2
-  color: #909090
+  color: #dac7a2
   size: 570 361
   @onEscape: self:destroy()
 
@@ -58,7 +58,7 @@ MainWindowHigh
         font: $var-cip-font-new
         anchors.fill: parent
         text-auto-resize: true
-        color: #C0C0C0
+        color: #dac7a2
         margin-left: 5
         margin-top: 4
         text-offset: 15 -2
@@ -77,7 +77,7 @@ MainWindowHigh
         font: $var-cip-font-new
         anchors.fill: parent
         text-auto-resize: true
-        color: #C0C0C0
+        color: #dac7a2
         margin-left: 5
         margin-top: 4
         text-offset: 15 -2
@@ -94,7 +94,7 @@ MainWindowHigh
       id: ignoreSettingsLabel
       !text: tr('Characters you wish ignore') .. ':'
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.left: parent.left
       anchors.top: parent.top
       margin-left: -1
@@ -111,7 +111,7 @@ MainWindowHigh
       image-source: /images/ui/1pixel-down-frame
       image-border: 3
       border-width: 0
-      background-color: #404040
+      background-color: #100a1d
 
     // TextEdit
     //   id: ignoreNameEdit
@@ -135,7 +135,7 @@ MainWindowHigh
         text: Ignore Permanently
         font: $var-cip-font-new
         anchors.fill: parent
-        color: #707070
+        color: #a295b7
         margin-left: 5
         margin-top: 4
         text-offset: 15 -2
@@ -164,7 +164,7 @@ MainWindowHigh
       id: ignoreGlobalSettingsLabel
       !text: tr('Global settings for ignoring messages') .. ':'
       font: $var-cip-font-lowspace
-      color: #C0C0C0
+      color: #dac7a2
       anchors.left: parent.left
       anchors.top: ignorePermanentPanel.bottom
       margin-top: 12
@@ -183,7 +183,7 @@ MainWindowHigh
         id: checkboxIgnoreYelling
         !text: tr('Ignore Yelling')
         font: $var-cip-font-new
-        color: #C0C0C0
+        color: #dac7a2
         anchors.left: parent.left
         anchors.fill: parent
         margin-left: 5
@@ -203,7 +203,7 @@ MainWindowHigh
         id: checkboxIgnorePrivateMessages
         !text: tr('Ignore Private Messages')
         font: $var-cip-font-new
-        color: #C0C0C0
+        color: #dac7a2
         anchors.left: parent.left
         anchors.fill: parent
         margin-left: 5
@@ -231,7 +231,7 @@ MainWindowHigh
       id: whitelistSettingsLabel
       !text: tr('Characters you allow to message you ') .. ':'
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.left: parent.left
       anchors.top: parent.top
       margin-left: -1
@@ -248,7 +248,7 @@ MainWindowHigh
       image-source: /images/ui/1pixel-down-frame
       image-border: 3
       border-width: 0
-      background-color: #404040
+      background-color: #100a1d
 
     // TextEdit
     //   id: whitelistNameEdit
@@ -272,7 +272,7 @@ MainWindowHigh
         font: $var-cip-font-new
         anchors.fill: parent
         text-auto-resize: true
-        color: #707070
+        color: #a295b7
         margin-left: 5
         margin-top: 4
         text-offset: 15 -2
@@ -301,7 +301,7 @@ MainWindowHigh
       id: whitelistGlobalSettingsLabel
       !text: tr('Global settings for allowing messages') .. ':'
       font: $var-cip-font-lowspace
-      color: #C0C0C0
+      color: #dac7a2
       anchors.left: parent.left
       anchors.top: whitelistPermanentPanel.bottom
       margin-top: 12
@@ -319,7 +319,7 @@ MainWindowHigh
         id: checkboxAllowVIPs
         !text: tr('Allow VIPs to message you')
         font: $var-cip-font-new
-        color: #C0C0C0
+        color: #dac7a2
         anchors.left: parent.left
         anchors.fill: parent
         margin-left: 5

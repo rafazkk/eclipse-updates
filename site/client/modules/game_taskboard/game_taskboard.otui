@@ -18,10 +18,10 @@ MainWindow
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
 
     UIButton
       id: BountyTaskMenu

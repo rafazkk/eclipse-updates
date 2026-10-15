@@ -3,7 +3,7 @@ MainWindowHigh
   !text: tr('Add Healing')
   size: 336 171
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   padding-top: 0
   padding-right: 0
@@ -37,7 +37,7 @@ MainWindowHigh
       Label
         !text: tr('When:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-top: 3
@@ -49,7 +49,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 12
         size: 60 20
-        color: #c0c0c0
+        color: #dac7a2
         @onSetup: |
           self:addOption('HP%')
           self:addOption('MP%')
@@ -61,7 +61,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 6
         size: 60 20
-        color: #c0c0c0
+        color: #dac7a2
         @onSetup: |
           self:addOption('and')
           self:addOption('or')
@@ -73,7 +73,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 6
         size: 60 20
-        color: #c0c0c0
+        color: #dac7a2
         @onSetup: |
           self:addOption('HP%')
           self:addOption('MP%')
@@ -91,7 +91,7 @@ MainWindowHigh
       Label
         !text: tr('Is:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-top: 3
@@ -103,7 +103,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 35
         size: 60 20
-        color: #c0c0c0
+        color: #dac7a2
         @onSetup: |
           self:addOption('<')
           self:addOption('<=')
@@ -117,7 +117,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 6
         size: 60 20
-        color: #c0c0c0
+        color: #dac7a2
         menu-scroll: true
         menu-height: 200
         menu-scroll-step: 50
@@ -131,7 +131,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 6
         size: 60 20
-        color: #c0c0c0
+        color: #dac7a2
         @onSetup: |
           self:addOption('<')
           self:addOption('<=')
@@ -145,7 +145,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 6
         size: 60 20
-        color: #c0c0c0
+        color: #dac7a2
         menu-scroll: true
         menu-height: 200
         menu-scroll-step: 50
@@ -157,7 +157,7 @@ MainWindowHigh
       id: addHealingActionLabel
       !text: tr('Action:')
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 15

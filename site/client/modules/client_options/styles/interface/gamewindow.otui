@@ -241,7 +241,7 @@ UIWidget
       anchors.verticalCenter: parent.verticalCenter
       margin-left: -1
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-auto-resize: true
 
     QtComboBox

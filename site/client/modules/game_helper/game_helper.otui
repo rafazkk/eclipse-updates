@@ -25,7 +25,7 @@ HelperMenuButtonFrame < OnePixelDownFrame
 HelperSideMenuButton < HelperMenuButton
   anchors.fill: parent
   height: 22
-  color: #c0c0c0
+  color: #dac7a2
   text-offset: 0 0
 
 HelperActionSlot < ActionSlot
@@ -146,7 +146,7 @@ PriorityTextEdit < TextEdit
 HealFriendVocationThresholdPercent < Label
   text: %
   font: $var-cip-font
-  color: #c0c0c0
+  color: #dac7a2
   text-auto-resize: true
   phantom: true
   focusable: false
@@ -164,7 +164,7 @@ HelperListColumnSeparator < UIWidget
 HealFriendPlayerSettingsRow < Panel
   height: 36
   focusable: true
-  background-color: #414141
+  background-color: #100a1d
   draggable: true
 
   UIWidget
@@ -201,7 +201,7 @@ HealFriendPlayerSettingsRow < Panel
     anchors.verticalCenter: parent.verticalCenter
     margin-left: 6
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     clipping: true
     phantom: true
     focusable: false
@@ -209,9 +209,9 @@ HealFriendPlayerSettingsRow < Panel
 HealFriendPlayerDragGhost < Panel
   height: 36
   width: 260
-  background-color: #585858
+  background-color: #100a1d
   border-width: 1
-  border-color: #808080
+  border-color: #765385
   opacity: 0.92
   phantom: true
   focusable: false
@@ -232,7 +232,7 @@ HealFriendPlayerDragGhost < Panel
     anchors.verticalCenter: parent.verticalCenter
     margin-left: 6
     font: $var-cip-font-new
-    color: #ffffff
+    color: #f1e6d0
     text-auto-resize: true
     phantom: true
     focusable: false
@@ -243,7 +243,7 @@ HealFriendPlayerDragGhost < Panel
     anchors.verticalCenter: parent.verticalCenter
     margin-right: 8
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     phantom: true
     focusable: false
@@ -290,21 +290,21 @@ HealFriendPriorityStepper < Panel
     anchors.left: btnDec.right
     anchors.verticalCenter: parent.verticalCenter
     margin-left: 3
-    background-color: #2a2a2aff
+    background-color: #100a1dff
     border-width-top: 1
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
 
     Label
       id: numberValue
       anchors.fill: parent
       font: $var-cip-font-new
-      color: #FFFFFF
+      color: #f1e6d0
       text-align: center
       text: 0
       phantom: true
@@ -334,21 +334,21 @@ HelperShooterPriorityStepper < Panel
     anchors.left: btnDec.right
     anchors.verticalCenter: parent.verticalCenter
     margin-left: 3
-    background-color: #2a2a2aff
+    background-color: #100a1dff
     border-width-top: 1
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
 
     Label
       id: numberValue
       anchors.fill: parent
       font: $var-cip-font-new
-      color: #FFFFFF
+      color: #f1e6d0
       text-align: center
       text: 0
       phantom: true
@@ -374,34 +374,34 @@ ProfileListItem < Panel
     margin-left: 6
     margin-top: 2
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: false
     phantom: true
 
 ProfileListItemOdd < ProfileListItem
-  background-color: #484848
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
-    background-color: #484848
+    background-color: #100a1d
 
 ProfileListItemEven < ProfileListItem
-  background-color: #414141
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
-    background-color: #414141
+    background-color: #100a1d
 
 HelperStatsToggleRow < Panel
   height: 31
   focusable: true
 
   $hover:
-    background-color: #ffffff12
+    background-color: #2b193f12
 
   Label
     id: titleLabel
@@ -412,7 +412,7 @@ HelperStatsToggleRow < Panel
     margin-left: 0
     height: 14
     font: $var-cip-font-new
-    color: #f0f0f0
+    color: #f1e6d0
     text-auto-resize: true
     phantom: true
 
@@ -467,7 +467,7 @@ HelperStatsWindow < MiniWindow
     font: verdana-11px-monochrome
     height: 13
     !text: tr('Helper Stats')
-    color: #909090
+    color: #dac7a2
 
   MiniWindowContents
     id: contentsPanel
@@ -617,7 +617,7 @@ PainelHealing < Panel
         Label
           !text: tr('Enable Healing')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.top: parent.top
           anchors.left: parent.left
           text-offset: 16 -1
@@ -652,7 +652,7 @@ PainelHealing < Panel
           margin-left: 1
           margin-top: 2
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
         OnePixelDownFrame
@@ -671,7 +671,7 @@ PainelHealing < Panel
             margin-right: 12
             padding-top: 17
             vertical-scrollbar: healingSpellScrollBar
-            background-color: #404040
+            background-color: #100a1d
             clipping: true
             layout:
               type: verticalBox
@@ -727,7 +727,7 @@ PainelHealing < Panel
           margin-left: 1
           margin-top: 2
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
         OnePixelDownFrame
@@ -746,7 +746,7 @@ PainelHealing < Panel
             margin-right: 12
             padding-top: 17
             vertical-scrollbar: healingPotionScrollBar
-            background-color: #404040
+            background-color: #100a1d
             clipping: true
             layout:
               type: verticalBox
@@ -799,7 +799,7 @@ PainelHealFriend < Panel
   anchors.right: parent.right
   anchors.bottom: botSeparator.top
   font: $var-cip-font-new
-  color: #929292
+  color: #dac7a2
   text-offset: 0 2
   text-align: top
   !text: tr('Heal Friend')
@@ -854,7 +854,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('When HP')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
@@ -877,7 +877,7 @@ PainelHealFriend < Panel
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: prev.right
         margin-left: 5
-        color: #FFFFFF
+        color: #f1e6d0
         font: $var-cip-font-new
         text-align: left
         !text: 80
@@ -890,7 +890,7 @@ PainelHealFriend < Panel
         text: %
         visible: false
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: prev.right
         margin-left: 3
@@ -914,7 +914,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Knight')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -923,7 +923,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -954,7 +954,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Paladin')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -963,7 +963,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -994,7 +994,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Sorcerer')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1003,7 +1003,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1034,7 +1034,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Druid')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1043,7 +1043,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1074,7 +1074,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Monk')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1083,7 +1083,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1138,7 +1138,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('When HP')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
@@ -1161,7 +1161,7 @@ PainelHealFriend < Panel
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: prev.right
         margin-left: 5
-        color: #FFFFFF
+        color: #f1e6d0
         font: $var-cip-font-new
         text-align: left
         !text: 80
@@ -1174,7 +1174,7 @@ PainelHealFriend < Panel
         text: %
         visible: false
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: prev.right
         margin-left: 3
@@ -1198,7 +1198,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Knight')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1207,7 +1207,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1238,7 +1238,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Paladin')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1247,7 +1247,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1278,7 +1278,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Sorcerer')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1287,7 +1287,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1318,7 +1318,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Druid')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1327,7 +1327,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1358,7 +1358,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Monk')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1367,7 +1367,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1422,7 +1422,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('When HP')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
@@ -1445,7 +1445,7 @@ PainelHealFriend < Panel
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: prev.right
         margin-left: 5
-        color: #FFFFFF
+        color: #f1e6d0
         font: $var-cip-font-new
         text-align: left
         !text: 80
@@ -1458,7 +1458,7 @@ PainelHealFriend < Panel
         text: %
         visible: false
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: prev.right
         margin-left: 3
@@ -1482,7 +1482,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Knight')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1491,7 +1491,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1522,7 +1522,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Paladin')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1531,7 +1531,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1562,7 +1562,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Sorcerer')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1571,7 +1571,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1602,7 +1602,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Druid')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1611,7 +1611,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1642,7 +1642,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Monk')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-left: 19
@@ -1651,7 +1651,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Priority: ')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         text-align: center
@@ -1695,7 +1695,7 @@ PainelHealFriend < Panel
       margin-top: 3
       margin-left: 4
       margin-right: 4
-      background-color: #363636
+      background-color: #100a1d
 
       Label
         id: friendPlayerEnabledHeader
@@ -1705,7 +1705,7 @@ PainelHealFriend < Panel
         anchors.verticalCenter: parent.verticalCenter
         margin-left: 4
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: 0 -1
         text-align: center
         text-auto-resize: false
@@ -1724,7 +1724,7 @@ PainelHealFriend < Panel
         anchors.verticalCenter: parent.verticalCenter
         margin-left: 28
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: 0 -1
         text-align: center
         text-auto-resize: false
@@ -1743,7 +1743,7 @@ PainelHealFriend < Panel
         anchors.verticalCenter: parent.verticalCenter
         margin-left: 194
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: 0 -1
         text-align: left
         text-auto-resize: false
@@ -1763,7 +1763,7 @@ PainelHealFriend < Panel
         margin-left: 304
         margin-right: 4
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: 0 -1
         text-align: left
         text-auto-resize: false
@@ -1811,7 +1811,7 @@ PainelHealFriend < Panel
         margin-left: 6
         margin-right: 18
         font: $var-cip-font
-        color: #909090
+        color: #dac7a2
         text-align: center
         !text: tr('No party players.')
         phantom: true
@@ -1823,7 +1823,7 @@ PainelHealFriend < Panel
       margin-left: 7
       margin-bottom: 8
       font: $var-cip-font
-      color: #909090
+      color: #dac7a2
       !text: tr('Party players: 0')
       text-auto-resize: true
 
@@ -1853,7 +1853,7 @@ PainelHealFriend < Panel
       Label
         !text: tr('Enable Heal Friend')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         text-offset: 16 -1
@@ -1868,7 +1868,7 @@ PainelHealFriend < Panel
 
 HelperSectionTitle < Label
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-auto-resize: true
 
 HelperListItemOdd < ProfileListItemOdd
@@ -1894,39 +1894,39 @@ HelperCreatureListRow < Panel
     margin-left: 6
     margin-right: 4
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
 HelperCreatureListRowOdd < HelperCreatureListRow
-  background-color: #484848
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
-    background-color: #484848
+    background-color: #100a1d
 
 HelperCreatureListRowEven < HelperCreatureListRow
-  background-color: #414141
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
-    background-color: #414141
+    background-color: #100a1d
 
 TargetPriorityListHeader < UIWidget
   height: 16
-  background-color: #363636
+  background-color: #100a1d
   focusable: false
 
   UIWidget
     size: 23 16
     anchors.top: parent.top
     anchors.left: parent.left
-    background-color: #363636
+    background-color: #100a1d
     !text: tr('...')
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
     text-offset: 0 -1
     text-align: center
@@ -1943,9 +1943,9 @@ TargetPriorityListHeader < UIWidget
     anchors.top: parent.top
     anchors.left: prev.right
     margin-left: 2
-    background-color: #363636
+    background-color: #100a1d
     !text: tr('Creature')
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
     text-offset: 0 -1
     text-align: left
@@ -1963,9 +1963,9 @@ TargetPriorityListHeader < UIWidget
     anchors.left: prev.right
     anchors.right: parent.right
     margin-left: 2
-    background-color: #363636
+    background-color: #100a1d
     !text: tr('Name')
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
     text-offset: 0 -1
     text-align: left
@@ -2029,7 +2029,7 @@ TargetPriorityListRow < UIWidget
     margin-left: 2
     margin-right: 8
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     text-align: left
 
@@ -2100,7 +2100,7 @@ HelperShooterPriorityItem < Panel
     margin-left: 2
     margin-right: 6
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     phantom: true
     text-auto-resize: true
 
@@ -2109,9 +2109,9 @@ ShooterPriorityDragGhost < Panel
   focusable: false
   phantom: true
   draggable: false
-  background-color: #565656e6
+  background-color: #100a1de6
   border-width: 1
-  border-color: #8a8a8a
+  border-color: #765385
   opacity: 0.92
 
   UIWidget
@@ -2148,7 +2148,7 @@ ShooterPriorityDragGhost < Panel
     margin-right: 6
     margin-top: 5
     font: $var-cip-font
-    color: #ffffff
+    color: #f1e6d0
     phantom: true
     text-auto-resize: false
     text-align: left
@@ -2161,14 +2161,14 @@ ShooterPriorityDragGhost < Panel
     margin-top: 22
     margin-right: 6
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     phantom: true
     text-auto-resize: false
     text-align: left
 
 ShooterPriorityListHeader < UIWidget
   height: 16
-  background-color: #363636
+  background-color: #100a1d
   focusable: false
 
   UIWidget
@@ -2176,9 +2176,9 @@ ShooterPriorityListHeader < UIWidget
     size: 23 16
     anchors.top: parent.top
     anchors.left: parent.left
-    background-color: #363636
+    background-color: #100a1d
     !text: tr('...')
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
     text-offset: 0 -1
     text-align: center
@@ -2196,9 +2196,9 @@ ShooterPriorityListHeader < UIWidget
     anchors.top: parent.top
     anchors.left: prev.right
     margin-left: 2
-    background-color: #363636
+    background-color: #100a1d
     !text: tr('Action')
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
     text-offset: 0 -1
     text-align: left
@@ -2216,30 +2216,30 @@ ShooterPriorityListHeader < UIWidget
     anchors.left: prev.right
     anchors.right: parent.right
     margin-left: 2
-    background-color: #363636
+    background-color: #100a1d
     !text: tr('Condition')
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
     text-offset: 0 -1
     text-align: left
 
 HelperShooterPriorityItemOdd < HelperShooterPriorityItem
-  background-color: #484848
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
-    background-color: #484848
+    background-color: #100a1d
 
 HelperShooterPriorityItemEven < HelperShooterPriorityItem
-  background-color: #414141
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
-    background-color: #414141
+    background-color: #100a1d
 
 HealingPercentStepper < Panel
   size: 56 20
@@ -2258,21 +2258,21 @@ HealingPercentStepper < Panel
     anchors.left: btnDec.right
     anchors.verticalCenter: parent.verticalCenter
     margin-left: 3
-    background-color: #2a2a2aff
+    background-color: #100a1dff
     border-width-top: 1
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
 
     Label
       id: numberValue
       anchors.fill: parent
       font: $var-cip-font-new
-      color: #ffffff
+      color: #f1e6d0
       text-align: center
       text: 80
       phantom: true
@@ -2304,7 +2304,7 @@ HealingMetricDropdown < UIWidget
     margin-right: 1
     margin-top: -1
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text: HP%
     text-auto-resize: false
     text-align: left
@@ -2321,16 +2321,16 @@ HealingMetricDropdown < UIWidget
 
 HealingListHeader < UIWidget
   height: 16
-  background-color: #363636
+  background-color: #100a1d
   focusable: false
 
   UIWidget
     size: 23 16
     anchors.top: parent.top
     anchors.left: parent.left
-    background-color: #363636
+    background-color: #100a1d
     !text: tr('...')
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
     text-offset: 0 -1
     text-align: center
@@ -2346,9 +2346,9 @@ HealingListHeader < UIWidget
     anchors.top: parent.top
     anchors.left: prev.right
     margin-left: 2
-    background-color: #363636
+    background-color: #100a1d
     !text: tr('Action')
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
     text-offset: 0 -1
     text-align: left
@@ -2365,9 +2365,9 @@ HealingListHeader < UIWidget
     anchors.left: prev.right
     anchors.right: parent.right
     margin-left: 2
-    background-color: #363636
+    background-color: #100a1d
     !text: tr('Value')
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font
     text-offset: 0 -1
     text-align: left
@@ -2447,7 +2447,7 @@ HealingConditionRow < UIWidget
     margin-right: 6
     margin-top: 6
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     phantom: true
     text-auto-resize: false
     text-align: left
@@ -2460,7 +2460,7 @@ HealingConditionRow < UIWidget
     margin-top: 27
     margin-right: 2
     font: $var-cip-font
-    color: #a8a8a8
+    color: #dac7a2
     phantom: true
     text-auto-resize: false
     text-align: left
@@ -2470,9 +2470,9 @@ HealingConditionDragGhost < Panel
   focusable: false
   phantom: true
   draggable: false
-  background-color: #565656e6
+  background-color: #100a1de6
   border-width: 1
-  border-color: #8a8a8a
+  border-color: #765385
   opacity: 0.92
 
   HelperHealingActionSlot
@@ -2493,7 +2493,7 @@ HealingConditionDragGhost < Panel
     margin-right: 6
     margin-top: 6
     font: $var-cip-font
-    color: #ffffff
+    color: #f1e6d0
     phantom: true
     text-auto-resize: false
     text-align: left
@@ -2506,7 +2506,7 @@ HealingConditionDragGhost < Panel
     margin-top: 25
     margin-right: 6
     font: $var-cip-font
-    color: #d0d0d0
+    color: #dac7a2
     phantom: true
     text-auto-resize: false
     text-align: left
@@ -2546,7 +2546,7 @@ HelperAttackSpellListRow < Panel
     margin-right: 6
     margin-top: 4
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   Label
@@ -2557,11 +2557,11 @@ HelperAttackSpellListRow < Panel
     margin-right: 6
     margin-top: -2
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
     background-color: alpha
@@ -2608,11 +2608,11 @@ HelperAttackRuneListRow < Panel
     margin-left: 4
     margin-right: 6
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
     background-color: alpha
@@ -2622,18 +2622,18 @@ HelperStdButton < Button
 
 HelperProfileInputBox < InputBoxWindow
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
 
 HelperProfileInputLabel < InputBoxLabel
   font: $var-cip-font
-  color: #c0c0c0
+  color: #dac7a2
   fixed-size: false
   text-auto-resize: true
 
 HelperProfileInputLineEdit < InputBoxLineEdit
   font: $var-cip-font
-  color: #ffffff
+  color: #f1e6d0
 
 HelperModuleFooter < Panel
   height: 20
@@ -2714,7 +2714,7 @@ PainelTarget < Panel
         anchors.fill: parent
         vertical-scrollbar: targetPriorityListScrollbar
         padding-top: 17
-        background-color: #414141
+        background-color: #100a1d
         clipping: true
         layout:
           type: verticalBox
@@ -2774,7 +2774,7 @@ PainelTarget < Panel
         width: 70
         !text: tr('Mode:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         text-auto-resize: false
@@ -2801,7 +2801,7 @@ PainelTarget < Panel
         width: 70
         !text: tr('Distance:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         text-auto-resize: false
@@ -2828,7 +2828,7 @@ PainelTarget < Panel
         width: 70
         !text: tr('Priority:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         text-auto-resize: false
@@ -2867,7 +2867,7 @@ PainelTarget < Panel
         !text: tr('PZ Auto:')
         !tooltip: tr('PZ Auto:<br><li>Enabled: pauses Target inside a protection zone and restores it after leaving.</li><li>Disabled: turns Target off in a protection zone. It stays off after leaving and cannot be enabled while you are inside.</li>')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         text-auto-resize: false
@@ -2907,7 +2907,7 @@ PainelTarget < Panel
           id: enableTargetLabel
           !text: tr('Enable Target')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.top: parent.top
           anchors.left: parent.left
           text-offset: 16 -1
@@ -2999,7 +2999,7 @@ PainelShooter < Panel
         vertical-scrollbar: shooterPriorityListScrollbar
         anchors.fill: parent
         padding-top: 17
-        background-color: #414141
+        background-color: #100a1d
         clipping: true
         layout:
           type: verticalBox
@@ -3061,7 +3061,7 @@ PainelShooter < Panel
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: false
 
       QtComboBox
@@ -3070,7 +3070,7 @@ PainelShooter < Panel
         anchors.left: prev.right
         margin-left: 6
         size: 108 17
-        color: #c0c0c0
+        color: #dac7a2
         @onOptionChange: modules.game_helper.onShooterPresetChange(self)
         @onMousePress: |
           return modules.game_helper.onShooterPresetMenu(self)
@@ -3121,7 +3121,7 @@ PainelShooter < Panel
         !text: tr('PZ Auto:')
         !tooltip: tr('PZ Auto:<br><li>Enabled: pauses Shooter inside a protection zone and restores it after leaving.</li><li>Disabled: turns Shooter off in a protection zone. It stays off after leaving and cannot be enabled while you are inside.</li>')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         text-auto-resize: false
@@ -3154,7 +3154,7 @@ PainelShooter < Panel
           id: comboModeLabel
           !text: tr('Combo priority')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           text-offset: 18 0
@@ -3186,7 +3186,7 @@ PainelShooter < Panel
           id: enableShooterLabel
           !text: tr('Enable Shooter')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.top: parent.top
           anchors.left: parent.left
           text-offset: 16 -1
@@ -3205,7 +3205,7 @@ PainelShooter < Panel
         width: 58
         !text: tr('Posture:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: setShooterHotkeyButton.right
         margin-left: 12
@@ -3254,7 +3254,7 @@ PainelParty < Panel
       margin-top: 9
       margin-left: -2
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
     Panel
       id: autoPartySendPanel
@@ -3340,7 +3340,7 @@ PainelParty < Panel
         Label
           !text: tr('Enable Auto Invite')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.top: parent.top
           anchors.left: parent.left
           text-offset: 16 -1
@@ -3369,7 +3369,7 @@ PainelParty < Panel
       margin-top: 9
       margin-left: -2
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
     TextEdit
       id: autoPartyAcceptEdit
@@ -3409,7 +3409,7 @@ PainelParty < Panel
         Label
           !text: tr('Enable Auto Accept')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.top: parent.top
           anchors.left: parent.left
           text-offset: 16 -1
@@ -3479,7 +3479,7 @@ PainelTools < Panel
           id: toolsAutoHasteEnabledLabel
           !text: tr('Enabled')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: toolsAutoHasteCheckBox.right
           margin-left: 5
@@ -3504,7 +3504,7 @@ PainelTools < Panel
         Label
           !text: tr('PZ Cast')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           margin-left: 66
@@ -3557,7 +3557,7 @@ PainelTools < Panel
           id: toolsAutoTrainingEnabledLabel
           !text: tr('Enabled')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           margin-left: 67
@@ -3610,7 +3610,7 @@ PainelTools < Panel
           id: toolsAntiIdleEnabledLabel
           !text: tr('Enabled')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           margin-left: 62
@@ -3662,7 +3662,7 @@ PainelTools < Panel
           id: toolsManaTrainingEnabledLabel
           !text: tr('Enabled')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           margin-left: 67
@@ -3682,7 +3682,7 @@ PainelTools < Panel
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           size: 70 20
-          color: #c0c0c0
+          color: #dac7a2
           margin-left: 49
           menu-scroll: true
           menu-height: 200
@@ -3743,7 +3743,7 @@ PainelTools < Panel
           id: toolsChangeGoldEnabledLabel
           !text: tr('Enabled')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           margin-left: 62
@@ -3802,7 +3802,7 @@ PainelTools < Panel
           id: toolsEatFoodEnabledLabel
           !text: tr('Enabled')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           margin-left: 63
@@ -3861,7 +3861,7 @@ PainelTools < Panel
           id: toolsReconnectEnabledLabel
           !text: tr('Enabled')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           margin-left: 63
@@ -3913,7 +3913,7 @@ PainelTools < Panel
           id: toolsAutoAmmoEnabledLabel
           !text: tr('Enabled')
           font: $var-cip-font
-          color: #c0c0c0
+          color: #dac7a2
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           margin-left: 67
@@ -3933,7 +3933,7 @@ PainelTools < Panel
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           size: 70 20
-          color: #c0c0c0
+          color: #dac7a2
           margin-left: 49
           menu-scroll: true
           menu-height: 200
@@ -3983,7 +3983,7 @@ PainelConfigs < Panel
         !text: tr('Target + Shooter Hotkey')
         height: 14
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.left: parent.left
         anchors.right: configsSharedHotkeyButton.left
         anchors.verticalCenter: parent.verticalCenter
@@ -4031,7 +4031,7 @@ PainelConfigs < Panel
         !text: tr('Auto Save')
         height: 14
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
@@ -4070,7 +4070,7 @@ PainelConfigs < Panel
         !text: tr('Auto-Switch Hotkey Preset')
         height: 14
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
@@ -4247,7 +4247,7 @@ HelperWindow < MainLogoWindow
         margin-left: 4
         margin-right: 4
         font: $var-cip-font-new
-        color: #f0f0f0
+        color: #f1e6d0
         text: Offline
         text-align: center
         text-auto-resize: false
@@ -4261,7 +4261,7 @@ HelperWindow < MainLogoWindow
         anchors.right: parent.right
         margin-top: 1
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         text: "Level: -"
         text-align: center
         text-auto-resize: false
@@ -4285,7 +4285,7 @@ HelperWindow < MainLogoWindow
         margin-left: 2
         margin-right: 2
         font: verdana-bold-8px-antialiased
-        color: #c0c0c0
+        color: #dac7a2
         text: "Account Status:"
         text-align: center
         text-auto-resize: false
@@ -4317,7 +4317,7 @@ HelperWindow < MainLogoWindow
           margin-left: 2
           margin-right: 2
           font: verdana-bold-8px-antialiased
-          color: #c0c0c0
+          color: #dac7a2
           text: Offline
           text-align: center
           text-auto-resize: false
@@ -4332,7 +4332,7 @@ HelperWindow < MainLogoWindow
         margin-right: 5
         margin-bottom: 6
         font: verdana-bold-8px-antialiased
-        color: #c0c0c0
+        color: #dac7a2
         text: English
         text-offset: 14 0
         @onClick: modules.game_helper.onHelperLanguageToggle()
@@ -4360,7 +4360,7 @@ HelperWindow < MainLogoWindow
           margin-left: 5
           background-color: #b22234
           border-width: 1
-          border-color: #171717
+          border-color: #765385
           phantom: true
 
           UIWidget
@@ -4369,7 +4369,7 @@ HelperWindow < MainLogoWindow
             anchors.left: parent.left
             anchors.right: parent.right
             margin-top: 2
-            background-color: #ffffff
+            background-color: #2b193f
             phantom: true
 
           UIWidget
@@ -4378,7 +4378,7 @@ HelperWindow < MainLogoWindow
             anchors.left: parent.left
             anchors.right: parent.right
             margin-top: 4
-            background-color: #ffffff
+            background-color: #2b193f
             phantom: true
 
           UIWidget
@@ -4387,7 +4387,7 @@ HelperWindow < MainLogoWindow
             anchors.left: parent.left
             anchors.right: parent.right
             margin-top: 6
-            background-color: #ffffff
+            background-color: #2b193f
             phantom: true
 
           UIWidget
@@ -4396,7 +4396,7 @@ HelperWindow < MainLogoWindow
             anchors.left: parent.left
             anchors.right: parent.right
             margin-top: 8
-            background-color: #ffffff
+            background-color: #2b193f
             phantom: true
 
           UIWidget
@@ -4436,7 +4436,7 @@ HelperWindow < MainLogoWindow
       anchors.verticalCenter: parent.verticalCenter
       margin-left: 8
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       text-auto-resize: true
 
     QtComboBox
@@ -4526,7 +4526,7 @@ HelperWindow < MainLogoWindow
     Label
       !text: tr('Enable Helper')
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: parent.top
       anchors.left: parent.left
       text-offset: 16 -1

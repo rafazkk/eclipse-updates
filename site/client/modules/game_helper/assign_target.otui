@@ -19,7 +19,7 @@ TargetAssignPreview < Panel
     margin-left: 5
     margin-top: -4
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-auto-resize: true
 
 MainWindowHigh
@@ -27,7 +27,7 @@ MainWindowHigh
   !text: tr('Add Target')
   size: 375 608
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   @onEscape: modules.game_helper.closeTargetAssignWindow()
   @onEnter: modules.game_helper.targetAssignOk()

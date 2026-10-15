@@ -10,7 +10,7 @@ StoreHistoryData < UIWidget
     width: 148
     text-align: left
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     phantom: false
     margin-left: 2
 
@@ -49,14 +49,14 @@ StoreHistoryData < UIWidget
     width: 306
     text-align: left
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     phantom: true
     margin-left: 2
 
 StoreBuyButton < UIButton
   size: 144 20
   font: cipsoftFont
-  color: #ffffff
+  color: #f1e6d0
   text-align: center
   text-offset: 0 1
   image-source: /game_store/images/button-buy
@@ -71,7 +71,7 @@ StoreBuyButton < UIButton
 
   $disabled:
     image-clip: 0 40 144 20
-    color: #b0b0b0
+    color: #dac7a2
     change-cursor-image: false
 
 OfferPanel2 < Panel
@@ -110,7 +110,7 @@ OfferPanel2 < Panel
         text-auto-resize: true
         text-align: left
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
 
       UIWidget
         id: lblPriceCoin
@@ -124,7 +124,7 @@ stackOfferPanel < Panel
     anchors.bottom: parent.bottom
     anchors.right: lblPrice.left
     margin: 0 7 3 0
-    color: #c0c0c0
+    color: #dac7a2
     font: $var-cip-font-new
     text-align: center
     text-auto-resize: true
@@ -136,7 +136,7 @@ stackOfferPanel < Panel
     anchors.right: parent.right
     text-align: right
     text-offset: -16 1
-    color: #c0c0c0
+    color: #dac7a2
     image-source: /images/ui/button-verydarkgrey-down
     image-border: 5
     image-clip: 0 0 98 40
@@ -159,7 +159,7 @@ StoreLightFlatPanel < UIWidget
 
 StoreButton < UIButton
   font: verdana-11px-antialised
-  color: #dfdfdfff
+  color: #dac7a2ff
   size: 106 23
   text-offset: 0 0
   image-source:  /game_store/images/button
@@ -177,7 +177,7 @@ StoreButton < UIButton
     text-offset: 1 1
 
   $disabled:
-    color: #dfdfdf88
+    color: #dac7a288
     opacity: 0.8
 
 StoreWindow < UIWindow
@@ -185,7 +185,7 @@ StoreWindow < UIWindow
   font: $var-cip-font-new
   size: 200 200
   opacity: 1
-  color: #dfdfdf
+  color: #dac7a2
   text-offset: 0 6
   text-align: top
   image-source:/images/ui/window-high
@@ -197,21 +197,21 @@ StoreWindow < UIWindow
   padding-bottom: 15
 
   $disabled:
-    color: #dfdfdf88
+    color: #dac7a288
 
   $dragging:
     opacity: 1
 
 StoreFlatLabel < UILabel
   font: $var-cip-font-new
-  color: #dfdfdf
+  color: #dac7a2
   size: 86 20
   text-offset: 3 3
   image-source:  /game_store/images/panel_flat
   image-border: 1
 
   $disabled:
-    color: #dfdfdf88
+    color: #dac7a288
 
 storeCategory < UIWidget
   size: 166 22
@@ -305,7 +305,7 @@ confirmarSHOP < UIMessageBox
   Label
     id: title
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     text-offset: 0 2
     text-align: top
     anchors.top: parent.top
@@ -321,7 +321,7 @@ confirmarSHOP < UIMessageBox
     anchors.top: parent.top
     margin-top: 29
     margin-left: 16
-    background-color: #363636
+    background-color: #100a1d
 
     Label
       id: Box
@@ -331,7 +331,7 @@ confirmarSHOP < UIMessageBox
       margin-top: 1
       margin-left: 1
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       text-auto-resize: true
       text-align: topLeft
@@ -372,16 +372,16 @@ BorderBox < UIWidget
   border-width-left: 1
   border-color-left: black
   border-width-bottom: 1
-  border-color-bottom: #747474
+  border-color-bottom: #765385
   border-width-right: 1
-  border-color-right: #747474
+  border-color-right: #765385
 
 StorePackageContentsHeader < Label
   height: 14
   margin-top: 6
   margin-bottom: 2
   font: $var-cip-font-new
-  color: #f4f4f4
+  color: #f1e6d0
   text-auto-resize: true
 
 StorePackageContentsRow < UIWidget
@@ -400,7 +400,7 @@ StorePackageContentsRow < UIWidget
   Label
     id: name
     font: $var-cip-font-new
-    color: #f4f4f4
+    color: #f1e6d0
     text-auto-resize: true
     anchors.left: preview.right
     anchors.right: parent.right
@@ -424,7 +424,7 @@ StoreDescriptionLine < UIWidget
   Label
     id: text
     font: verdana-11px-monochrome
-    color: #f4f4f4
+    color: #f1e6d0
     text-wrap: true
     text-auto-resize: true
     anchors.left: parent.left

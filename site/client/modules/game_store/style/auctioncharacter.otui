@@ -30,7 +30,7 @@ AuctionCharacterCheckRow < UIWidget
     margin-left: 5
     margin-right: 10
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-wrap: true
     text-auto-resize: true
     focusable: false
@@ -44,7 +44,7 @@ AuctionCharacterItemBox < UIItem
   padding: 1
   image-source: /images/ui/item
   border-width: 0
-  color: #aaaaaa
+  color: #dac7a2
 
   Item
     id: item
@@ -64,7 +64,7 @@ AuctionCharacterItemBox < UIItem
     border-width: 0
 
   $hover !checked:
-    border-color: #aaaaaa
+    border-color: #765385
 
 RowAuctionCharacterArgumentEntry < UIWidget
   margin-top: 1
@@ -74,7 +74,7 @@ RowAuctionCharacterArgumentEntry < UIWidget
   margin-right: -3
   height: 16
   focusable: true
-  background-color: #484848
+  background-color: #100a1d
 
   UIWidget
     id: entryIcon
@@ -96,7 +96,7 @@ RowAuctionCharacterArgumentEntry < UIWidget
     margin-left: 5
     margin-right: 4
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     text-wrap: true
     text-align: left
@@ -115,11 +115,11 @@ RowAuctionCharacterArgument < UIWidget
     anchors.right: parent.right
     margin-right: 1
     height: 16
-    background-color: #363636
+    background-color: #100a1d
     text: "Argument Title"
     text-align: center
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   HorizontalSeparator
@@ -163,7 +163,7 @@ ChecksAuctionCharacterWindow < MainWindowHigh
       !text: tr('Here you can set up an auction to sell the character you are currently logged in with. The auction will be')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: parent.top
       anchors.left: parent.left
       anchors.right: parent.right
@@ -172,10 +172,10 @@ ChecksAuctionCharacterWindow < MainWindowHigh
       text-wrap: true
  
     Label
-      !text: tr(' running on the PlayTC website in the section Char Bazaar.')
+      !text: tr(' running on the Eclipse website in the section Char Bazaar.')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: prev.bottom
       anchors.left: parent.left
       anchors.right: parent.right
@@ -187,7 +187,7 @@ ChecksAuctionCharacterWindow < MainWindowHigh
       !text: tr('If you like to put this character up for auction, the following conditions must be met:')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: prev.bottom
       anchors.left: parent.left
       anchors.right: parent.right
@@ -206,12 +206,12 @@ ChecksAuctionCharacterWindow < MainWindowHigh
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
-      background-color: #414141
-      background-color: #363636
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
+      background-color: #100a1d
+      background-color: #100a1d
       vertical-scrollbar: auctionChecksScrollBar
       focusable: false
       layout:
@@ -269,7 +269,7 @@ ChecksAuctionCharacterWindow < MainWindowHigh
       margin-right: 2
       margin-bottom: 3
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
   Button
     id: exitButton
@@ -316,7 +316,7 @@ PanelAuctionNone < QtPanel
     !text: tr('Select here the starting price for your character\'s auction and choose at which day and time your auction should end. Note that your local time is used here.')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -328,7 +328,7 @@ PanelAuctionNone < QtPanel
     !text: tr('Moreover, you can select here some sales arguments which should be displayed for your character. Show your rarest and most valuable items, your best skills, your greatest achievements or other outstanding features of your character!')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: prev.bottom
     anchors.left: parent.left
     anchors.right: parent.right
@@ -340,7 +340,7 @@ PanelAuctionNone < QtPanel
     !text: tr('All items and features you select here, will be displayed on the auction overview page on the Tibia website. Everything else can only be viewed by checking the details for your character.')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: prev.bottom
     anchors.left: parent.left
     anchors.right: parent.right
@@ -359,7 +359,7 @@ PanelSelectItem < QtPanel
     !text: tr('Search:')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     margin-top: 5
@@ -410,11 +410,11 @@ PanelSelectItem < QtPanel
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
-    background-color: #363636
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
+    background-color: #100a1d
 
     VerticalQtScrollBar
       id: selectItemsPanelScrollBar
@@ -452,7 +452,7 @@ PanelSelectDate < QtPanel
     !text: tr('Select the time and date your auction should end.')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -464,7 +464,7 @@ PanelSelectDate < QtPanel
     !text: tr('The auction may and betwwen ')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -477,7 +477,7 @@ PanelSelectDate < QtPanel
     !text: tr('0000-00-00, 00:00 and 0000-00-00, 00:00.')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -493,11 +493,11 @@ PanelSelectDate < QtPanel
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
-    background-color: #484848
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
+    background-color: #100a1d
     anchors.top: parent.top
     anchors.left: parent.left
     margin-top: 42
@@ -522,7 +522,7 @@ PanelSelectDate < QtPanel
       !text: tr('May 2026')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: parent.top
       anchors.horizontalCenter: parent.horizontalCenter
       margin-top: 5
@@ -570,7 +570,7 @@ PanelSelectDate < QtPanel
     !text: tr('End time:')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: prev.bottom
     anchors.left: prev.left
     margin-top: 10
@@ -586,7 +586,7 @@ PanelSelectDate < QtPanel
     margin-left: 3
     width: 50
     height: 20
-    color: #c0c0c0
+    color: #dac7a2
     menu-scroll: true
     menu-height: 200
     menu-scroll-step: 50
@@ -599,7 +599,7 @@ PanelSelectDate < QtPanel
     margin-left: 9
     width: 50
     height: 20
-    color: #c0c0c0
+    color: #dac7a2
 
 PanelSelectArgument < QtPanel
   anchors.top: headerWindow.bottom
@@ -612,7 +612,7 @@ PanelSelectArgument < QtPanel
     !text: tr('Search:')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     margin-top: 5
@@ -663,11 +663,11 @@ PanelSelectArgument < QtPanel
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
-    background-color: #363636
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
+    background-color: #100a1d
 
     VerticalQtScrollBar
       id: selectArgumentsPanelScrollBar
@@ -702,7 +702,7 @@ PanelConfirmation < QtPanel
     !text: tr('If you have selected everything correctly and you are sure that you want to put up this character for auction, "Confirm" your choice.')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -714,7 +714,7 @@ PanelConfirmation < QtPanel
     !text: tr('Go back to a "Previous" page to change your current set up. If you have changed your mind and do not want to sell this character anymore, simply "Cancel" this set up.')
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: prev.bottom
     anchors.left: parent.left
     anchors.right: parent.right
@@ -764,7 +764,7 @@ AuctionCalendarDayCell < UIWidget
     anchors.left: parent.left
     margin-left: 11
     margin-top: 1
-    background-color: #585858
+    background-color: #100a1d
     phantom: true
     focusable: false
     visible: false
@@ -774,7 +774,7 @@ AuctionCalendarDayCell < UIWidget
     anchors.fill: parent
     text-align: center
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     phantom: true
     focusable: false
   
@@ -933,7 +933,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       !text: tr('The starting price for your auction lies at')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: selectItem2.top
       anchors.left: selectItem2.right
       margin-top: 1
@@ -946,7 +946,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       anchors.left: selectItem2.right
       margin-left: 289
       padding-top: 1
-      color: #FFFFFF
+      color: #f1e6d0
       font: $var-cip-font-new
       text-align: right
       padding-right: 3
@@ -973,7 +973,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       !text: tr('Your auction will end at')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: selectItem2.top
       anchors.left: selectItem2.right
       margin-top: 20
@@ -985,7 +985,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       !text: tr('2026-05-28, 10:00')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #FFFFFF
+      color: #f1e6d0
       anchors.top: selectItem2.top
       anchors.left: prev.right
       margin-top: 20
@@ -996,7 +996,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       !text: tr('2026-05-28, 15:00 CEST')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: selectItem2.top
       anchors.left: prev.left
       margin-top: 38
@@ -1053,7 +1053,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       !text: tr('Add sales argument #1')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: selectArgument1.top
       anchors.left: selectArgument1Icon.right
       margin-top: -2
@@ -1090,7 +1090,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       !text: tr('Add sales argument #2')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: selectArgument2.top
       anchors.left: selectArgument2Icon.right
       margin-top: -2
@@ -1127,7 +1127,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       !text: tr('Add sales argument #3')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: selectArgument3.top
       anchors.left: selectArgument3Icon.right
       margin-top: -2
@@ -1164,7 +1164,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       !text: tr('Add sales argument #4')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: selectArgument4.top
       anchors.left: selectArgument4Icon.right
       margin-top: -2
@@ -1201,7 +1201,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       !text: tr('Add sales argument #5')
       font: $var-cip-font-new
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: selectArgument5.top
       anchors.left: selectArgument5Icon.right
       margin-top: -2
@@ -1339,7 +1339,7 @@ ConfigAuctionCharacterWindow < MainWindowHigh
       margin-right: 2
       margin-bottom: 3
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
   
   Button
     id: exitButton

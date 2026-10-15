@@ -148,7 +148,7 @@ GameBannerPanel < UIWidget
       anchors.fill: parent
       font: $var-cip-font-new
       text-align: center
-      color: #c0c0c0
+      color: #dac7a2
       text-auto-resize: false
       text-wrap: true
 

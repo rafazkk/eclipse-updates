@@ -62,7 +62,7 @@ HelperAssignPreview < Panel
     margin-left: 5
     margin-top: -4
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-auto-resize: true
 
   Label
@@ -73,7 +73,7 @@ HelperAssignPreview < Panel
     margin-left: 5
     margin-top: 1
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-auto-resize: true
 
 HelperAssignListLabel < Panel
@@ -138,7 +138,7 @@ HelperAssignListLabel < Panel
     margin-left: 6
     margin-top: 2
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     text-align: right
 
@@ -153,7 +153,7 @@ HelperAssignListLabel < Panel
     margin-right: 6
     margin-top: 4
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   Label
@@ -166,11 +166,11 @@ HelperAssignListLabel < Panel
     margin-right: 6
     margin-top: -2
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
     background-color: alpha
@@ -181,7 +181,7 @@ MainWindowHigh
   !text: tr('Assign Spell')
   size: 375 384
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   @onEscape: modules.game_helper.closeHelperAssignWindow()
   @onEnter: modules.game_helper.helperAssignOk()
@@ -276,7 +276,7 @@ MainWindowHigh
       @onSetup: self:setChecked(false)
       @onCheckChange: modules.game_helper.onHelperAssignLearntChange()
       text-offset: 15 0
-      color: #c0c0c0
+      color: #dac7a2
       font: $var-cip-font-new
 
   HorizontalSeparator

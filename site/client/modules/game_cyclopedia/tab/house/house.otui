@@ -60,7 +60,7 @@ UIWidget
       text-offset: 15 0
       !text: tr('Guildhalls')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       @onClick: modules.game_cyclopedia.Cyclopedia.houseFilter(self)
 
@@ -72,7 +72,7 @@ UIWidget
       text-offset: 15 0
       !text: tr('Houses and Flats')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       @onClick: modules.game_cyclopedia.Cyclopedia.houseFilter(self)
 
@@ -330,7 +330,7 @@ UIWidget
         Label
           !text: tr('No house selected')
           font: $var-cip-font-new
-          color: #C0C0C0
+          color: #dac7a2
           text-offset: -1 0
           text-wrap: true
           text-auto-resize: true
@@ -411,13 +411,13 @@ UIWidget
       margin-left: -1
       !text: tr('Auction')
       font: $var-cip-font-new
-      color: #F7F7F7
+      color: #f1e6d0
       text-auto-resize: true
 
     Label
       id: AuctionText
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.left: MapViewbase.left
       anchors.top: AuctionLabel.bottom
       margin-top: 3
@@ -429,7 +429,7 @@ UIWidget
       id: rentalTenantLabel
       !text: tr('Tenant:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 91 15
       anchors.left: MapViewbase.left
@@ -441,7 +441,7 @@ UIWidget
     Label
       id: rentalTenantValue
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.left: rentalTenantLabel.right
@@ -453,7 +453,7 @@ UIWidget
       id: rentalPaidUntilLabel
       !text: tr('Paid Until:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 91 15
       anchors.left: MapViewbase.left
@@ -465,7 +465,7 @@ UIWidget
     Label
       id: rentalPaidUntilValue
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.left: rentalPaidUntilLabel.right
@@ -478,7 +478,7 @@ UIWidget
       !text: tr('Move out Pending')
       font: $var-cip-font-new
       text-offset: -1 0
-      color: #F7F7F7
+      color: #f1e6d0
       text-auto-resize: true
       anchors.left: MapViewbase.left
       anchors.top: rentalPaidUntilLabel.bottom
@@ -490,7 +490,7 @@ UIWidget
       id: moveOutDateLabel
       !text: tr('Date:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 91 15
       anchors.left: MapViewbase.left
@@ -502,7 +502,7 @@ UIWidget
     Label
       id: moveOutDateValue
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.left: moveOutDateLabel.right
@@ -518,14 +518,14 @@ UIWidget
       !text: tr('Pending Transfer')
       font: $var-cip-font-new
       text-offset: -1 0
-      color: #F7F7F7
+      color: #f1e6d0
       text-auto-resize: true
       visible: false
 
     Label
       id: subAuctionText
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.left: MapViewbase.left
       anchors.top: subAuctionLabel.bottom
       margin-top: 3
@@ -536,7 +536,7 @@ UIWidget
       id: transferOwnerLabel
       !text: tr('New Owner:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 99 15
       anchors.left: MapViewbase.left
@@ -548,7 +548,7 @@ UIWidget
     Label
       id: transferOwnerValue
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.left: transferOwnerLabel.right
@@ -560,7 +560,7 @@ UIWidget
       id: transferDateLabel
       !text: tr('Date:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 99 15
       anchors.left: MapViewbase.left
@@ -572,7 +572,7 @@ UIWidget
     Label
       id: transferDateValue
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.left: transferDateLabel.right
@@ -584,7 +584,7 @@ UIWidget
       id: auctionBidderLabel
       !text: tr('Highest Bidder:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 99 15
       anchors.left: MapViewbase.left
@@ -596,7 +596,7 @@ UIWidget
     Label
       id: auctionBidderValue
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.left: auctionBidderLabel.right
@@ -608,7 +608,7 @@ UIWidget
       id: auctionEndTimeLabel
       !text: tr('End Time:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 91 15
       anchors.left: MapViewbase.left
@@ -620,7 +620,7 @@ UIWidget
     Label
       id: auctionEndTimeValue
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.left: auctionEndTimeLabel.right
@@ -632,7 +632,7 @@ UIWidget
       id: highestBidLabel
       !text: tr('Highest Bid:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 91 15
       anchors.left: MapViewbase.left
@@ -646,7 +646,7 @@ UIWidget
       size: 100 15
       font: $var-cip-font-new
       text-align: right
-      color: #C0C0C0
+      color: #dac7a2
       anchors.right: parent.right
       anchors.top: highestBidLabel.top
       margin-right: 23
@@ -664,7 +664,7 @@ UIWidget
       id: yourLimitLabel
       !text: tr('Your Limit:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 91 15
       anchors.left: MapViewbase.left
@@ -678,7 +678,7 @@ UIWidget
       size: 100 15
       font: $var-cip-font-new
       text-align: right
-      color: #C0C0C0
+      color: #dac7a2
       anchors.right: parent.right
       anchors.top: highestBid.bottom
       margin-right: 23
@@ -697,7 +697,7 @@ UIWidget
       id: transferLabel
       !text: tr('Price:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       anchors.left: transferDateLabel.left
       anchors.top: transferDateLabel.bottom
       margin-left: 61
@@ -708,7 +708,7 @@ UIWidget
       id: transferValue
       text-auto-resize: true
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.left: transferLabel.right
       anchors.top: transferLabel.top
       visible: false
@@ -748,7 +748,7 @@ UIWidget
     font: $var-cip-font-new
     text-align: top
     text-offset: 0 2
-    color: #909090
+    color: #dac7a2
     size: 413 358
     anchors.top: LateralBase.top
     anchors.left: LateralBase.right
@@ -763,7 +763,7 @@ UIWidget
       size: 43 20
       !text: tr('Cancel')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.bottom: parent.bottom
       anchors.right: parent.right
       text-offset: 0 0
@@ -776,7 +776,7 @@ UIWidget
       size: 64 20
       !text: tr('Bid')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 6
@@ -789,12 +789,12 @@ UIWidget
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 14
-      color: #F7F7F7
+      color: #f1e6d0
 
     Label
       !text: tr('Name:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: prev.bottom
@@ -806,7 +806,7 @@ UIWidget
       id: name
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -815,7 +815,7 @@ UIWidget
     Label
       !text: tr('Size:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: name.bottom
@@ -827,7 +827,7 @@ UIWidget
       id: size
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -836,7 +836,7 @@ UIWidget
     Label
       !text: tr('Max. Beds:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: size.bottom
@@ -848,7 +848,7 @@ UIWidget
       id: beds
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -857,7 +857,7 @@ UIWidget
     Label
       !text: tr('Rent:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: beds.bottom
@@ -869,7 +869,7 @@ UIWidget
       id: rent
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -888,13 +888,13 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 8
-      color: #F7F7F7
+      color: #f1e6d0
 
     Label
       id: hightestBidder
       !text: tr('Highest Bidder:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -906,7 +906,7 @@ UIWidget
       id: hightestBidder_value
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -917,7 +917,7 @@ UIWidget
       id: endTime
       !text: tr('End Time:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: hightestBidder.bottom
@@ -930,7 +930,7 @@ UIWidget
       id: endTime_value
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -941,7 +941,7 @@ UIWidget
       id: bidHighestBid
       !text: tr('Highest Bid:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: endTime.bottom
@@ -955,7 +955,7 @@ UIWidget
       size: 99 15
       font: $var-cip-font-new
       text-align: right
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: prev.top
       anchors.left: prev.right
       margin-left: 7
@@ -973,7 +973,7 @@ UIWidget
       id: yourLimit
       !text: tr('Your Limit:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: bidHighestBid.bottom
@@ -987,7 +987,7 @@ UIWidget
       size: 90 15
       font: $var-cip-font-new
       text-align: right
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: prev.top
       anchors.left: prev.right
       margin-left: 13
@@ -1005,7 +1005,7 @@ UIWidget
       id: soFar
       !text: tr('There is no bid so far.')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: hightestBidder.top
       anchors.left: parent.left
@@ -1020,7 +1020,7 @@ UIWidget
     font: $var-cip-font-new
     text-align: top
     text-offset: 0 2
-    color: #909090
+    color: #dac7a2
     size: 413 358
     anchors.top: LateralBase.top
     anchors.left: LateralBase.right
@@ -1035,7 +1035,7 @@ UIWidget
       size: 43 20
       !text: tr('Cancel')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.bottom: parent.bottom
       anchors.right: parent.right
       text-offset: 0 0
@@ -1048,7 +1048,7 @@ UIWidget
       size: 64 20
       !text: tr('Move Out')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 6
@@ -1061,12 +1061,12 @@ UIWidget
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 14
-      color: #F7F7F7
+      color: #f1e6d0
 
     Label
       !text: tr('Name:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: prev.bottom
@@ -1078,7 +1078,7 @@ UIWidget
       id: name
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1087,7 +1087,7 @@ UIWidget
     Label
       !text: tr('Size:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: name.bottom
@@ -1099,7 +1099,7 @@ UIWidget
       id: size
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1108,7 +1108,7 @@ UIWidget
     Label
       !text: tr('Max. Beds:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: size.bottom
@@ -1120,7 +1120,7 @@ UIWidget
       id: beds
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1129,7 +1129,7 @@ UIWidget
     Label
       !text: tr('Rent:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: beds.bottom
@@ -1141,7 +1141,7 @@ UIWidget
       id: rent
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1160,12 +1160,12 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 8
-      color: #F7F7F7
+      color: #f1e6d0
 
     Label
       !text: tr('Paid until:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: prev.bottom
@@ -1177,7 +1177,7 @@ UIWidget
       id: paid
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1186,7 +1186,7 @@ UIWidget
     Label
       !text: tr('Move Date:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: paid.bottom
@@ -1198,7 +1198,7 @@ UIWidget
       id: year
       size: 70 20
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.left: prev.right
       anchors.top: prev.top
       margin-left: 7
@@ -1208,7 +1208,7 @@ UIWidget
     Label
       !text: tr('-')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: prev.top
       anchors.left: prev.right
       margin-left: 2
@@ -1218,7 +1218,7 @@ UIWidget
       id: month
       size: 50 20
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: -11 1
       anchors.left: prev.right
       anchors.top: year.top
@@ -1227,7 +1227,7 @@ UIWidget
     Label
       !text: tr('-')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: prev.top
       anchors.left: prev.right
       margin-left: 2
@@ -1237,7 +1237,7 @@ UIWidget
       id: day
       size: 50 20
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: -11 1
       menu-scroll: true
       menu-height: 400
@@ -1272,7 +1272,7 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 15
-      color: #C0C0C0
+      color: #dac7a2
 
   UIWidget
     id: keepHouseArea
@@ -1280,7 +1280,7 @@ UIWidget
     font: $var-cip-font-new
     text-align: top
     text-offset: 0 2
-    color: #909090
+    color: #dac7a2
     size: 413 358
     anchors.top: LateralBase.top
     anchors.left: LateralBase.right
@@ -1295,7 +1295,7 @@ UIWidget
       size: 43 20
       !text: tr('Cancel')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.bottom: parent.bottom
       anchors.right: parent.right
       text-offset: 0 0
@@ -1308,7 +1308,7 @@ UIWidget
       size: 72 20
       !text: tr('Keep House')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 6
@@ -1321,12 +1321,12 @@ UIWidget
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 14
-      color: #F7F7F7
+      color: #f1e6d0
 
     Label
       !text: tr('Name:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: prev.bottom
@@ -1338,7 +1338,7 @@ UIWidget
       id: name
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1347,7 +1347,7 @@ UIWidget
     Label
       !text: tr('Size:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: name.bottom
@@ -1359,7 +1359,7 @@ UIWidget
       id: size
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1368,7 +1368,7 @@ UIWidget
     Label
       !text: tr('Max. Beds:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: size.bottom
@@ -1380,7 +1380,7 @@ UIWidget
       id: beds
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1389,7 +1389,7 @@ UIWidget
     Label
       !text: tr('Rent:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: beds.bottom
@@ -1401,7 +1401,7 @@ UIWidget
       id: rent
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1420,12 +1420,12 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 8
-      color: #F7F7F7
+      color: #f1e6d0
 
     Label
       !text: tr('Paid until:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: prev.bottom
@@ -1437,7 +1437,7 @@ UIWidget
       id: paid
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1446,7 +1446,7 @@ UIWidget
     Label
       !text: tr('Move Date:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 90 15
       anchors.top: paid.bottom
@@ -1458,7 +1458,7 @@ UIWidget
       id: moveDate
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1471,7 +1471,7 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 11
-      color: #C0C0C0
+      color: #dac7a2
 
   UIWidget
     id: transferArea
@@ -1479,7 +1479,7 @@ UIWidget
     font: $var-cip-font-new
     text-align: top
     text-offset: 0 2
-    color: #909090
+    color: #dac7a2
     size: 413 358
     anchors.top: LateralBase.top
     anchors.left: LateralBase.right
@@ -1493,7 +1493,7 @@ UIWidget
       size: 43 20
       !text: tr('Cancel')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.bottom: parent.bottom
       anchors.right: parent.right
       text-offset: 0 0
@@ -1505,7 +1505,7 @@ UIWidget
       size: 64 20
       !text: tr('Transfer')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 6
@@ -1517,11 +1517,11 @@ UIWidget
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 14
-      color: #F7F7F7
+      color: #f1e6d0
     Label
       !text: tr('Name:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -1531,7 +1531,7 @@ UIWidget
       id: name
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1539,7 +1539,7 @@ UIWidget
     Label
       !text: tr('Size:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: name.bottom
@@ -1549,7 +1549,7 @@ UIWidget
       id: size
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1557,7 +1557,7 @@ UIWidget
     Label
       !text: tr('Max. Beds:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: size.bottom
@@ -1567,7 +1567,7 @@ UIWidget
       id: beds
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1575,7 +1575,7 @@ UIWidget
     Label
       !text: tr('Rent:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: beds.bottom
@@ -1585,7 +1585,7 @@ UIWidget
       id: rent
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1602,11 +1602,11 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 8
-      color: #F7F7F7
+      color: #f1e6d0
     Label
       !text: tr('Paid until:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -1616,7 +1616,7 @@ UIWidget
       id: paid
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1624,7 +1624,7 @@ UIWidget
     Label
       !text: tr('Transfer Date:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: paid.bottom
@@ -1634,7 +1634,7 @@ UIWidget
       id: year
       size: 70 20
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.left: prev.right
       anchors.top: prev.top
       margin-left: 7
@@ -1643,7 +1643,7 @@ UIWidget
     Label
       !text: tr('-')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: prev.top
       anchors.left: prev.right
       margin-left: 2
@@ -1652,7 +1652,7 @@ UIWidget
       id: month
       size: 50 20
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: -11 1
       anchors.left: prev.right
       anchors.top: year.top
@@ -1660,7 +1660,7 @@ UIWidget
     Label
       !text: tr('-')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: prev.top
       anchors.left: prev.right
       margin-left: 2
@@ -1669,7 +1669,7 @@ UIWidget
       id: day
       size: 50 20
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: -11 1
       menu-scroll: true
       menu-height: 400
@@ -1697,7 +1697,7 @@ UIWidget
     Label
       !text: tr('New Owner:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       text-offset: 0 1
@@ -1734,7 +1734,7 @@ UIWidget
       id: transferPriceLabel
       !text: tr('Transfer Price:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       text-offset: 0 1
       size: 100 15
@@ -1776,7 +1776,7 @@ UIWidget
         id: guildhallTransferInfoLabel
         !text: tr('Read additional guildhall transfer information here: ')
         font: $var-cip-font-new
-        color: #C0C0C0
+        color: #dac7a2
         text-auto-resize: true
         anchors.top: parent.top
         anchors.left: parent.left
@@ -1794,7 +1794,7 @@ UIWidget
         !text: tr('Guildhall transfer information read')
         height: 16
         font: $var-cip-font-new
-        color: #C0C0C0
+        color: #dac7a2
         text-offset: 15 0
         text-auto-resize: true
         anchors.top: guildhallTransferInfoLabel.bottom
@@ -1817,14 +1817,14 @@ UIWidget
       anchors.top: guildhallTransferInfo.bottom
       anchors.left: parent.left
       margin-top: 6
-      color: #C0C0C0
+      color: #dac7a2
   UIWidget
     id: cancelHouseTransferArea
     !text: tr('Cancel House Transfer')
     font: $var-cip-font-new
     text-align: top
     text-offset: 0 2
-    color: #909090
+    color: #dac7a2
     size: 413 358
     anchors.top: LateralBase.top
     anchors.left: LateralBase.right
@@ -1838,7 +1838,7 @@ UIWidget
       size: 43 20
       !text: tr('Cancel')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.bottom: parent.bottom
       anchors.right: parent.right
       text-offset: 0 0
@@ -1850,7 +1850,7 @@ UIWidget
       size: 86 20
       !text: tr('Cancel Transfer')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 6
@@ -1862,11 +1862,11 @@ UIWidget
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 14
-      color: #F7F7F7
+      color: #f1e6d0
     Label
       !text: tr('Name:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -1876,7 +1876,7 @@ UIWidget
       id: name
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1884,7 +1884,7 @@ UIWidget
     Label
       !text: tr('Size:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: name.bottom
@@ -1894,7 +1894,7 @@ UIWidget
       id: size
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -1902,7 +1902,7 @@ UIWidget
     Label
       !text: tr('Max. Beds:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: size.bottom
@@ -1911,7 +1911,7 @@ UIWidget
     Label
       id: beds
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -1920,7 +1920,7 @@ UIWidget
     Label
       !text: tr('Rent:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: beds.bottom
@@ -1929,7 +1929,7 @@ UIWidget
     Label
       id: rent
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -1947,11 +1947,11 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 8
-      color: #F7F7F7
+      color: #f1e6d0
     Label
       !text: tr('Paid until:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -1960,7 +1960,7 @@ UIWidget
     Label
       id: paid
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -1969,7 +1969,7 @@ UIWidget
     Label
       !text: tr('New Owner:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -1978,7 +1978,7 @@ UIWidget
     Label
       id: owner
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -1987,7 +1987,7 @@ UIWidget
     Label
       !text: tr('Transfer Date:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -1996,7 +1996,7 @@ UIWidget
     Label
       id: transferDate
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2005,7 +2005,7 @@ UIWidget
     Label
       !text: tr('Price:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2014,7 +2014,7 @@ UIWidget
     Label
       id: transferPrice
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2033,14 +2033,14 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 13
-      color: #C0C0C0
+      color: #dac7a2
   UIWidget
     id: acceptTransferHouse
     !text: tr('Accept House Transfer')
     font: $var-cip-font-new
     text-align: top
     text-offset: 0 2
-    color: #909090
+    color: #dac7a2
     size: 413 358
     anchors.top: LateralBase.top
     anchors.left: LateralBase.right
@@ -2054,7 +2054,7 @@ UIWidget
       size: 43 20
       !text: tr('Cancel')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.bottom: parent.bottom
       anchors.right: parent.right
       text-offset: 0 0
@@ -2066,7 +2066,7 @@ UIWidget
       size: 86 20
       !text: tr('Accept Transfer')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 6
@@ -2078,11 +2078,11 @@ UIWidget
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 14
-      color: #F7F7F7
+      color: #f1e6d0
     Label
       !text: tr('Name:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2091,7 +2091,7 @@ UIWidget
     Label
       id: name
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2100,7 +2100,7 @@ UIWidget
     Label
       !text: tr('Size:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: name.bottom
@@ -2109,7 +2109,7 @@ UIWidget
     Label
       id: size
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2118,7 +2118,7 @@ UIWidget
     Label
       !text: tr('Max. Beds:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: size.bottom
@@ -2127,7 +2127,7 @@ UIWidget
     Label
       id: beds
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2136,7 +2136,7 @@ UIWidget
     Label
       !text: tr('Rent:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: beds.bottom
@@ -2145,7 +2145,7 @@ UIWidget
     Label
       id: rent
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2163,11 +2163,11 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 8
-      color: #F7F7F7
+      color: #f1e6d0
     Label
       !text: tr('Paid until:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2177,7 +2177,7 @@ UIWidget
       id: paid
       font: $var-cip-font-new
       text-offset: 0 1
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.top: prev.top
       anchors.left: prev.right
@@ -2185,7 +2185,7 @@ UIWidget
     Label
       !text: tr('New Owner:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2194,7 +2194,7 @@ UIWidget
     Label
       id: owner
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2203,7 +2203,7 @@ UIWidget
     Label
       !text: tr('Transfer Date:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2212,7 +2212,7 @@ UIWidget
     Label
       id: transferDate
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2221,7 +2221,7 @@ UIWidget
     Label
       !text: tr('Price:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2230,7 +2230,7 @@ UIWidget
     Label
       id: transferPrice
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2249,14 +2249,14 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 13
-      color: #C0C0C0
+      color: #dac7a2
   UIWidget
     id: rejectTransferHouse
     !text: tr('Reject House Transfer')
     font: $var-cip-font-new
     text-align: top
     text-offset: 0 2
-    color: #909090
+    color: #dac7a2
     size: 413 358
     anchors.top: LateralBase.top
     anchors.left: LateralBase.right
@@ -2270,7 +2270,7 @@ UIWidget
       size: 43 20
       !text: tr('Cancel')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.bottom: parent.bottom
       anchors.right: parent.right
       text-offset: 0 0
@@ -2282,7 +2282,7 @@ UIWidget
       size: 86 20
       !text: tr('Reject Transfer')
       font: verdana-bold-8px-antialiased
-      color: #C0C0C0
+      color: #dac7a2
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 6
@@ -2294,11 +2294,11 @@ UIWidget
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 14
-      color: #F7F7F7
+      color: #f1e6d0
     Label
       !text: tr('Name:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2307,7 +2307,7 @@ UIWidget
     Label
       id: name
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2316,7 +2316,7 @@ UIWidget
     Label
       !text: tr('Size:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: name.bottom
@@ -2325,7 +2325,7 @@ UIWidget
     Label
       id: size
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2334,7 +2334,7 @@ UIWidget
     Label
       !text: tr('Max. Beds:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: size.bottom
@@ -2343,7 +2343,7 @@ UIWidget
     Label
       id: beds
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2352,7 +2352,7 @@ UIWidget
     Label
       !text: tr('Rent:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: beds.bottom
@@ -2361,7 +2361,7 @@ UIWidget
     Label
       id: rent
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2379,11 +2379,11 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 8
-      color: #F7F7F7
+      color: #f1e6d0
     Label
       !text: tr('Paid until:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2392,7 +2392,7 @@ UIWidget
     Label
       id: paid
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2401,7 +2401,7 @@ UIWidget
     Label
       !text: tr('New Owner:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2410,7 +2410,7 @@ UIWidget
     Label
       id: owner
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2419,7 +2419,7 @@ UIWidget
     Label
       !text: tr('Transfer Date:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2428,7 +2428,7 @@ UIWidget
     Label
       id: transferDate
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2437,7 +2437,7 @@ UIWidget
     Label
       !text: tr('Price:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-align: right
       size: 100 15
       anchors.top: prev.bottom
@@ -2446,7 +2446,7 @@ UIWidget
     Label
       id: transferPrice
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 1
       text-auto-resize: true
       anchors.top: prev.top
@@ -2465,7 +2465,7 @@ UIWidget
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 13
-      color: #C0C0C0
+      color: #dac7a2
   UIWidget
     id: ListBase
     size: 413 358
@@ -2506,7 +2506,7 @@ UIWidget
       id: NoResult
       !text: tr('No result.')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-auto-resize: true
       anchors.centerIn: parent
       visible: false

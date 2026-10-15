@@ -1,37 +1,37 @@
 ModalDialogMessageLabel < UILabel
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   text-align: left
   text-wrap: true
 
 ChoiceListLabel < Label
   height: 16
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   text-offset: 1 0
   focusable: true
 
 ChoiceListLabelOdd < ChoiceListLabel
-  background-color: #484848
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
-    color: #f4f4f4
+    background-color: #100a1d
+    color: #f1e6d0
 
   $!focus:
-    background-color: #484848
-    color: #c0c0c0
+    background-color: #100a1d
+    color: #dac7a2
 
 ChoiceListLabelEven < ChoiceListLabel
-  background-color: #414141
+  background-color: #100a1d
 
   $focus:
-    background-color: #585858
-    color: #f4f4f4
+    background-color: #100a1d
+    color: #f1e6d0
 
   $!focus:
-    background-color: #414141
-    color: #c0c0c0
+    background-color: #100a1d
+    color: #dac7a2
 
 ChoiceList < TextList
   id: choiceList
@@ -44,7 +44,7 @@ ChoiceList < TextList
   image-source: /images/ui/1pixel-down-frame
   image-border: 3
   border-width: 0
-  background-color: #404040
+  background-color: #100a1d
   padding: 1
   auto-focus: none
   focusable: false
@@ -65,13 +65,13 @@ ChoiceScrollBar < VerticalQtScrollBar
 ModalButton < CipsoftButton
   size: 43 20
   fixed-size: true
-  color: #ffffff
+  color: #f1e6d0
   text-offset: 0 0
 
 ModalDialog < MainWindowHigh
   id: modalDialog
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   size: 245 100
   padding-top: 30

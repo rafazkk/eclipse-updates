@@ -8,7 +8,7 @@ historyData < UIWidget
     width: 150
     !text: tr('1')
     text-align: center
-    color: #dfdfdfcf
+    color: #dac7a2cf
     phantom: false
     margin-left: 4
 

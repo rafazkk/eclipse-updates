@@ -19,7 +19,7 @@ TerminalSelectText < UITextEdit
 
 UIWindow
   id: terminalWindow
-  background-color: #000000
+  background-color: #100a1d
   opacity: 0.85
   clipping: true
   anchors.fill: parent
@@ -35,7 +35,7 @@ UIWindow
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
-    background-color: #ffffff11
+    background-color: #2b193f11
     text-align: left
     text-offset: 4 0
     height: 18

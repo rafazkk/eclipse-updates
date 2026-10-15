@@ -16,7 +16,7 @@ MainWindowHigh
     !text: tr('History')
     text-offset: 0 2
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     visible: false
 
     TextListWithScroll
@@ -25,7 +25,7 @@ MainWindowHigh
       margin-top: -3
       margin-left: -1
       margin-bottom: 2
-      background-color: #363636
+      background-color: #100a1d
       padding-top: 1
       focusable: false
     
@@ -44,7 +44,7 @@ MainWindowHigh
     !text: tr('Resting Area Bonuses')
     text-offset: -1 2
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     margin-top: -7
     focusable: false
 
@@ -68,7 +68,7 @@ MainWindowHigh
         text-align: center
         text-offset: -1 -2
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         @onHoverChange: modules.game_rewardwall.onHoverStatusPlayerChange(self, value)
 
       RestingAreaTimeLeft
@@ -95,7 +95,7 @@ MainWindowHigh
       anchors.left: parent.left
       margin-top: -5
       margin-left: 72
-      border-color: #00000077
+      border-color: #76538577
       focusable: false
       clipping: false
       layout:
@@ -136,7 +136,7 @@ MainWindowHigh
       id: streakWarning
       text-align: center
       text-wrap: true
-      border-color: #00000077
+      border-color: #76538577
       height: 38
       width: 370
       anchors.top: parent.top
@@ -145,7 +145,7 @@ MainWindowHigh
       margin-left: 110
       font: $var-cip-font-new
       phantom: true
-      color: #c0c0c0
+      color: #dac7a2
       text: Great! You benefit from the best possible rewards and bonuses due to your premium status.
 
   MiniPanel
@@ -153,7 +153,7 @@ MainWindowHigh
     !text: tr('Daily Rewards')
     text-offset: -1 2
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     anchors.top: prev.bottom
     anchors.left: parent.left
     size: 506 133
@@ -406,11 +406,11 @@ MainWindowHigh
       id: premiumMessage
       text-align: center
       text-wrap: true
-      border-color: #00000077
+      border-color: #76538577
       height: 38
       width: 350
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       anchors.left: parent.left
       anchors.top: parent.top
       margin-top: -2
@@ -437,7 +437,7 @@ MainWindowHigh
       text-align: topLeft
       text-wrap: true
       font: $var-cip-font-new
-      color: #808080
+      color: #a295b7
       anchors.left: parent.left
       anchors.top: parent.top
       anchors.bottom: parent.bottom
@@ -450,7 +450,7 @@ MainWindowHigh
       text-align: topLeft
       text-wrap: true
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       anchors.left: free.right
       anchors.top: parent.top
       anchors.right: parent.right
@@ -468,7 +468,7 @@ MainWindowHigh
       text-align: topLeft
       text-wrap: true
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       focusable: false
 
   Panel

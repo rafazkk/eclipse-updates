@@ -4,7 +4,7 @@ MagicalArchivesSpellListItem < UIWidget
   focusable: true
 
   $focus:
-    background-color: #c0c0c033
+    background-color: #2b193f33
 
   UIWidget
     id: spellIcon
@@ -32,7 +32,7 @@ MagicalArchivesSpellListItem < UIWidget
     anchors.right: parent.right
     margin-left: 2
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
 MagicalArchivesVocationIcon < UIWidget
@@ -43,7 +43,7 @@ MagicalArchivesVocationIcon < UIWidget
 MagicalArchivesTabButton < UIButton
   checkable: true
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   size: 159 36
   image-clip: 0 0 159 36
   image-size: 159 36
@@ -53,7 +53,7 @@ MagicalArchivesTabButton < UIButton
     image-size: 159 36
 
   $on:
-    color: #ffffff
+    color: #f1e6d0
     image-clip: 0 36 159 36
     image-size: 159 36
 
@@ -63,12 +63,12 @@ MagicalArchivesTabButton < UIButton
 
 MagicalArchivesValueLabel < Label
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   text-auto-resize: true
 
 MagicalArchivesTitleLabel < Label
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   text-auto-resize: true
 
 MagicalArchivesSearchEdit < Panel
@@ -139,7 +139,7 @@ UIWidget
           icon-offset: 145 3
           font: $var-cip-font-new
           text:
-          color: #909090
+          color: #dac7a2
           text-offset: 0 -1
           layout:
             type: anchor
@@ -159,7 +159,7 @@ UIWidget
             height: 17
             !text: tr('Filter')
             font: $var-cip-font-new
-            color: #909090
+            color: #dac7a2
             text-align: center
             phantom: true
 
@@ -228,7 +228,7 @@ UIWidget
         text-align: center
         text-auto-resize: true
         font: $var-cip-font-new
-        color: #909090
+        color: #dac7a2
 
     UIWidget
       id: spellDetails
@@ -270,7 +270,7 @@ UIWidget
           margin-left: 5
           margin-top: 6
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
         Label
@@ -281,7 +281,7 @@ UIWidget
           margin-left: 5
           margin-top: 8
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
         Panel
@@ -299,7 +299,7 @@ UIWidget
           margin-bottom: 6
           margin-right: 7
           font: $var-cip-font-new
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
       UIWidget
@@ -701,18 +701,18 @@ UIWidget
     margin-left: 6
     width: 110
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-offset: 15 0
     visible: false
 
 MagicalArchivesFilterPopupCheckBox < CheckBox
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   text-offset: 15 -1
   height: 16
 
   $hover !disabled:
-    color: #ffffff
+    color: #f1e6d0
 
 MagicalArchivesFilterPopup < Panel
   id: filterPopup

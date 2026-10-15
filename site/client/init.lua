@@ -72,7 +72,7 @@ if ENABLE_SERVERS then
     end
 end
 
-g_app.setName("PlayTC");
+g_app.setName("Eclipse");
 g_app.setCompactName("playtc");
 g_app.setOrganizationName("PlayOtserver");
 

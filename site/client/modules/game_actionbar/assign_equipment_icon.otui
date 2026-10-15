@@ -35,7 +35,7 @@ EquipmentIconPickerOption < UIButton
 MainWindowHigh
   !text: tr('Assign Equipment Icon')
   text-offset: 0 1
-  color: #909090
+  color: #dac7a2
   size: 285 245
   margin-top: -1
   @onEscape: modules.game_actionbar.closeEquipmentAssignIconWindow(true)
@@ -51,7 +51,7 @@ MainWindowHigh
     anchors.top: parent.top
     anchors.left: parent.left
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
   TextEdit
     id: descriptionTextEdit
@@ -72,7 +72,7 @@ MainWindowHigh
     anchors.top: descriptionTextEdit.bottom
     anchors.left: parent.left
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
   Panel
     id: iconScrollFrame
@@ -120,7 +120,7 @@ MainWindowHigh
     anchors.top: iconScrollFrame.bottom
     anchors.left: parent.left
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
   UIWidget
     id: typeButtonsPanel

@@ -24,7 +24,7 @@ BlessingWidget < UIWidget
     color: $var-text-cip-color
     font: $var-cip-font
     image-source: /images/game/blessings/panel-20
-    background-color: #404040
+    background-color: #100a1d
     text-offset: 0 1
     text: 1 (0)
     visible: true
@@ -79,7 +79,7 @@ MainWindowHigh
   id: blessingWindow
   !text: tr('Blessings')
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   size: 615 427
   @onEscape: modules.game_blessing.closeBlessing()
@@ -92,7 +92,7 @@ MainWindowHigh
     margin-top: -7
     !text: tr('Record of Blessings')
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     text-align: center
     text-offset: 0 -54
     image-source: /images/ui/t2pixel-up-frame-borderimage
@@ -114,7 +114,7 @@ MainWindowHigh
     id: miniWindowPromotion
     !text: tr('Promotion and Premium Status')
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     anchors.top: miniWindowBlessing.bottom
     anchors.right: parent.right
     text-align: center
@@ -133,7 +133,7 @@ MainWindowHigh
       text-auto-resize: true
       text-wrap: true
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       margin-top: 20
       margin-left: 9
 
@@ -151,7 +151,7 @@ MainWindowHigh
     font: $var-cip-font-new
     text-align: center
     text-offset: 0 -52
-    color: #909090
+    color: #dac7a2
     anchors.top: miniWindowPromotion.bottom
     anchors.right: parent.right
     size: 583 121
@@ -166,7 +166,7 @@ MainWindowHigh
       margin-top: 27
       margin-left: 9
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       height: 29
 
@@ -175,7 +175,7 @@ MainWindowHigh
       anchors.top: pvpDeath.bottom
       anchors.left: pvpDeath.left
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       height: 16
 
@@ -184,7 +184,7 @@ MainWindowHigh
       anchors.top: pveDeath.bottom
       anchors.left: pvpDeath.left
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       height: 29
 
@@ -193,7 +193,7 @@ MainWindowHigh
       anchors.top: pvpDrop.bottom
       anchors.left: pvpDeath.left
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       height: 18
 

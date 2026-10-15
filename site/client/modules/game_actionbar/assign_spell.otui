@@ -32,7 +32,7 @@ SpellAssignPreview < Panel
     margin-left: 5
     margin-top: -4
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text: name
     text-auto-resize: true
 
@@ -44,7 +44,7 @@ SpellAssignPreview < Panel
     margin-left: 5
     margin-top: 1
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text: words
     text-auto-resize: true
 
@@ -92,7 +92,7 @@ SpellListLabel < Panel
     margin-left: 6
     margin-top: 2
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     text-align: right
 
@@ -107,7 +107,7 @@ SpellListLabel < Panel
     margin-right: 6
     margin-top: 4
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   Label
@@ -120,11 +120,11 @@ SpellListLabel < Panel
     margin-right: 6
     margin-top: -2
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   $focus:
-    background-color: #585858
+    background-color: #100a1d
 
   $!focus:
     background-color: alpha
@@ -133,7 +133,7 @@ MainWindowHigh
   !text: tr('Assign Spell')
   size: 375 609
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   @onEscape: modules.game_actionbar.closeSpellAssignWindow()
   @onEnter: modules.game_actionbar.spellAssignOk()
@@ -227,7 +227,7 @@ MainWindowHigh
       margin-left: 5
       @onSetup: self:setChecked(false)
       text-offset: 15 0
-      color: #c0c0c0
+      color: #dac7a2
       font: $var-cip-font-new
 
   Label
@@ -238,12 +238,12 @@ MainWindowHigh
     margin-top: 11
     margin-left: -1
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
   TextEdit
     id: parameterTextEdit
     image-source: /images/ui/1pixel-down-frame
-    background-color: #363636
+    background-color: #100a1d
     height: 16
     placeholder-color: #707070
     image-border: 3
@@ -270,7 +270,7 @@ MainWindowHigh
       margin-left: 1
       !text: tr('Cast with crosshair')
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-auto-resize: true
       text-offset: 15 0
 
@@ -281,7 +281,7 @@ MainWindowHigh
       margin-top: 2
       !text: tr('Cast at cursor position')
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-auto-resize: true
       text-offset: 15 0
 
@@ -292,7 +292,7 @@ MainWindowHigh
       margin-top: 2
       !text: tr('Cast at target')
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-auto-resize: true
       text-offset: 15 0
 

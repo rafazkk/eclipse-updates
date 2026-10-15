@@ -2,7 +2,7 @@ TextWindow < MainWindowHigh
   id: textWindow
   size: 313 445
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
 
   UIItem

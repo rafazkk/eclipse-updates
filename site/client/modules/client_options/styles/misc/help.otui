@@ -45,7 +45,7 @@ UIWidget
       anchors.right: parent.right
       anchors.verticalCenter: manualBtn.verticalCenter
       margin-right: 5
-      !specialtooltip: tr("Clicking this button will open the PlayTC manual. It offers information about gameplay, the client interface and system requirements.")
+      !specialtooltip: tr("Clicking this button will open the Eclipse manual. It offers information about gameplay, the client interface and system requirements.")
 
     QtButton
       id: faqBtn
@@ -64,7 +64,7 @@ UIWidget
       anchors.right: parent.right
       anchors.verticalCenter: faqBtn.verticalCenter
       margin-right: 5
-      !specialtooltip: tr("This button will open the PlayTC FAQ, with answers about gameplay, accounts, the client and connection troubleshooting.")
+      !specialtooltip: tr("This button will open the Eclipse FAQ, with answers about gameplay, accounts, the client and connection troubleshooting.")
 
     QtButton
       id: infoBtn

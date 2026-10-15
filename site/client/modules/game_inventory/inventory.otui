@@ -314,7 +314,7 @@ PhantomMiniWindow
         text-align: center
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
-        color: #c0c0c0
+        color: #dac7a2
         margin-bottom: -1
 
 
@@ -334,7 +334,7 @@ PhantomMiniWindow
         text-align: center
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
-        color: #c0c0c0
+        color: #dac7a2
         margin-bottom: -1
 
   UIWidget
@@ -375,7 +375,7 @@ PhantomMiniWindow
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
         margin-top: 7
-        color: #c0c0c0
+        color: #dac7a2
 
       Label
         id: soul
@@ -385,7 +385,7 @@ PhantomMiniWindow
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
         margin-bottom: -1
-        color: #c0c0c0
+        color: #dac7a2
 
     TopToggleButton
       id: standPosture

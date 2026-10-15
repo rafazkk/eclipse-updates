@@ -1,6 +1,6 @@
 SpellListWindow < UIMiniWindow
   font: verdana-11px-antialised
-  color: #959595
+  color: #dac7a2
   icon-rect: 4 4 12 12
   width: 175
   height: 365
@@ -246,7 +246,7 @@ SpellListWindow < UIMiniWindow
       anchors.top: detailsLabel.bottom
       anchors.horizontalCenter: parent.horizontalCenter
       margin-top: 6
-      color: #C0C0C0
+      color: #dac7a2
       text-offset: 0 0
       text-align: center
       change-cursor-image: false

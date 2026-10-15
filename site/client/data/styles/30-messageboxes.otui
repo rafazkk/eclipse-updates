@@ -1,6 +1,6 @@
 MessageBoxBodyCip < UILabel
   font: Verdana Bold-11px-new
-  color: #c0c0c0ff
+  color: #dac7a2ff
 
 MessageBoxWindow < UIMessageBox
   icon-rect: 4 4 16 16
@@ -34,7 +34,7 @@ MessageBoxWindow < UIMessageBox
     anchors.bottom: parent.bottom
     anchors.left: parent.left
     anchors.right: parent.right
-    color: #909090
+    color: #dac7a2
     text-offset: 0 1
 
   MessageBoxBodyCip
@@ -284,7 +284,7 @@ MessageBoxShopWindow < UIMessageBox
   Label
     id: title
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     text-offset: 0 2
     text-align: top
     anchors.top: parent.top
@@ -310,7 +310,7 @@ MessageBoxShopWindow < UIMessageBox
     anchors.top: content.bottom
     margin-top: 11
     margin-left: 16
-    background-color: #404040
+    background-color: #100a1d
 
   OnePixelDownFrame
     id: detailsPanel
@@ -321,7 +321,7 @@ MessageBoxShopWindow < UIMessageBox
     margin-top: 11
     margin-left: 90
     margin-right: 16
-    background-color: #404040
+    background-color: #100a1d
 
     UIWidget
       id: priceRow
@@ -339,7 +339,7 @@ MessageBoxShopWindow < UIMessageBox
         id: priceLabel
         height: 14
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
         text-align: leftCenter
         !text: tr('Price:')
@@ -348,7 +348,7 @@ MessageBoxShopWindow < UIMessageBox
         id: priceAmount
         height: 14
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
         text-align: leftCenter
 
@@ -367,7 +367,7 @@ MessageBoxShopWindow < UIMessageBox
       margin-left: 5
       margin-right: 4
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       text-auto-resize: true
       text-align: topLeft
@@ -384,7 +384,7 @@ MessageBoxShopWindow < UIMessageBox
     QtCheckBox
       id: doNotShowAgain
       !text: tr('Do not show this dialog again!')
-      color: #c0c0c0
+      color: #dac7a2
       text-offset: 16  0
       anchors.left: parent.left
       anchors.right: parent.right

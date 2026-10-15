@@ -4,8 +4,8 @@ RVListLabel < Label
   focusable: true
 
   $focus:
-    background-color: #ffffff22
-    color: #ffffff
+    background-color: #2b193f22
+    color: #f1e6d0
 
 RVLabel < Label
   anchors.left: parent.left

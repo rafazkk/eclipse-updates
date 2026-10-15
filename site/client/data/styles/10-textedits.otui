@@ -6,12 +6,12 @@ TextEdit < UITextEdit
   opacity: 1
   padding: 0 0 0 4
   padding-bottom: 1
-  image-source: /images/ui/textedit 
+  image-source: /images/ui/textedit
   image-border: 1
   selection-color: #ffffffff
-  selection-background-color: #808080 
+  selection-background-color: #563276
   $disabled:
-    color: #c0c0c0ff
+    color: #dac7a2ff
     opacity: 0.5
 
 PasswordTextEdit < TextEdit
@@ -22,7 +22,7 @@ MultilineTextEdit < TextEdit
 
 TextQtEdit < UITextEdit
   font: $var-cip-font
-  color: #c0c0c0ff
+  color: #dac7a2ff
   size: 97 20
   text-offset: 0 4
   opacity: 1
@@ -31,7 +31,7 @@ TextQtEdit < UITextEdit
   image-source: /images/ui/textedit
   image-border: 1
   selection-color: #ffffffff
-  selection-background-color: #808080ff
+  selection-background-color: #563276ff
   change-cursor-image: false
 
 TextQtHideToggleBox < TextQtEdit
@@ -49,6 +49,6 @@ HiddenTextQtEdit < TextQtEdit
 HiddenTextQtToggleEdit < HiddenTextQtEdit
 
 TextEditNew < TextEdit
-  color: #C0C0C0
+  color: #dac7a2
   padding: 0
   padding-left: 2

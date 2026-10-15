@@ -21,7 +21,7 @@ WorldTransferReqRow < UIWidget
     anchors.verticalCenter: parent.verticalCenter
     margin-left: 5
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-align: left
     focusable: false
     phantom: true
@@ -32,7 +32,7 @@ StoreWindow
   padding: 3
   visible: false
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
 
   Panel
@@ -48,7 +48,7 @@ StoreWindow
       margin-top: 26
       margin-left: 12
       font: $var-cip-font-new
-      color: #e0e0e0
+      color: #dac7a2
       text-align: left
       text-auto-resize: true
 
@@ -61,7 +61,7 @@ StoreWindow
       margin-left: 12
       margin-right: 8
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       !text: tr('The following conditions must be met before you can purchase a Character World Transfer.')
       text-wrap: true
       text-auto-resize: true
@@ -89,7 +89,7 @@ StoreWindow
       margin-left: 12
       margin-right: 8
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       text-auto-resize: true
       text-align: left
@@ -101,7 +101,7 @@ StoreWindow
       margin-top: 20
       margin-left: 12
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       !text: tr('Target world:')
       text-auto-resize: true
 
@@ -114,7 +114,7 @@ StoreWindow
       width: 309
       height: 20
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
     UIWidget
       id: infoIcon
@@ -142,7 +142,7 @@ StoreWindow
       !text: tr('Cancel')
       size: 64 20
       text-offset: 0 1
-      color: #ffffff
+      color: #f1e6d0
 
     CipsoftButton
       id: btnNext
@@ -152,16 +152,16 @@ StoreWindow
       !text: tr('Next')
       size: 64 20
       text-offset: 0 1
-      color: #ffffff
+      color: #f1e6d0
       enabled: false
 
       $disabled:
-        color: #c0c0c0
+        color: #dac7a2
         opacity: 0.8
         change-cursor-image: false
 
       $hover !disabled:
-        color: #ffffff
+        color: #f1e6d0
 
   Panel
     id: step2Panel
@@ -177,7 +177,7 @@ StoreWindow
       margin-top: 26
       margin-left: 12
       font: $var-cip-font-new
-      color: #e0e0e0
+      color: #dac7a2
       text-align: left
       text-auto-resize: true
 
@@ -189,7 +189,7 @@ StoreWindow
       margin-top: 11
       margin-left: 12
       font: $var-cip-font-new
-      color: #e0e0e0
+      color: #dac7a2
       text-align: left
       text-auto-resize: true
 
@@ -201,7 +201,7 @@ StoreWindow
       margin-left: 12
       margin-right: 12
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       !text: tr('Please read the following notes before purchasing the Character World Transfer:')
       text-wrap: true
       text-auto-resize: true
@@ -216,7 +216,7 @@ StoreWindow
       height: 18
       width: 260
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       !text: tr('I understand and wish to proceed')
       text-offset: 16 -1
 
@@ -243,7 +243,7 @@ StoreWindow
         margin-left: 4
         margin-right: 4
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-wrap: true
         text-auto-resize: true
         !text: tr('\149 If you are a member of a guild, you will be removed from the guild once your character has been transferred. Make sure to pick up all your items from the guild hall or they will remain with the guild.')
@@ -254,7 +254,7 @@ StoreWindow
         margin-left: 4
         margin-right: 4
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-wrap: true
         text-auto-resize: true
         !text: tr('\149 In case you are married, you will be divorced as soon as your character has been transferred.')
@@ -265,7 +265,7 @@ StoreWindow
         margin-left: 4
         margin-right: 4
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-wrap: true
         text-auto-resize: true
         !text: tr('\149 A pending bid on a house or a pending house transfer will be cancelled.')
@@ -276,7 +276,7 @@ StoreWindow
         margin-left: 4
         margin-right: 4
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-wrap: true
         text-auto-resize: true
         !text: tr('\149 All of your open Market offers will be cancelled. The items will be sent to your Inbox.')
@@ -287,7 +287,7 @@ StoreWindow
         margin-left: 4
         margin-right: 4
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-wrap: true
         text-auto-resize: true
         !text: tr('\149 Make sure to select a game world located near your own home. Otherwise you might experience connection problems.')
@@ -321,7 +321,7 @@ StoreWindow
       !text: tr('Cancel')
       size: 64 20
       text-offset: 0 1
-      color: #ffffff
+      color: #f1e6d0
 
     CipsoftButton
       id: btnBuyNow
@@ -331,20 +331,20 @@ StoreWindow
       !text: tr('Buy Now')
       size: 64 20
       text-offset: 0 1
-      color: #ffffff
+      color: #f1e6d0
       image-source: /images/ui/button-blue-up
       image-border: 2
       enabled: false
 
       $hover !disabled:
-        color: #ffffff
+        color: #f1e6d0
 
       $pressed:
         image-source: /images/ui/button-blue-down
         text-offset: 1 2
 
       $disabled:
-        color: #c0c0c0
+        color: #dac7a2
         opacity: 0.7
         change-cursor-image: false
 
@@ -356,4 +356,4 @@ StoreWindow
       !text: tr('Back')
       size: 64 20
       text-offset: 0 1
-      color: #ffffff
+      color: #f1e6d0

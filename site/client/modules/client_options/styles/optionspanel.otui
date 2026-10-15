@@ -31,7 +31,7 @@ UIWidget
         !text: tr('Mouse Preset:')
         anchors.left: parent.left
         margin-left: 8
-        color: #c0c0c0ff
+        color: #dac7a2ff
         font: $var-cip-font
         anchors.verticalCenter: parent.verticalCenter
   
@@ -121,7 +121,7 @@ UIWidget
         !text: tr('HUD Style:')
         anchors.left: parent.left
         margin-left: 8
-        color: #c0c0c0ff
+        color: #dac7a2ff
         anchors.verticalCenter: parent.verticalCenter
   
       OptionCheckBox
@@ -165,7 +165,7 @@ UIWidget
         anchors.top: parent.top
         margin-left: 2
         margin-top: 1
-        color: #c0c0c0ff
+        color: #dac7a2ff
   
       OptionCheckBox
         id: bottomBarsAll
@@ -211,7 +211,7 @@ UIWidget
         anchors.top: bottomBarsLabel.bottom
         margin-left: 2
         margin-top: 4
-        color: #707070
+        color: #a295b7
   
       OptionCheckBox
         id: leftBarsAll
@@ -220,7 +220,7 @@ UIWidget
         anchors.top: leftBarsLabel.top
         margin-left: 38
         enabled: false
-        color: #707070
+        color: #a295b7
   
       OptionCheckBox
         id: leftBarsBar1
@@ -229,7 +229,7 @@ UIWidget
         anchors.top: leftBarsLabel.top
         margin-left: 10
         enabled: false
-        color: #707070
+        color: #a295b7
   
       OptionCheckBox
         id: leftBarsBar2
@@ -238,7 +238,7 @@ UIWidget
         anchors.top: leftBarsLabel.top
         margin-left: 10
         enabled: false
-        color: #707070
+        color: #a295b7
   
       OptionCheckBox
         id: leftBarsBar3
@@ -247,7 +247,7 @@ UIWidget
         anchors.top: leftBarsLabel.top
         margin-left: 10
         enabled: false
-        color: #707070
+        color: #a295b7
   
       Label
         id: rightBarsLabel
@@ -256,7 +256,7 @@ UIWidget
         anchors.top: leftBarsLabel.bottom
         margin-left: 2
         margin-top: 2
-        color: #707070
+        color: #a295b7
   
       OptionCheckBox
         id: rightBarsAll
@@ -265,7 +265,7 @@ UIWidget
         anchors.top: rightBarsLabel.top
         margin-left: 32
         enabled: false
-        color: #707070
+        color: #a295b7
   
       OptionCheckBox
         id: rightBarsBar1
@@ -274,7 +274,7 @@ UIWidget
         anchors.top: rightBarsLabel.top
         margin-left: 10
         enabled: false
-        color: #707070
+        color: #a295b7
   
       OptionCheckBox
         id: rightBarsBar2
@@ -283,7 +283,7 @@ UIWidget
         anchors.top: rightBarsLabel.top
         margin-left: 10
         enabled: false
-        color: #707070
+        color: #a295b7
   
       OptionCheckBox
         id: rightBarsBar3
@@ -292,7 +292,7 @@ UIWidget
         anchors.top: rightBarsLabel.top
         margin-left: 10
         enabled: false
-        color: #707070
+        color: #a295b7
   
     UIWidget
       anchors.left: parent.left
@@ -306,7 +306,7 @@ UIWidget
       Label
         !text: tr('Colourise Loot Value:')
         anchors.left: parent.left
-        color: #c0c0c0ff
+        color: #dac7a2ff
         anchors.verticalCenter: parent.verticalCenter
   
       QtComboBox

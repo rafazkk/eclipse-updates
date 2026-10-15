@@ -12,15 +12,15 @@
 &var-cip-font-ttf: verdana-ttf
 
 // Colors
-&var-text-color: #dfdfdf
-&var-text-color-disabled: #dfdfdf88
-&var-text-cip-color: #c0c0c0
-&var-cip-inactive-color: #707070
+&var-text-color: #e7d7b4
+&var-text-color-disabled: #b6a5c488
+&var-text-cip-color: #ded0b8
+&var-cip-inactive-color: #9585a5
 &var-text-cip-color-green: #44ad25
 &var-text-cip-color-green-disabled: #2c4f23
 &var-text-cip-color-white: #f7f7f7
 &var-text-cip-color-highlight: #f4f4f4
-&var-text-cip-color-grey: #909090
+&var-text-cip-color-grey: #b6a5c4
 &var-text-cip-color-orange: #ff9854
 &var-text-cip-color-yellow: #ffda34
 &var-text-cip-color-blue: #3fbbca
@@ -32,7 +32,7 @@
 &var-text-cip-store-sale-disabled: #664f2e
 &var-text-cip-store-timed: #1872c3
 &var-text-cip-store-timed-disabled: #1d3b55
-&var-textlist-selected: #585858
-&var-textlist-even: #414141
-&var-textlist-odd: #484848
+&var-textlist-selected: #51326e
+&var-textlist-even: #1b112b
+&var-textlist-odd: #241734
 &var-progress-red: #c00000

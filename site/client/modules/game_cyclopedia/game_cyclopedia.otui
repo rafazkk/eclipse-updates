@@ -16,13 +16,13 @@ MainWindowHigh
     image-source: /images/game/cyclopedia/background
     image-repeated: true
     border-width-top: 1
-    border-color-top: #141414
+    border-color-top: #765385
     border-width-left: 1
-    border-color-left: #141414
+    border-color-left: #765385
     border-width-bottom: 1
-    border-color-bottom: #747474
+    border-color-bottom: #765385
     border-width-right: 1
-    border-color-right: #747474
+    border-color-right: #765385
 
     UIButton
       id: items
@@ -240,7 +240,7 @@ MainWindowHigh
     !text: tr('Close')
     font: cipsoftFont
     text-offset: -1 1
-    color: #ffffff
+    color: #f1e6d0
     @onClick: toggle()
 
   Button
@@ -252,7 +252,7 @@ MainWindowHigh
     !text: tr('Back')
     font: cipsoftFont
     text-offset: -1 1
-    color: #ffffff
+    color: #f1e6d0
     enabled: false
     @onClick: toggleBack()
 
@@ -265,7 +265,7 @@ MainWindowHigh
     !text: tr('Refresh')
     font: cipsoftFont
     text-offset: -1 1
-    color: #ffffff
+    color: #f1e6d0
     visible: false
     @onClick: modules.game_cyclopedia.Cyclopedia.houseRefresh()
 
@@ -301,7 +301,7 @@ MainWindowHigh
       margin-bottom: -2
       !text: tr('0')
       text-auto-resize: true
-      color: #BDBDBD
+      color: #dac7a2
 
   UIWidget
     id: MajorCharmsBase
@@ -330,7 +330,7 @@ MainWindowHigh
       margin-bottom: -2
       !text: tr('0 / 0')
       text-auto-resize: true
-      color: #BDBDBD
+      color: #dac7a2
 
   UIWidget
     id: MinorCharmsBase
@@ -360,7 +360,7 @@ MainWindowHigh
       margin-bottom: -2
       !text: tr('0 / 0')
       text-auto-resize: true
-      color: #BDBDBD
+      color: #dac7a2
 
   Button
     id: BestiaryTrackerButton
@@ -372,4 +372,4 @@ MainWindowHigh
     font: cipsoftFont
     @onClick: modules.game_cyclopedia.Cyclopedia.toggleBestiaryTracker()
     text-offset: -1 1
-    color: #ffffff
+    color: #f1e6d0

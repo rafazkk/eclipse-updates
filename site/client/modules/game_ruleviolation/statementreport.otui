@@ -1,20 +1,20 @@
 ReportReasonListLabel < Label
   height: 16
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   background-color: alpha
   text-offset: 1 0
   focusable: true
 
   $focus:
-    background-color: #585858
-    color: #f4f4f4
+    background-color: #100a1d
+    color: #f1e6d0
 
 ReportStep2TextEdit < MultilineTextEdit
   image-source: /images/ui/1pixel-down-frame
   image-border: 3
   border-width: 0
-  background-color: #363636
+  background-color: #100a1d
   padding: 5
   padding-right: 19
   text-offset: -1 -1
@@ -28,7 +28,7 @@ ReportStep3LineTextEdit < TextEdit
   image-source: /images/ui/1pixel-down-frame
   image-border: 3
   border-width: 0
-  background-color: #363636
+  background-color: #100a1d
   padding: 0
   padding-top: 1
   padding-left: 3
@@ -38,7 +38,7 @@ ReportReasonDescriptionEdit < MultilineTextEdit
   image-source: /images/ui/1pixel-down-frame
   image-border: 3
   border-width: 0
-  background-color: #363636
+  background-color: #100a1d
   padding: 5
   padding-right: 19
   text-offset: 0 0
@@ -49,7 +49,7 @@ MainWindowHigh
   !text: tr('Report Rule Violation')
   size: 545 455
   font: Verdana-11px-lowspace
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   @onEscape: modules.game_ruleviolation.hidePlayerReportWindow()
 
@@ -64,7 +64,7 @@ MainWindowHigh
     Label
       id: step1Label
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       text-auto-resize: true
       anchors.top: parent.top
@@ -72,7 +72,7 @@ MainWindowHigh
       anchors.right: parent.right
       margin-top: -7
       margin-left: -1
-      !text: tr('Step 1 of 3:\nPlease select the PlayTC rule which is violated.')
+      !text: tr('Step 1 of 3:\nPlease select the Eclipse rule which is violated.')
 
     HorizontalSeparator
       id: step1Separator
@@ -100,7 +100,7 @@ MainWindowHigh
         padding: 0 
         focusable: false
         border-width: 0
-        background-color: #404040
+        background-color: #100a1d
 
       VerticalQtScrollBar
         id: reasonListScrollBar
@@ -118,7 +118,7 @@ MainWindowHigh
       height: 148
       margin-top: 6
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       editable: false
       focusable: false
       vertical-scrollbar: reasonDescriptionScrollBar
@@ -153,7 +153,7 @@ MainWindowHigh
     Label
       id: step2Label
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       text-auto-resize: true
       anchors.top: parent.top
@@ -182,7 +182,7 @@ MainWindowHigh
         id: statementCaption
         !text: tr('Statement:')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: -1 0
         text-wrap: true
         text-auto-resize: true
@@ -197,7 +197,7 @@ MainWindowHigh
         margin-top: 6
         height: 73
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         editable: false
         focusable: false
         vertical-scrollbar: statementScrollBar
@@ -225,7 +225,7 @@ MainWindowHigh
         id: translationCaption
         !text: tr('Please give a translation if you report something that is not in English:')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: -1 0
         text-wrap: true
         text-auto-resize: true
@@ -241,7 +241,7 @@ MainWindowHigh
         margin-top: 6
         height: 74
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         max-length: 300
         vertical-scrollbar: translationScrollBar
 
@@ -260,7 +260,7 @@ MainWindowHigh
         id: translationCounter
         !text: tr('300 characters left')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
         anchors.top: translationText.bottom
         anchors.right: parent.right
@@ -278,7 +278,7 @@ MainWindowHigh
         id: commentCaption
         !text: tr('Please give us more details about your report:')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: -1 0
         text-wrap: true
         text-auto-resize: true
@@ -294,7 +294,7 @@ MainWindowHigh
         margin-top: 6
         height: 73
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         max-length: 300
         vertical-scrollbar: commentScrollBar
 
@@ -323,7 +323,7 @@ MainWindowHigh
       Label
         id: commentCounter
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
         anchors.top: commentText.bottom
         anchors.right: parent.right
@@ -339,7 +339,7 @@ MainWindowHigh
     Label
       id: step3Label
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       text-wrap: true
       text-auto-resize: true
       anchors.top: parent.top
@@ -368,7 +368,7 @@ MainWindowHigh
         id: summaryNameCaption
         !text: tr('Name') .. ':'
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: -1 0
         text-wrap: true
         text-auto-resize: true
@@ -384,7 +384,7 @@ MainWindowHigh
         anchors.right: parent.right
         height: 16
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         editable: false
         focusable: false
 
@@ -400,7 +400,7 @@ MainWindowHigh
         id: summaryReasonCaption
         !text: tr('Reason') .. ':'
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: -1 0
         text-wrap: true
         text-auto-resize: true
@@ -416,7 +416,7 @@ MainWindowHigh
         anchors.right: parent.right
         height: 16
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         editable: false
         focusable: false
 
@@ -431,7 +431,7 @@ MainWindowHigh
         id: summaryStatementCaption
         !text: tr('Statement') .. ':'
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: -1 0
         text-wrap: true
         text-auto-resize: true
@@ -448,7 +448,7 @@ MainWindowHigh
         margin-top: 3
         height: 89
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         editable: false
         focusable: false
         vertical-scrollbar: summaryStatementScrollBar
@@ -475,7 +475,7 @@ MainWindowHigh
         id: summaryTranslationCaption
         !text: tr('Translation') .. ':'
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: -1 0
         text-wrap: true
         text-auto-resize: true
@@ -492,7 +492,7 @@ MainWindowHigh
         margin-top: 3
         height: 89
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         editable: false
         focusable: false
         vertical-scrollbar: summaryTranslationScrollBar
@@ -519,7 +519,7 @@ MainWindowHigh
         id: summaryCommentCaption
         !text: tr('Comment') .. ':'
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: -1 0
         text-wrap: true
         text-auto-resize: true
@@ -536,7 +536,7 @@ MainWindowHigh
         margin-top: 3
         height: 89
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         editable: false
         focusable: false
         vertical-scrollbar: summaryCommentScrollBar

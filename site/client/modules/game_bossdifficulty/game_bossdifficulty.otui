@@ -53,7 +53,7 @@ BossDifficultyConItem < UIWidget
   Label
     id: text
     font: Verdana Bold-11-px-lowspace
-    color: #c0c0c0
+    color: #dac7a2
     fixed-size: true
     text-offset: 0 1
 
@@ -75,7 +75,7 @@ BossDifficultyProItem < UIWidget
   Label
     id: text
     font: Verdana Bold-11-px-lowspace
-    color: #c0c0c0
+    color: #dac7a2
     fixed-size: true
     text-offset: 0 1
 
@@ -88,7 +88,7 @@ BossDifficultyPlayerBox < UIWidget
     anchors.fill: parent
     text-align: center
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-offset: 0 1
 
 BossDifficultyWindow < MainWindowHigh
@@ -123,7 +123,7 @@ BossDifficultyWindow < MainWindowHigh
       anchors.horizontalCenter: parent.horizontalCenter
       margin-top: 2
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-auto-resize: true
 
     UIWidget
@@ -209,8 +209,8 @@ BossDifficultyWindow < MainWindowHigh
       text-align: right
       editable: false
       font: $var-cip-font-new
-      color: #c0c0c0
-      background-color: #363636
+      color: #dac7a2
+      background-color: #100a1d
       border-width: 1
 
     BossDifficultyFirstButton
@@ -267,7 +267,7 @@ BossDifficultyWindow < MainWindowHigh
         anchors.top: parent.top
         anchors.left: parent.left
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
 
       Label
@@ -277,7 +277,7 @@ BossDifficultyWindow < MainWindowHigh
         anchors.left: parent.left
         margin-left: 223
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
 
       Label
@@ -287,7 +287,7 @@ BossDifficultyWindow < MainWindowHigh
         anchors.left: parent.left
         margin-top: 6
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
 
       Label
@@ -297,7 +297,7 @@ BossDifficultyWindow < MainWindowHigh
         anchors.left: parent.left
         margin-left: 223
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
 
       Label
@@ -307,7 +307,7 @@ BossDifficultyWindow < MainWindowHigh
         anchors.left: parent.left
         margin-top: 6
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
 
       Label
@@ -317,7 +317,7 @@ BossDifficultyWindow < MainWindowHigh
         anchors.left: parent.left
         margin-left: 223
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-auto-resize: true
 
   UIWindow

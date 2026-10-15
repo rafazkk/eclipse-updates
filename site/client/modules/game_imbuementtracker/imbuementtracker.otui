@@ -8,10 +8,10 @@ ImbuementTrackerMenuOption < ThickCheckBox
   height: 19
 
   $hover:
-    background-color: #808080
+    background-color: #2b193f
 
   $disabled:
-    color: #c0c0c0ff
+    color: #dac7a2ff
 
 ImbuementTrackerMenu < GamePopupMenu
   id: imbuementTrackerMenu
@@ -116,7 +116,7 @@ ImbuementTracker < MiniWindow
     height: 13
     !text: tr('Imbuements')
     text-offset: 0 -1
-    color: #909090
+    color: #dac7a2
 
   MiniWindowContents
     id: contentsPanel

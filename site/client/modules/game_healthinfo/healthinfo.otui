@@ -31,7 +31,7 @@ PhantomMiniWindow
       font: verdana-11px-monochrome
       width: 44
       text-align: left
-      color: #c0c0c0ff
+      color: #dac7a2ff
       text-offset: 2 1
 
     UIWidget
@@ -82,7 +82,7 @@ PhantomMiniWindow
       font: verdana-11px-monochrome
       width: 44
       text-align: left
-      color: #c0c0c0ff
+      color: #dac7a2ff
       text-offset: 4 1
 
     UIWidget

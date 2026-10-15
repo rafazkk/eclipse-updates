@@ -13,7 +13,7 @@ FloatingInputWindow
     !text: tr('Add VIP Group')
     text-align: center
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     text-offset: 0 1
     anchors.top: parent.top
     anchors.left: parent.left
@@ -25,7 +25,7 @@ FloatingInputWindow
     id: descriptionText
     !text: tr('Please enter a group name:')
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-wrap: true
     text-auto-resize:true
     anchors.top: headerLabel.bottom
@@ -72,7 +72,7 @@ FloatingInputWindow
     !text: tr('Cancel')
     font: cipsoftFont
     size: 43 20
-    color: #ffffff
+    color: #f1e6d0
     @onClick: modules.game_viplist.destroyAddGroupWindow()
 
   Button
@@ -83,5 +83,5 @@ FloatingInputWindow
     !text: tr('Ok')
     font: cipsoftFont
     size: 43 20
-    color: #ffffff
+    color: #f1e6d0
     @onClick: modules.game_viplist.addGroup()

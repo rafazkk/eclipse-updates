@@ -24,7 +24,7 @@ BottomStatsSkillElement < UIWidget
     id: level
     !text: '99999'
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-align: right
     anchors.left: parent.left
     anchors.verticalCenter: parent.verticalCenter
@@ -391,7 +391,7 @@ TopStatsBarParallelOnBottom < UIWidget
             text-align: center
             text-auto-resize: true
             font: $var-cip-font
-            color: #f4f4f4
+            color: #f1e6d0
             text: 0%
             phantom: true
 
@@ -619,7 +619,7 @@ TopStatsBarDefaultOnBottom < UIWidget
             text-align: center
             text-auto-resize: true
             font: $var-cip-font
-            color: #f4f4f4
+            color: #f1e6d0
             text: 0%
             phantom: true
 

@@ -32,7 +32,7 @@ CountWindow < MainWindowHigh
     margin-left: 11
     margin-right: -5
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
     height: 30
     text-align: left
     text-wrap: true

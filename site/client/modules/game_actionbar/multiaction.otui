@@ -3,7 +3,7 @@ MultiActionSubSlot < UIActionSlot
   image-source: /assets/images/game/actionbar/slot-actionbar-empty
   image-size: 34 34
   font: Verdana-8px-outline
-  color: #ffffff
+  color: #f1e6d0
   show-count: false
   always-show-count: false
   focusable: true
@@ -18,7 +18,7 @@ MultiActionSubSlot < UIActionSlot
     phantom: true
     text-auto-resize: true
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
     visible: false
 
   UIWidget
@@ -62,7 +62,7 @@ MultiActionSubSlot < UIActionSlot
     text-align: center
     margin-left: -1
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
 
   Label
     id: spellParameter
@@ -73,7 +73,7 @@ MultiActionSubSlot < UIActionSlot
     text-auto-resize: false
     text-align: right
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
     visible: false
 
   UIWidget

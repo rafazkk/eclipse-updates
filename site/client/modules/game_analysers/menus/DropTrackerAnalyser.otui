@@ -145,7 +145,7 @@ MiniWindow
     font: verdana-11px-monochrome
     height: 13
     !text: tr('Drop Tracker')
-    color: #909090
+    color: #dac7a2
 
   ScrollablePanel
     id: contentsPanel

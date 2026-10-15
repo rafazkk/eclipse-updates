@@ -9,11 +9,11 @@ PopupMenuButton < UIButton
   background-color: alpha
 
   $hover !disabled:
-    background-color: #ffffff36
+    background-color: #2b193f36
     image-clip: 0 40 20 20
 
   $disabled:
-    color: #c0c0c0ff
+    color: #dac7a2ff
 
 PopupMenuShortcutLabel < Label
   font: $var-cip-font
@@ -41,16 +41,16 @@ PopupScrollMenuButton < UIButton
   text-align: left
   font: $var-cip-font
 
-  color: #aaaaaa
+  color: #dac7a2
   background-color: alpha
 
   $hover !disabled:
-    color: #ffffff
-    background-color: #ffffff44
+    color: #f1e6d0
+    background-color: #2b193f44
     image-clip: 0 40 20 20
 
   $disabled:
-    color: #555555
+    color: #a295b7
 
 PopupScrollMenuShortcutLabel < Label
   font: $var-cip-font
@@ -81,10 +81,10 @@ PopupMenuCheckBox < ThickCheckBox
   margin-bottom: 1
 
   $hover:
-    background-color: #ffffff1a
+    background-color: #2b193f1a
 
   $disabled:
-    color: #c0c0c0ff
+    color: #dac7a2ff
 
 GamePopupMenuButton < PopupMenuButton
   font: $var-cip-font-outline

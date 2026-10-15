@@ -10,7 +10,7 @@ OfflineTrainingWindow < MainWindowHigh
     !text: tr('While logged out, you can train')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -22,7 +22,7 @@ OfflineTrainingWindow < MainWindowHigh
     !text: tr('one of these skills using offline')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -34,7 +34,7 @@ OfflineTrainingWindow < MainWindowHigh
     !text: tr('training. Shielding is always')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: prev.bottom
     anchors.left: parent.left
     anchors.right: parent.right
@@ -46,7 +46,7 @@ OfflineTrainingWindow < MainWindowHigh
     !text: tr('trained alongside.')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: prev.bottom
     anchors.left: parent.left
     anchors.right: parent.right

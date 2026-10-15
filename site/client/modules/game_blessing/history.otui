@@ -1,7 +1,7 @@
 MainWindow
   id: historyWindow
   !text: tr('Blessings')
-  color: #909090
+  color: #dac7a2
   text-offset: 0 0
   size: 615 427
   @onEscape: modules.game_blessing.closeBlessing()
@@ -13,7 +13,7 @@ MainWindow
     size: 583 340
     margin-top: -6
     !text: tr('History')
-    color: #909090
+    color: #dac7a2
     text-offset: 270 2
     image-source: /images/ui/t2pixel-up-frame-borderimage
     image-border: 3
@@ -23,7 +23,7 @@ MainWindow
       anchors.fill: parent
       margin: 27 10 10 10
       vertical-scrollbar: historyListScroll
-      background-color: #404040
+      background-color: #100a1d
 
     UIWidget
       size: 549 17
@@ -31,7 +31,7 @@ MainWindow
       anchors.left: historyList.left
       margin-left: 1
       border-width-bottom: 1
-      border-color-bottom: #757575
+      border-color-bottom: #765385
 
     UIWidget
       id: dateButton
@@ -47,10 +47,10 @@ MainWindow
       margin-left: 1
       border-width-bottom: 1
       border-color-bottom: #292a29
-      background-color: #363636
+      background-color: #100a1d
       opacity: 1.0
       $pressed:
-        color: #dfdfdf88
+        color: #dac7a288
         opacity: 0.8
 
     UIWidget
@@ -74,10 +74,10 @@ MainWindow
       margin-left: 2
       border-width-bottom: 1
       border-color-bottom: #292a29
-      background-color: #363636
+      background-color: #100a1d
       opacity: 1.0
       $pressed:
-        color: #dfdfdf88
+        color: #dac7a288
         opacity: 0.8
 
     VerticalScrollBar

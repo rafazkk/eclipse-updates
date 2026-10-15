@@ -23,7 +23,7 @@ FusionToggleQtButton < QtButton
     image-clip: 0 46 22 23
     text-offset: 1 1
   $on $disabled:
-    color: #dfdfdf88
+    color: #dac7a288
     opacity: 0.8
 
 FusionHelpIcon < UIWidget
@@ -62,11 +62,11 @@ FusionWindow < Panel
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
-      background-color: #404040
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
+      background-color: #100a1d
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 22
@@ -167,7 +167,7 @@ FusionWindow < Panel
     text-align: top
     text-offset: 2 2
     id: previewPanel2
-    color: #dfdfdf
+    color: #dac7a2
     image-source: /images/ui/popupwindow-sem-borda-interna
     color: $var-text-color-disabled
     font: verdana-11px-monochrome
@@ -188,11 +188,11 @@ FusionWindow < Panel
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
-      background-color: #404040
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
+      background-color: #100a1d
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 22
@@ -400,7 +400,7 @@ FusionWindow < Panel
         id: improveButton
         size: 110 21
         text: Improve to 65%
-        color: #ffffff
+        color: #f1e6d0
         anchors.top: successRate.bottom
         anchors.left: parent.left
         margin-top: 0
@@ -470,7 +470,7 @@ FusionWindow < Panel
         size: 110 21
         text: Reduce to 50%
         text-offset: 0 1
-        color: #ffffff
+        color: #f1e6d0
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         margin-left: -1
@@ -666,7 +666,7 @@ FusionWindow < Panel
           id: fusionHelpText1
           !text: tr('The aim of a fusion is to increase the tier of an item.')
           font: $var-cip-font-lowspace
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
         FusionHelpIcon
@@ -688,7 +688,7 @@ FusionWindow < Panel
           id: fusionHelpText2
           !text: tr('The classification of an item defines its maximum tier.')
           font: $var-cip-font-lowspace
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
         FusionHelpIcon
@@ -710,7 +710,7 @@ FusionWindow < Panel
           id: fusionHelpText3
           !text: tr('If two items are fused, you can spend exaltation cores.')
           font: $var-cip-font-lowspace
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
         FusionHelpIcon
@@ -732,7 +732,7 @@ FusionWindow < Panel
           id: fusionHelpText4
           !text: tr('Items with a tier grant unique bonuses.')
           font: $var-cip-font-lowspace
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
         FusionHelpIcon
@@ -761,7 +761,7 @@ FusionWindow < Panel
           id: convergenceHelpText1
           !text: tr('The goal of a Convergence fusion is to increase the tier of an item.')
           font: $var-cip-font-lowspace
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
         FusionHelpIcon
@@ -783,7 +783,7 @@ FusionWindow < Panel
           id: convergenceHelpText2
           !text: tr('A Convergence fusion has a 100%% success rate.')
           font: $var-cip-font-lowspace
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
       Panel
@@ -801,7 +801,7 @@ FusionWindow < Panel
           id: convergenceHelpText3
           !text: tr('There are no bonus effects from a Convergence fusion.')
           font: $var-cip-font-lowspace
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
       Panel
@@ -819,7 +819,7 @@ FusionWindow < Panel
           id: convergenceHelpText4
           !text: tr('Only items with classification 4 can be fused using Convergence.')
           font: $var-cip-font-lowspace
-          color: #c0c0c0
+          color: #dac7a2
           text-auto-resize: true
 
     Label
@@ -830,5 +830,5 @@ FusionWindow < Panel
       visible: false
       text-wrap: true
       font: $var-cip-font-lowspace
-      color: #c0c0c0
+      color: #dac7a2
 

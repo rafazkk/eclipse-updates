@@ -163,7 +163,7 @@ TradeWindow < MiniWindow
   Button
     id: acceptButton
     !text: tr('Accept')
-    color: #c0c0c0
+    color: #dac7a2
     size: 43 20
     anchors.top: botSeparator.bottom
     anchors.right: rejectButton.left
@@ -175,7 +175,7 @@ TradeWindow < MiniWindow
   Button
     id: rejectButton
     !text: tr('Reject')
-    color: #c0c0c0
+    color: #dac7a2
     size: 43 20
     anchors.top: botSeparator.bottom
     anchors.right: parent.right

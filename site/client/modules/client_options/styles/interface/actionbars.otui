@@ -13,7 +13,7 @@ UIWidget
       anchors.left: parent.left
       anchors.top: parent.top
       margin-top: 5
-      color: #c0c0c0ff
+      color: #dac7a2ff
 
     OptionCheckBox
       id: allActionBar13
@@ -54,7 +54,7 @@ UIWidget
       anchors.left: parent.left
       anchors.top: prev.bottom
       margin-top: 5
-      color: #c0c0c0ff
+      color: #dac7a2ff
 
     OptionCheckBox
       id: allActionBar46
@@ -91,7 +91,7 @@ UIWidget
       anchors.left: parent.left
       anchors.top: leftActionLabel.bottom
       margin-top: 5
-      color: #c0c0c0ff
+      color: #dac7a2ff
 
     OptionCheckBox
       id: allActionBar79
@@ -209,7 +209,7 @@ UIWidget
       anchors.top: parent.top
       margin-left: 10
       margin-top: 5
-      color: #c0c0c0ff
+      color: #dac7a2ff
 
     UIWidget
       id: toolTipWidgetClearBottom
@@ -257,7 +257,7 @@ UIWidget
       anchors.top: clearBottomBar1.bottom
       margin-left: 10
       margin-top: 5
-      color: #c0c0c0ff
+      color: #dac7a2ff
 
     QtButton
       id: clearLeftBar1
@@ -295,7 +295,7 @@ UIWidget
       anchors.top: clearLeftBar1.bottom
       margin-left: 10
       margin-top: 5
-      color: #c0c0c0ff
+      color: #dac7a2ff
 
     QtButton
       id: clearRightBar1

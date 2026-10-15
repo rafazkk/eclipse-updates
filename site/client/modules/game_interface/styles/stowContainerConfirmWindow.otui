@@ -77,7 +77,7 @@ StowContainerConfirmModal < UIMessageBox
         id: doNotShowAgain
         !text: tr('Do not show this dialog again!')
         font: $var-cip-font-lowspace
-        color: #c0c0c0
+        color: #dac7a2
         text-offset: 16 1
         anchors.left: parent.left
         anchors.right: parent.right

@@ -16,7 +16,7 @@ NewMainWindow
       anchors.top: parent.top
       anchors.left: parent.left
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       font: Verdana Bold-11px
       margin-top: -1
       margin-left: -1
@@ -50,7 +50,7 @@ NewMainWindow
       !text: tr('Use empty Wheel of Destiny')
       font: Verdana Bold-11px
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       text-offet: -6 0
       anchors.top: prev.bottom
       anchors.left: parent.left
@@ -65,7 +65,7 @@ NewMainWindow
       !text: tr("Copy preset 'Default-Preset'")
       font: Verdana Bold-11px
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       text-offet: -6 0
       anchors.top: prev.bottom
       anchors.left: parent.left
@@ -80,7 +80,7 @@ NewMainWindow
       !text: tr('Import')
       font: Verdana Bold-11px
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: prev.bottom
       anchors.left: parent.left
       change-cursor-image: false

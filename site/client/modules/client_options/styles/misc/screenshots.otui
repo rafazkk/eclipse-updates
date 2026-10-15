@@ -58,7 +58,7 @@ UIWidget
       margin-top: 5
       margin-left: 18
       font: $var-cip-font
-      color: #b9b9b9ff
+      color: #dac7a2ff
       text-align: left
 
     UIWidget

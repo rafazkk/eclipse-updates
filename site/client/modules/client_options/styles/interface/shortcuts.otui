@@ -19,7 +19,7 @@ UIWidget
       anchors.left: parent.left
       anchors.top: parent.top
       margin-top: 1 
-      color: #909090
+      color: #dac7a2
       font: $var-cip-font-new
 
     TextList
@@ -37,7 +37,7 @@ UIWidget
       image-source: /images/ui/1pixel-down-frame
       image-border: 3
       border-width: 0
-      background-color: #404040
+      background-color: #100a1d
 
     VerticalQtScrollBar
       id: displayedButtonsScrollBar
@@ -115,7 +115,7 @@ UIWidget
       anchors.left: parent.left
       anchors.top: parent.top
       margin-top: 1
-      color: #909090
+      color: #dac7a2
       font: $var-cip-font-new
 
     TextList
@@ -134,7 +134,7 @@ UIWidget
       image-source: /images/ui/1pixel-down-frame
       image-border: 3
       border-width: 0
-      background-color: #404040
+      background-color: #100a1d
 
     VerticalQtScrollBar
       id: availableButtonsScrollBar
@@ -166,7 +166,7 @@ UIWidget
     id: resetShortcutsBtn
     size: 45 21
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     !text: tr('Reset')
     anchors.right: parent.right
     anchors.bottom: parent.bottom

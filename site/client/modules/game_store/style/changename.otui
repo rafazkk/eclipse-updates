@@ -1,10 +1,10 @@
 ChangeNameTitle < Label
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
 
 ChangeNameLabel < Label
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
 
 StoreWindow
   id: changeNameWindow
@@ -13,7 +13,7 @@ StoreWindow
   visible: false
   !text: tr('Enter New Character Name')
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
 
   ChangeNameLabel
@@ -32,7 +32,7 @@ StoreWindow
     id: transferPointsText
     height: 16
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: descriptionText.bottom
     anchors.left: parent.left
     anchors.right: parent.right
@@ -58,7 +58,7 @@ StoreWindow
     !text: tr('Cancel')
     size: 43 20
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
 
   CipsoftButton
     id: buttonOk
@@ -68,13 +68,13 @@ StoreWindow
     !text: tr('Ok')
     size: 43 20
     text-offset: 0 1
-    color: #ffffff
+    color: #f1e6d0
     enabled: false
 
     $disabled:
-      color: #c0c0c0
+      color: #dac7a2
       opacity: 0.8
       change-cursor-image: false
 
     $hover !disabled:
-      color: #ffffff
+      color: #f1e6d0

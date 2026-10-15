@@ -7,7 +7,7 @@ Item < UIItem
   color: white
 
   $disabled:
-    color: #646464
+    color: #a295b7
 
   UIWidget
     id: quickloot
@@ -28,7 +28,7 @@ Item < UIItem
     phantom: true
     margin-bottom: -2
     font: "verdana-11px-rounded"
-    color: #bfbfbf
+    color: #dac7a2
 
   Label
     id: charges
@@ -38,7 +38,7 @@ Item < UIItem
     text-auto-resize: true
     margin-bottom: -2
     font: "verdana-11px-rounded"
-    color: #bfbfbf
+    color: #dac7a2
 
   Label
     id: charges2
@@ -107,7 +107,7 @@ ContainerItemSlot < UIWidget
     color: white
 
     $disabled:
-      color: #646464
+      color: #a295b7
 
   UIWidget
     id: tier
@@ -128,7 +128,7 @@ ContainerItemSlot < UIWidget
     anchors.bottom: item.bottom
     anchors.right: item.right
     text-align: right
-    color: #bfbfbf
+    color: #dac7a2
     font: $var-cip-font-outline
     text-auto-resize: false
     !text: tr('')
@@ -168,7 +168,7 @@ ContainerItemSlot < UIWidget
     phantom: true
     margin-bottom: -2
     font: verdana-11px-rounded
-    color: #bfbfbf
+    color: #dac7a2
 
   Label
     id: charges
@@ -178,7 +178,7 @@ ContainerItemSlot < UIWidget
     text-auto-resize: true
     margin-bottom: -2
     font: verdana-11px-rounded
-    color: #bfbfbf
+    color: #dac7a2
 
 Item1Px < UIItem
   size: 34 34
@@ -189,7 +189,7 @@ Item1Px < UIItem
   color: white
 
   $disabled:
-    color: #646464
+    color: #a295b7
 
   UIWidget
     id: tier
@@ -411,7 +411,7 @@ MainInventoryItem < UIWidget
       phantom: true
       margin-bottom: -2
       font: "verdana-11px-rounded"
-      color: #bfbfbf
+      color: #dac7a2
 
     Label
       id: charges
@@ -421,7 +421,7 @@ MainInventoryItem < UIWidget
       text-auto-resize: true
       margin-bottom: -2
       font: "verdana-11px-rounded"
-      color: #bfbfbf
+      color: #dac7a2
 
     UIWidget
       id: tier

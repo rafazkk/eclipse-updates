@@ -1,6 +1,6 @@
 CyclopediaMapAreaLabel < Label
   font: Verdana Bold-11px-outline
-  color: #8f8f8f
+  color: #dac7a2
   text-auto-resize: true
   text-align: center
   phantom: true
@@ -42,7 +42,7 @@ UIWidget
           fixed-size: true
           image-source: /images/ui/t2pixel-up-frame-borderimage
           image-border: 20
-          color: #929292
+          color: #dac7a2
           text-offset: 0 2
           text-align: top
           !text: tr('Display')
@@ -68,7 +68,7 @@ UIWidget
             margin-left: 7
             !text: tr('Filter Marks')
             font: $var-cip-font-new
-            color: #c0c0c0
+            color: #dac7a2
             text-align: center
 
           UIWidget
@@ -260,7 +260,7 @@ UIWidget
               margin-bottom: 4
               margin-left: 5
               font: $var-cip-font-new
-              color: #c0c0c0
+              color: #dac7a2
               text-align: left
               text-offset: 15 0
               !text: tr('Show All')
@@ -275,7 +275,7 @@ UIWidget
             margin-left: 7
             !text: tr('Views')
             font: $var-cip-font-new
-            color: #c0c0c0
+            color: #dac7a2
             text-align: center
 
           UIWidget
@@ -295,7 +295,7 @@ UIWidget
               margin-left: 5
               !text: tr('Surface View')
               font: $var-cip-font-new
-              color: #c0c0c0
+              color: #dac7a2
               text-offset: 15 0
               text-auto-resize: true
               checked: false
@@ -309,7 +309,7 @@ UIWidget
               margin-top: 6
               !text: tr('Map View')
               font: $var-cip-font-new
-              color: #c0c0c0
+              color: #dac7a2
               text-offset: 15 0
               text-auto-resize: true
               checked: true
@@ -324,7 +324,7 @@ UIWidget
               margin-top: 6
               !text: tr('Level Separator')
               font: $var-cip-font-new
-              color: #707070
+              color: #a295b7
               text-align: left
               text-auto-resize: true
 
@@ -351,7 +351,7 @@ UIWidget
           fixed-size: true
           image-source: /images/ui/t2pixel-up-frame-borderimage
           image-border: 20
-          color: #929292
+          color: #dac7a2
           text-offset: 0 2
           text-align: top
           !text: tr('Navigation')
@@ -562,7 +562,7 @@ UIWidget
           visible: false
           image-source: /images/ui/t2pixel-up-frame-borderimage
           image-border: 20
-          color: #929292
+          color: #dac7a2
           text-offset: 0 2
           text-align: top
           font: verdana-11px-monochrome
@@ -588,7 +588,7 @@ UIWidget
             margin-right: 7
             height: 14
             font: $var-cip-font-new
-            color: #c0c0c0
+            color: #dac7a2
             text-align: center
 
           UIWidget
@@ -608,7 +608,7 @@ UIWidget
               anchors.fill: parent
               !text: tr('0%%')
               font: $var-cip-font-new
-              color: #c0c0c0
+              color: #dac7a2
               text-align: center
 
           Label
@@ -622,7 +622,7 @@ UIWidget
             height: 28
             !text: tr('Improved Respawn\nRate')
             font: $var-cip-font-new
-            color: #c0c0c0
+            color: #dac7a2
             text-align: center
 
           UIWidget
@@ -640,7 +640,7 @@ UIWidget
               anchors.fill: parent
               !text: tr('0')
               font: $var-cip-font-new
-              color: #c0c0c0
+              color: #dac7a2
               text-align: center
               text-offset: -5 0
 
@@ -707,7 +707,7 @@ UIWidget
             margin-right: 7
             height: 30
             font: $var-cip-font-new
-            color: #c0c0c0
+            color: #dac7a2
             text-align: center
             visible: false
 
@@ -722,7 +722,7 @@ UIWidget
             height: 16
             !text: tr('Not discoverable.')
             font: $var-cip-font-new
-            color: #c0c0c0
+            color: #dac7a2
             text-align: center
             visible: false
 

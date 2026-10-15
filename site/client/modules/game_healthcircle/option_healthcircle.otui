@@ -77,7 +77,7 @@ UIWidget
       !text: tr('Bar Style:')
       anchors.left: parent.left
       margin-left: 18
-      color: #c0c0c0ff
+      color: #dac7a2ff
       anchors.verticalCenter: parent.verticalCenter
 
     QtComboBox

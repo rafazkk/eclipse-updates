@@ -189,7 +189,7 @@ MainWindow
       margin-top: 1
       text-auto-resize: true
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
  
   Panel
     id: dustBalancePanel
@@ -218,7 +218,7 @@ MainWindow
       margin-top: 1
       text-auto-resize: true
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
   Panel
     id: sliverBalancePanel
@@ -247,7 +247,7 @@ MainWindow
       margin-top: 1
       text-auto-resize: true
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
   Panel
     id: coreBalancePanel
@@ -276,5 +276,5 @@ MainWindow
       margin-top: 1
       text-auto-resize: true 
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 	

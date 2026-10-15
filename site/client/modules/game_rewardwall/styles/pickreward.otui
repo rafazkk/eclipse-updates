@@ -3,14 +3,14 @@ MainWindowHigh
   size: 450 378
   text-offset: 0 2
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   @onEscape: modules.game_rewardwall.destroyPickReward()
   padding: 20
 
   Label
     id: rewardLabel
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
@@ -27,16 +27,16 @@ MainWindowHigh
     size: 418 265
     fixed-size: true
     vertical-scrollbar: rewardListScrollBar
-    background-color: #404040
+    background-color: #100a1d
     padding: 1
     border-width-top: 1
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
 
   VerticalQtScrollBar
     id: rewardListScrollBar
@@ -51,7 +51,7 @@ MainWindowHigh
   Panel
     id: capacity
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.left: parent.left
     anchors.top: rewardList.bottom
     margin-top: 6
@@ -60,7 +60,7 @@ MainWindowHigh
 
   Label
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     id: weight
     anchors.right: parent.right
     anchors.top: rewardList.bottom

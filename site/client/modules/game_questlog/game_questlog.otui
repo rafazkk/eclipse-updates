@@ -16,7 +16,7 @@ TextListQuestLog < Panel
     padding: 0
     font: $var-cip-font-new
     focusable: true
-    background-color: #404040
+    background-color: #100a1d
     auto-focus: none
     border-width: 0
 
@@ -45,7 +45,7 @@ MultiLineQuestLog < Panel
     padding: 5 20 5 5
     focusable: false
     text-wrap: true
-    background-color: #363636
+    background-color: #100a1d
     border-width: 0
 
   VerticalQtScrollBar
@@ -84,7 +84,7 @@ TextEditQuestLog < Panel
 QuestLogLabel < UIWidget
   height: 16
   font: $var-cip-font-new
-  color: #C0C0C0
+  color: #dac7a2
   text-align: left
   text-offset: 15 -1
   focusable: true
@@ -92,7 +92,7 @@ QuestLogLabel < UIWidget
   icon-offset: 1 0
 
   $checked:
-    color: #f4f4f4
+    color: #f1e6d0
 
   CheckBoxButton
     id: iconShow
@@ -141,7 +141,7 @@ QuestLogTracker < MiniWindow
     margin-right: 50
     font: verdana-11px-monochrome
     height: 13
-    color: #9d9d9dff
+    color: #dac7a2ff
 
   UIButton
     id: menuButton
@@ -205,10 +205,10 @@ ButtonTrackerMenuOption < UIButton
   padding: 3 6
 
   $hover:
-    background-color: #ffffff1a
+    background-color: #2b193f1a
 
   $disabled:
-    color: #c0c0c0ff
+    color: #dac7a2ff
 
 QuestTrackerLabel < Panel
   height: 20
@@ -224,12 +224,12 @@ QuestTrackerLabel < Panel
     text-align: left
     text-wrap: true
     text-auto-resize: true
-    color: #cccccc
+    color: #dac7a2
     &onMousePress: modules.game_questlog.onQuestTrackerDescriptionClick
 
     $hover:
-      color: #ffffff
-      background-color: #ffffff11
+      color: #f1e6d0
+      background-color: #2b193f11
   HorizontalSeparator
     margin-top: 3
 
@@ -247,7 +247,7 @@ QuestLogSidePanel < Panel
   text-align: top
   padding: 7
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   focusable: false
 
 MainWindowHigh
@@ -259,7 +259,7 @@ MainWindowHigh
   image-border-bottom: 6
   text-offset: 0 2
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   @onEscape: modules.game_questlog.questLogController:close()
 
   QuestLogSidePanel
@@ -292,7 +292,7 @@ MainWindowHigh
         id: checkboxShowComplete
         !text: tr('Show completed')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         width: 115
@@ -303,7 +303,7 @@ MainWindowHigh
       Label
         id: lblCompleteNumber
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text: 0
         anchors.top: parent.top
         anchors.right: parent.right
@@ -315,7 +315,7 @@ MainWindowHigh
       Label
         !text: tr('Quests completed:')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: checkboxShowComplete.right
         anchors.right: lblCompleteNumber.left
@@ -327,7 +327,7 @@ MainWindowHigh
         id: checkboxShowShidden
         !text: tr('Show hidden')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: checkboxShowComplete.bottom
         anchors.left: parent.left
         margin-top: 5
@@ -338,7 +338,7 @@ MainWindowHigh
       Label
         id: lblHiddenNumber
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text: 0
         anchors.top: checkboxShowShidden.top
         anchors.right: parent.right
@@ -350,7 +350,7 @@ MainWindowHigh
       Label
         !text: tr('Quests hidden:')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: checkboxShowShidden.top
         anchors.left: checkboxShowShidden.right
         anchors.right: lblHiddenNumber.left
@@ -381,7 +381,7 @@ MainWindowHigh
     QtCheckBox
       id: checkboxShowInQuestTracker
       !text: tr('Show in quest tracker')
-      color: #c0c0c0
+      color: #dac7a2
       margin-left: -2
       margin-top: -2
       text-offset: 16 0
@@ -396,7 +396,7 @@ MainWindowHigh
     id: trackerButton
     size: 86 20
     !text: tr('Quest Tracker')
-    color: #C0C0C0
+    color: #dac7a2
     text-offset: 0 0
     text-align: center
     change-cursor-image: false
@@ -408,7 +408,7 @@ MainWindowHigh
     id: closeButton
     size: 43 20
     !text: tr('Close')
-    color: #C0C0C0
+    color: #dac7a2
     text-offset: 0 0
     text-align: center
     change-cursor-image: false

@@ -1,7 +1,7 @@
 MainWindowHigh
   !text: tr('Assign Text')
   text-offset: 0 1
-  color: #909090
+  color: #dac7a2
   size: 275 148
   margin-top: -1
 
@@ -15,7 +15,7 @@ MainWindowHigh
     anchors.top: parent.top
     anchors.left: parent.left
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
   TextEdit
     id: textToSendTextEdit
@@ -46,7 +46,7 @@ MainWindowHigh
       @onSetup: self:setChecked(true)
       text-offset: 15 -1
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
   HorizontalSeparator
     anchors.top: prev.bottom

@@ -1,14 +1,14 @@
 BugReportListLabel < Label
   height: 16
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   background-color: alpha
   text-offset: 1 0
   focusable: true
 
   $focus:
-    background-color: #585858
-    color: #f4f4f4
+    background-color: #100a1d
+    color: #f1e6d0
 
 BugReportWindow < MainWindowHigh
   !text: tr('Reporting')
@@ -22,7 +22,7 @@ BugReportWindow < MainWindowHigh
     margin-left:
     font: Verdana-11px-lowspace
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     !text: tr('Please use this dialog only to report bugs. Do not report rule violations here!')
     text-offset: 0 0
     text-wrap: true
@@ -42,7 +42,7 @@ BugReportWindow < MainWindowHigh
     image-source: /images/ui/1pixel-down-frame
     image-border: 3
     border-width: 0
-    background-color: #404040
+    background-color: #100a1d
     focusable: false
     vertical-scrollbar: bugCategoryScrollBar
 

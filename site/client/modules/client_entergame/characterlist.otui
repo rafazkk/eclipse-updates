@@ -1,8 +1,7 @@
 EclipseCharacterButton < UIButton
   image-source: /images/eclipse-login/button-secondary
-  image-border: 8
-  image-border-left: 24
-  image-border-right: 24
+  image-border: 0
+  image-repeated: false
   ttf-font: /fonts/ttf/Cinzel-Regular.ttf
   ttf-font-size: 12
   color: #e6d4ec
@@ -10,7 +9,7 @@ EclipseCharacterButton < UIButton
   cursor: pointer
   $hover:
     image-color: #ebc9ffff
-    color: #ffffff
+    color: #f1e6d0
   $pressed:
     image-color: #ab83cbff
 
@@ -73,7 +72,7 @@ CharacterWidget < UIWidget
     margin-left: -2
 
     $on:
-      color: #ffffff
+      color: #f1e6d0
 
   Label
     id: mainCharacter
@@ -145,7 +144,7 @@ CharacterWidget < UIWidget
       end
 
     $on:
-      color: #ffffff
+      color: #f1e6d0
 
   Label
     id: vocation
@@ -163,7 +162,7 @@ CharacterWidget < UIWidget
       end
 
     $on:
-      color: #ffffff
+      color: #f1e6d0
 
   Label
     id: worldName
@@ -182,7 +181,7 @@ CharacterWidget < UIWidget
       self.baseText = '%s'
 
     $on:
-      color: #ffffff
+      color: #f1e6d0
 
   Label
     id: worldPvpType
@@ -200,7 +199,7 @@ CharacterWidget < UIWidget
       self.baseText = '%s'
 
     $on:
-      color: #ffffff
+      color: #f1e6d0
 
 UIWindow
   id: charactersWindow

@@ -17,10 +17,10 @@ WindowHigh
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
     
     OptionCheckBox
       id: checkbox
@@ -33,7 +33,7 @@ WindowHigh
     Label
       !text: tr('Use main container as fallback')
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 3
@@ -60,7 +60,7 @@ WindowHigh
     Label
       !text: tr('Loot')
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 5
@@ -70,7 +70,7 @@ WindowHigh
     Label
       !text: tr('Obtain')
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 5
@@ -88,11 +88,11 @@ WindowHigh
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
-    background-color: #ffffff11
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
+    background-color: #2b193f11
     padding-left: 1
     padding-top: 1
     margin-top: 24
@@ -132,7 +132,7 @@ WindowHigh
       id: filterBoxTitle
       !text: tr('Quick Loot Filter:')
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: parent.top
       anchors.horizontalCenter: parent.horizontalCenter
       margin-left: -8
@@ -145,7 +145,7 @@ WindowHigh
       !text: tr('Skipped Loot')
       font: $var-cip-font
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       text-offset: 15 -1
       anchors.left: parent.left
       anchors.top: prev.bottom
@@ -156,7 +156,7 @@ WindowHigh
       @onClick: QuickLoot.filter(self, self:isChecked())
 
       $hover !disabled:
-        color: #c0c0c0
+        color: #dac7a2
 
     RoundedCheckBox
       id: accepted
@@ -164,7 +164,7 @@ WindowHigh
       !text: tr('Accepted Loot')
       font: $var-cip-font
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       text-offset: 15 -1
       anchors.left: parent.left
       anchors.top: prev.bottom
@@ -175,13 +175,13 @@ WindowHigh
       @onClick: QuickLoot.filter(self, self:isChecked())
 
       $hover !disabled:
-        color: #c0c0c0
+        color: #dac7a2
       
     QtButton
       id: clear
       size: 130 21
       !text: tr('Clear Skipped Loot List')
-      color: #ffffff
+      color: #f1e6d0
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 5
@@ -192,7 +192,7 @@ WindowHigh
       id: add
       size: 130 21
       !text: tr('Add to Skipped Loot List')
-      color: #ffffff
+      color: #f1e6d0
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 5
@@ -219,7 +219,7 @@ WindowHigh
       !text: tr('Select containers for your loot!')
       font: $var-cip-font
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: parent.top
       anchors.left: parent.left
       anchors.right: parent.right
@@ -234,7 +234,7 @@ WindowHigh
       !text: tr('Refine your Quick Looting by setting objects on your skipped loot or accepted loot list!')
       font: $var-cip-font
       text-auto-resize: true
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: filterBoxTitle.bottom
       anchors.left: parent.left
       anchors.right: parent.right
@@ -266,7 +266,7 @@ WindowHigh
         $!on:
           image-clip: 0 74 128 37
         $disabled:
-          color: #dfdfdf88
+          color: #dac7a288
           opacity: 0.8
       Label
         id: label
@@ -317,11 +317,11 @@ WindowHigh
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
-    background-color: #414141
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
+    background-color: #100a1d
     padding-left: 1
     padding-top: 1
     margin-top: 6
@@ -371,7 +371,7 @@ InvalidLootContainerWindow < MainWindowHigh
     id: errorMessage
     !text: tr('You can only select containers you carry in your inventory.')
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     text-align: center
     text-wrap: true
@@ -422,7 +422,7 @@ QuickLootContainerItem < UIItem
   show-count: false
 
   $disabled:
-    color: #646464
+    color: #a295b7
 
 QuickLootItemSlot < UIWidget
   size: 34 34
@@ -453,13 +453,13 @@ QuickLootItemSlot < UIWidget
     color: white
 
 QuicLootIgnoreItem < UIWidget
-  background-color: #484848
+  background-color: #100a1d
   Label
     id: label
     !text: tr('bag')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.verticalCenter: parent.verticalCenter
     anchors.left: parent.left
     margin-left: 2
@@ -478,14 +478,14 @@ QuicLootIgnoreItem < UIWidget
     margin-right: 6
 
 QuicklootBagLabel < UIWidget
-  background-color: #484848
+  background-color: #100a1d
 
   Label
     id: label
     !text: tr('Unassigned Loot')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.verticalCenter: parent.verticalCenter
     anchors.left: parent.left
     margin-left: 5

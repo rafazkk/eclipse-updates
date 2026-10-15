@@ -31,7 +31,7 @@ MainWindowHigh
   !text: tr('Add Shooter')
   size: 288 171
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   padding-top: 0
   padding-right: 0
@@ -63,7 +63,7 @@ MainWindowHigh
       Label
         !text: tr('HP%%:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-top: 3
@@ -75,7 +75,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 42
         size: 50 20
-        color: #c0c0c0
+        color: #dac7a2
         menu-scroll: true
         menu-height: 200
         menu-scroll-step: 50
@@ -86,7 +86,7 @@ MainWindowHigh
       Label
         !text: tr('to')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: prev.right
         margin-left: 8
@@ -99,7 +99,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 8
         size: 50 20
-        color: #c0c0c0
+        color: #dac7a2
         menu-scroll: true
         menu-height: 200
         menu-scroll-step: 50
@@ -120,7 +120,7 @@ MainWindowHigh
       Label
         !text: tr('Use to:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-top: 3
@@ -132,7 +132,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 32
         size: 128 20
-        color: #c0c0c0
+        color: #dac7a2
         @onSetup: |
           self:addOption('Target')
           self:addOption('Yourself')
@@ -151,7 +151,7 @@ MainWindowHigh
       Label
         !text: tr('Creatures:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-top: 3
@@ -163,7 +163,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 6
         size: 50 20
-        color: #c0c0c0
+        color: #dac7a2
         @onSetup: |
           for i = 1, 8 do self:addOption(tostring(i) .. '+') end
           self:setCurrentOption('1+')
@@ -181,7 +181,7 @@ MainWindowHigh
       Label
         !text: tr('Harmony:')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-top: 3
@@ -193,7 +193,7 @@ MainWindowHigh
         anchors.left: prev.right
         margin-left: 13
         size: 50 20
-        color: #c0c0c0
+        color: #dac7a2
         @onSetup: |
           for i = 1, 4 do self:addOption(tostring(i) .. '+') end
           self:addOption('5')
@@ -220,7 +220,7 @@ MainWindowHigh
         id: addShooterAutoTurnLabel
         !text: tr('Auto-turn (beta)')
         font: $var-cip-font
-        color: #c0c0c0
+        color: #dac7a2
         anchors.top: parent.top
         anchors.left: parent.left
         margin-top: 3
@@ -232,7 +232,7 @@ MainWindowHigh
       id: addShooterActionLabel
       !text: tr('Action:')
       font: $var-cip-font
-      color: #c0c0c0
+      color: #dac7a2
       anchors.top: prev.bottom
       anchors.left: parent.left
       margin-top: 16

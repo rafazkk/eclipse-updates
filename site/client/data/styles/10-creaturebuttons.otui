@@ -68,7 +68,7 @@ CreatureButton < UICreatureButton
     anchors.left: skull.right
     anchors.right: iconsMonsterSlot3.left
     anchors.top: creature.top
-    color: #888888
+    color: #a295b7
     margin-left: 2
     margin-right: 4
     phantom: true

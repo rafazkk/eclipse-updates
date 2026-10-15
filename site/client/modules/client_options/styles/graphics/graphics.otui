@@ -6,7 +6,7 @@ UIWidget
     !text: 'Graphics Engine:'
     anchors.left: parent.left
     margin-top: 6
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: parent.top
     font: $var-cip-font-lowspace
 
@@ -32,7 +32,7 @@ UIWidget
   Label
     !text: 'Antialiasing Mode:'
     anchors.left: parent.left
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: graphicsEngine.bottom
     margin-top: 11
     font: $var-cip-font-lowspace
@@ -171,7 +171,7 @@ UIWidget
       anchors.top: backgroundFrameRate.bottom
       margin-top: 7
       text-offset: 17 0
-      color: #c0c0c0
+      color: #dac7a2
       font: $var-cip-font-lowspace
       !text: tr('Current Frame Rate: 0.00 fps')
 

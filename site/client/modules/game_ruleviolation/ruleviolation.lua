@@ -202,8 +202,8 @@ StatementReportReasons = {
 	},
 	{
 		id = 19,
-title = tr("Publishing clearly wrong information about PlayTC"),
-description = tr("Statements can be reported if they are made to publish clearly wrong information about PlayTC or its services.")
+title = tr("Publishing clearly wrong information about Eclipse"),
+description = tr("Statements can be reported if they are made to publish clearly wrong information about Eclipse or its services.")
 	},
 	{
 		id = 17,
@@ -212,8 +212,8 @@ description = tr("Statements can be reported if they are made to publish clearly
 	},
 	{
 		id = 19,
-title = tr("False information to PlayTC"),
-description = tr("Statements can be reported if they prove that a player has intentionally given wrong or misleading information concerning rule violation reports, complaints, bug reports or support requests to PlayTC.")
+title = tr("False information to Eclipse"),
+description = tr("Statements can be reported if they prove that a player has intentionally given wrong or misleading information concerning rule violation reports, complaints, bug reports or support requests to Eclipse.")
 	},
 	{
 		id = 14,
@@ -222,8 +222,8 @@ description = tr("Statements can be reported if they prove that a player has int
 	},
 	{
 		id = 20,
-title = tr("Attacking a PlayTC service"),
-description = tr("Statements can be reported if they prove that a player has or wants to attack, disrupt or damage the operation of PlayTC servers, the game or any other part of PlayTC service.")
+title = tr("Attacking an Eclipse service"),
+description = tr("Statements can be reported if they prove that a player has or wants to attack, disrupt or damage the operation of Eclipse servers, the game or any other part of Eclipse service.")
 	},
 	{
 		id = 20,
@@ -232,8 +232,8 @@ description = tr("Statements can be reported if they prove that a player has or 
 	},
 	{
 		id = 20,
-title = tr("Violating the PlayTC Service Agreement"),
-description = tr("Statements can be reported if they violate the PlayTC Service Agreement or prove that the PlayTC Service Agreement has been violated or is planned to be violated.")
+title = tr("Violating the Eclipse Service Agreement"),
+description = tr("Statements can be reported if they violate the Eclipse Service Agreement or prove that the Eclipse Service Agreement has been violated or is planned to be violated.")
 	},
 	{
 		id = 20,

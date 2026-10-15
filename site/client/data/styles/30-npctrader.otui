@@ -1,6 +1,6 @@
 NpcWindow < UIMiniWindow
   font: verdana-11px-antialised
-  color: #959595
+  color: #dac7a2
   icon-rect: 4 4 12 12
   width: 175
   height: 365
@@ -136,10 +136,10 @@ NpcWindow < UIMiniWindow
       margin-right: 48
       margin-top: 3
       border-width: 1
-      border-color-top: #181818
-      border-color-left: #181818
-      border-color-bottom: #757575
-      border-color-right: #757575
+      border-color-top: #765385
+      border-color-left: #765385
+      border-color-bottom: #765385
+      border-color-right: #765385
     UIItem
       id: currencyItem
       size: 32 32

@@ -16,7 +16,7 @@ VipGroupList < UIWidget
     anchors.top: parent.top
     anchors.left: parent.left
     font: $var-cip-font-new
-    color: #f7f7f7
+    color: #f1e6d0
     text-align: topLeft
     !text: tr('No Group')
     text-auto-resize: true
@@ -65,7 +65,7 @@ MiniWindow
     font: verdana-11px-monochrome
     height: 13
     !text: tr('VIP')
-    color: #909090
+    color: #dac7a2
 
   MiniWindowContents
     padding-left: 5

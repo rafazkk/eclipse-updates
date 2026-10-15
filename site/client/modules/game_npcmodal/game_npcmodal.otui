@@ -30,7 +30,7 @@ NpcTradeQtButton < QtButton
     image-clip: 0 46 22 23
     text-offset: 1 1
   $on $disabled:
-    color: #dfdfdf88
+    color: #dac7a288
     opacity: 0.8
 
 NpcModalWindow < npcWindowBase
@@ -81,10 +81,10 @@ NpcModalWindow < npcWindowBase
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
     margin-bottom: 77
     margin-top: 31
     margin-right: 16
@@ -127,7 +127,7 @@ NpcModalWindow < npcWindowBase
     margin-left: 10
     margin-bottom: -18
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
   UIWidget
@@ -163,7 +163,7 @@ NpcModalWindow < npcWindowBase
     height: 16
     shift-navigation: true
     max-length: 255
-    color: #f4f4f4
+    color: #f1e6d0
     font: $var-cip-font-new
     text-align: left
     padding-left: 5
@@ -176,7 +176,7 @@ NpcModalWindow < npcWindowBase
   UILabel
     id: placeholderLabel
     text: Type here to chat
-    color: #888888
+    color: #a295b7
     font: verdana-11px-antialised
     anchors.left: npcModalChatProxy.left
     anchors.top: npcModalChatProxy.top
@@ -231,7 +231,7 @@ NpcModalWindow < npcWindowBase
     !text: tr('Currency:')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: sep1.top
     anchors.left: sep1.right
     margin-left: 12
@@ -242,7 +242,7 @@ NpcModalWindow < npcWindowBase
     !text: tr('Gold Coin')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: label1.bottom
     anchors.left: sep1.right
     margin-left: 12
@@ -269,7 +269,7 @@ NpcModalWindow < npcWindowBase
     size: 45 17
     !text: tr('Buy')
     tooltip: You are currently buying items from the NPC
-    color: #ffffff
+    color: #f1e6d0
     anchors.top: item.top
     anchors.left: item.right
     margin-left: 2
@@ -280,7 +280,7 @@ NpcModalWindow < npcWindowBase
     size: 45 17
     !text: tr('Sell')
     tooltip: Sell items to the NPC
-    color: #ffffff
+    color: #f1e6d0
     anchors.top: buyButton.bottom
     anchors.left: item.right
     margin-top: 2
@@ -294,7 +294,7 @@ NpcModalWindow < npcWindowBase
     text-offset: 7 1
     tooltip: Sell all items to the NPC
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: sellButton.bottom
     anchors.left: item.right
     margin-top: 3
@@ -331,11 +331,11 @@ NpcModalWindow < npcWindowBase
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
-    background-color: #404040
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
+    background-color: #100a1d
 
     VerticalQtScrollBar
       id: npcTradeItemsScrollBar
@@ -402,7 +402,7 @@ NpcModalWindow < npcWindowBase
     !text: tr('Amount:')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: search.bottom
     anchors.left: sep1.right
     margin-left: 12
@@ -413,7 +413,7 @@ NpcModalWindow < npcWindowBase
     !text: tr('Price:')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: label3.bottom
     anchors.left: sep1.right
     margin-left: 12
@@ -424,7 +424,7 @@ NpcModalWindow < npcWindowBase
     !text: tr('Gold:')
     font: $var-cip-font
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: label4.bottom
     anchors.left: sep1.right
     margin-left: 12
@@ -436,7 +436,7 @@ NpcModalWindow < npcWindowBase
     font: $var-cip-font
     text-auto-resize: true
     text-align: right
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: label3.bottom
     anchors.right: label4.right
     margin-right: -90
@@ -448,7 +448,7 @@ NpcModalWindow < npcWindowBase
     font: $var-cip-font
     text-auto-resize: true
     text-align: right
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: labelPrice.bottom
     anchors.right: label4.right
     margin-right: -90
@@ -457,7 +457,7 @@ NpcModalWindow < npcWindowBase
   TextEdit
     id: userInput
     font: $var-cip-font
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: search.bottom
     anchors.left: label3.right
     margin-left: 3
@@ -488,7 +488,7 @@ NpcModalWindow < npcWindowBase
     size: 45 21
     !text: tr('Buy')
     tooltip: Please select an item you wand to sell
-    color: #ffffff
+    color: #f1e6d0
     anchors.top: item2.bottom
     anchors.left: labelPrice.right
     margin-top: 6
@@ -510,7 +510,7 @@ NpcModalWindow < npcWindowBase
 NpcItemBox < Panel
   height: 34
   margin-top: 1
-  background-color: #00000000
+  background-color: #100a1d00
 
   Item
     id: itemIcon
@@ -524,7 +524,7 @@ NpcItemBox < Panel
   Label
     id: nameLabel
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.left: itemIcon.right
     anchors.right: parent.right
     anchors.top: parent.top
@@ -535,7 +535,7 @@ NpcItemBox < Panel
   Label
     id: infoLabel
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.left: itemIcon.right
     anchors.right: parent.right
     anchors.bottom: parent.bottom
@@ -549,7 +549,7 @@ NpcItemBox < Panel
 
 ItemBoxSell < UIItem
   id: itemBox
-  color: #aaaaaa
+  color: #dac7a2
   text-align: center
   margin: 1
 
@@ -565,11 +565,11 @@ ItemBoxSell < UIItem
     margin-top: 1
 
   $hover !checked:
-    border-color: #aaaaaa
+    border-color: #765385
 
   $disabled:
     image-color: #ffffff88
-    color: #aaaaaa88
+    color: #dac7a288
   
   UIWidget
     id: ignoredBorder
@@ -650,11 +650,11 @@ SellAllModalWindow < npcWindowBase
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
-      background-color: #404040
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
+      background-color: #100a1d
 
       VerticalQtScrollBar
         id: npcTradeItemsScrollBar
@@ -732,11 +732,11 @@ SellAllModalWindow < npcWindowBase
       border-width-left: 1
       border-width-right: 1
       border-width-bottom: 1
-      border-color-bottom: #808080
-      border-color-right: #808080
-      border-color-left: #131313
-      border-color-top: #131313
-      background-color: #404040
+      border-color-bottom: #765385
+      border-color-right: #765385
+      border-color-left: #765385
+      border-color-top: #765385
+      background-color: #100a1d
 
       VerticalQtScrollBar
         id: npcIgnoreItemsScrollBar
@@ -857,7 +857,7 @@ SellAllModalWindow < npcWindowBase
     text-offset: -1 0
     tooltip: Sell items to the NPC
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     anchors.top: separator.bottom
     anchors.right: parent.right
     margin-top: 8

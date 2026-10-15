@@ -10,7 +10,7 @@ ForgeHistoryRow < UIWidget
     margin-left: 1
     width: 141
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-align: topLeft
 
   VerticalSeparator
@@ -26,7 +26,7 @@ ForgeHistoryRow < UIWidget
     margin-left: 151
     width: 88
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-align: topLeft
 
   VerticalSeparator
@@ -55,7 +55,7 @@ ForgeHistoryRow < UIWidget
     margin-left: 0
     margin-right: 0
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-align: topLeft
     text-auto-resize: false
     text-wrap: true
@@ -108,7 +108,7 @@ HistoryWindow < Panel
       UIWidget
         anchors.fill: parent
         margin: 1
-        background-color: #363636
+        background-color: #100a1d
 
       Label
         id: dateHeader
@@ -119,7 +119,7 @@ HistoryWindow < Panel
         anchors.left: parent.left
         margin-left: 2
         margin-top: 1
-        color: #C0C0C0
+        color: #dac7a2
         width: 142
 
       VerticalSeparator
@@ -140,7 +140,7 @@ HistoryWindow < Panel
         anchors.left: historyHeaderSeparator1.right
         margin-left: 2
         margin-top: 1
-        color: #C0C0C0
+        color: #dac7a2
         width: 92
 
       VerticalSeparator
@@ -160,7 +160,7 @@ HistoryWindow < Panel
         anchors.left: historyHeaderSeparator2.right
         margin-left: 2
         margin-top: 1
-        color: #C0C0C0
+        color: #dac7a2
 
     HorizontalSeparator
       id: historyHeaderListSeparator
@@ -182,7 +182,7 @@ HistoryWindow < Panel
       margin-left: 1
       margin-bottom: 1
       margin-right: 13
-      background-color: #404040
+      background-color: #100a1d
       layout:
         type: verticalBox
         spacing: 0
@@ -218,6 +218,6 @@ HistoryWindow < Panel
     anchors.horizontalCenter: historyListContainer.horizontalCenter
     margin-top: 10
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text: Page 1/1
     text-auto-resize: true

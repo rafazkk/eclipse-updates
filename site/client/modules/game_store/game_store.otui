@@ -16,7 +16,7 @@ HistoryEntry < UIWidget
   margin-right: 8
   margin-top: 24
   size: 535 15
-  background-color: #484848
+  background-color: #100a1d
 
   Label
     id: historyDate
@@ -65,7 +65,7 @@ StoreOfferRowAvailable < StoreLightFlatPanel
     anchors.left: image.right
     anchors.right: parent.right
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-align: left
     text-wrap: true
     margin-left: 5
@@ -116,7 +116,7 @@ StoreOfferRowUnavailable < StoreLightFlatPanel
     anchors.left: image.right
     anchors.right: parent.right
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-align: left
     text-wrap: true
     margin-left: 5
@@ -151,7 +151,7 @@ StoreOfferRowUnavailable < StoreLightFlatPanel
     anchors.fill: parent
     phantom: true
     focusable: false
-    background-color: #000000
+    background-color: #100a1d
     opacity: 0.35
 
   UIWidget
@@ -169,7 +169,7 @@ StorePreviewCreature < Creature
   image-border: 0
   border-width: 0
   border-color: alpha
-    color: #c0c0c0
+    color: #dac7a2
     opacity: 0.5
 
 RowStore < StoreOfferRowAvailable
@@ -197,7 +197,7 @@ StoreWindow
   !text: tr('Store')
   font: $var-cip-font-new
   text-offset: 0 2
-  color: #909090
+  color: #dac7a2
   visible: false
   @onEscape: modules.game_store.toggle()
 
@@ -260,7 +260,7 @@ StoreWindow
       margin-right: 4
       margin-bottom: 3
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
     UIWidget
       id: iconodos
@@ -280,7 +280,7 @@ StoreWindow
       margin-bottom: 4
       phantom: true
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
     UIWidget
       id: icono
@@ -302,7 +302,7 @@ StoreWindow
       text-auto-resize: true
       phantom: true
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
 
   UIButton
     id: btnCoins
@@ -505,7 +505,7 @@ StoreWindow
         text-auto-resize: true
         text-align: center
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
 
       UIWidget
         id: image
@@ -541,7 +541,7 @@ StoreWindow
         image-source: /images/ui/1pixel-down-frame
         image-border: 1
         image-fixed-ratio: false
-        background-color: #404040
+        background-color: #100a1d
         padding: 3 15 3 3
         auto-focus: none
         layout:
@@ -552,7 +552,7 @@ StoreWindow
           text-wrap: true
           text-auto-resize: true
           font: verdana-11px-monochrome
-          color: #f4f4f4
+          color: #f1e6d0
           text-offset: 3 3
           visible: false
 
@@ -591,7 +591,7 @@ StoreWindow
       anchors.left: historyBox.left
       anchors.right: historyBox.right
       height: 16
-      background-color: #363636
+      background-color: #100a1d
 
       UIWidget
         id: historyHeaderDate
@@ -600,7 +600,7 @@ StoreWindow
         anchors.left: parent.left
         !text: tr('Date')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-align: left
         text-offset: 2 1
 
@@ -619,7 +619,7 @@ StoreWindow
         anchors.left: historyHeaderDate.right
         !text: tr('Balance')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-align: right
         text-offset: -5 1
 
@@ -638,7 +638,7 @@ StoreWindow
         anchors.right: parent.right
         !text: tr('Description')
         font: $var-cip-font-new
-        color: #c0c0c0
+        color: #dac7a2
         text-align: left
         text-offset: 3 1
 
@@ -686,7 +686,7 @@ StoreWindow
       anchors.bottom: parent.bottom
       anchors.horizontalCenter: parent.horizontalCenter
       font: $var-cip-font-new
-      color: #c0c0c0
+      color: #dac7a2
       margin-bottom: 3
       !text: tr('Page 1 / 4')
 
@@ -761,14 +761,14 @@ StoreWindow
       margin-top: 6
       text: Recently Added
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
       text-offset: 0 2
 
       UIScrollArea
         id: HomeProductos
         size: 505 190
         image-source: /images/ui/1pixel-down-frame
-        background-color: #404040
+        background-color: #100a1d
         image-border: 1
         image-fixed-ratio: false
         vertical-scrollbar: scrollList2

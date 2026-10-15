@@ -10,7 +10,7 @@ UIWidget
     anchors.top: parent.top
     anchors.left: parent.left
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     text-offset: 0 2
     margin-top: 10
     layout:
@@ -28,7 +28,7 @@ UIWidget
         id: TextBase
         text: "killin a monster has 10% chance to deal physical damage equal to 15& of its maximum health to all monsters in a small rabius"
         font: $var-cip-font-new
-        color: #C0C0C0
+        color: #dac7a2
         anchors.fill: parent
         text-offset: 0 -1
         text-wrap: true
@@ -106,7 +106,7 @@ UIWidget
             id: Value
             height: 20
             font: $var-cip-font-new
-            color: #C0C0C0
+            color: #dac7a2
             !text: tr('0')
             text-offset: 0 4
             text-auto-resize: true
@@ -157,7 +157,7 @@ UIWidget
             id: Value
             height: 20
             font: $var-cip-font-new
-            color: #C0C0C0
+            color: #dac7a2
             !text: tr('0')
             text-offset: 0 4
             text-auto-resize: true
@@ -185,18 +185,18 @@ UIWidget
         anchors.right: parent.right
         image-source: /images/ui/1pixel-down-frame
         image-border: 5
-        background-color: #363636
+        background-color: #100a1d
         border-width: 0
         focusable: true
         font: $var-cip-font-new
-        color: #C0C0C0
+        color: #dac7a2
         padding: 2 20 2 4
         placeholder: Type to search
         placeholder-color: #6E706F
         @onTextChange: modules.game_cyclopedia.Cyclopedia.onCharmSearchTextChange(self:getText())
         $disabled:
           opacity: 1
-          color: #C0C0C0
+          color: #dac7a2
           placeholder-color: #414141
 
       UIWidget
@@ -222,7 +222,7 @@ UIWidget
         margin-top: 7
         image-source: /images/ui/1pixel-down-frame
         image-border: 5
-        background-color: #404040
+        background-color: #100a1d
         border-width: 0
 
         UIScrollArea
@@ -233,7 +233,7 @@ UIWidget
           margin-top: 1
           margin-left: 1
           margin-bottom: 1
-          background-color: #404040
+          background-color: #100a1d
           focusable: true
 
           layout:
@@ -242,9 +242,9 @@ UIWidget
             cell-spacing: 0
             flow: true
           CharmCreatureName
-            background-color: #484848
+            background-color: #100a1d
           CharmCreatureName
-            background-color: #414141
+            background-color: #100a1d
 
         VerticalQtScrollBar
           id: CreatureListScrollbar
@@ -280,7 +280,7 @@ UIWidget
         margin-top: 6
         image-source: /images/ui/1pixel-down-frame
         image-border: 5
-        background-color: #404040
+        background-color: #100a1d
         border-width: 0
         padding: 1
 
@@ -307,7 +307,7 @@ UIWidget
       size: 110 14
       !text: tr('Get Expansion')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-align: left
       text-wrap: true
       anchors.left: parent.left
@@ -348,7 +348,7 @@ UIWidget
       size: 110 14
       !text: tr('Get Points')
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
       text-align: left
       text-wrap: true
       anchors.left: parent.left
@@ -421,7 +421,7 @@ UIWidget
           id: resetAllCharmsCostValue
           height: 20
           font: $var-cip-font-new
-          color: #C0C0C0
+          color: #dac7a2
           !text: tr('0')
           text-offset: 0 4
           text-auto-resize: true

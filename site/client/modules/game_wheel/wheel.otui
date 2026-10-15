@@ -1,6 +1,6 @@
 WheelFooterButton < Button
   font: verdana-bold-8px-antialiased
-  color: #C0C0C0
+  color: #dac7a2
   text-offset: 0 -1
   padding: 0
   size: 43 20
@@ -120,7 +120,7 @@ NewMainWindow
       margin-top: 3
       text-auto-resize: true
       font: verdana-11px-antialised
-      color: #dfdfdf
+      color: #dac7a2
 
   Panel
     id: lesserFragmentPanel
@@ -149,7 +149,7 @@ NewMainWindow
       margin-top: 3
       text-auto-resize: true
       font: verdana-11px-antialised
-      color: #dfdfdf
+      color: #dac7a2
 
   Panel
     id: greaterFragmentPanel
@@ -178,7 +178,7 @@ NewMainWindow
       margin-top: 3
       text-auto-resize: true
       font: verdana-11px-antialised
-      color: #dfdfdf
+      color: #dac7a2
 
   Button
     id: hotCopy
@@ -204,7 +204,7 @@ NewMainWindow
     !text: tr('Current Preset: Default-Preset')
     text-auto-resize: true
     font: verdana-11px-antialised
-    color: #dfdfdf
+    color: #dac7a2
 
   WheelFooterButton
     id: close

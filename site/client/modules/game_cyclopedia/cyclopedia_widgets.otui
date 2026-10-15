@@ -14,7 +14,7 @@ HouseBidArea < UIWidget
   Label
     !text: tr('Set bid limit:')
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     text-offset: 0 -1
     text-align: right
     size: 90 15
@@ -56,7 +56,7 @@ HouseBidArea < UIWidget
   Label
     id: information
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-auto-resize: true
     text-wrap: true
     anchors.top: parent.top
@@ -66,7 +66,7 @@ House < UICheckBox
   text-align: top
   text-offset: -1 2
   font: $var-cip-font-new
-  color: #909090
+  color: #dac7a2
   image-source: /images/ui/window-high
   image-border: 5
   border: 0 white
@@ -101,14 +101,14 @@ House < UICheckBox
       text-align: left
       !text: tr('Size:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
     Label
       id: sizeValue
       anchors.top: parent.top
       anchors.right: parent.right
       text-align: right
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
   UIWidget
     id: bedsColumn
     height: 15
@@ -122,7 +122,7 @@ House < UICheckBox
       anchors.left: parent.left
       text-align: left
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
   UIWidget
     id: rentColumn
     height: 15
@@ -137,14 +137,14 @@ House < UICheckBox
       text-align: left
       !text: tr('Rent:')
       font: $var-cip-font-new
-      color: #909090
+      color: #dac7a2
     Label
       id: rentValue
       anchors.top: parent.top
       anchors.right: parent.right
       text-align: right
       font: $var-cip-font-new
-      color: #C0C0C0
+      color: #dac7a2
   UIWidget
     id: rentGold
     anchors.left: rentColumn.right
@@ -169,7 +169,7 @@ House < UICheckBox
     text-align: left
     !text: tr('Status:')
     font: $var-cip-font-new
-    color: #909090
+    color: #dac7a2
     anchors.top: sizeColumn.bottom
     anchors.left: parent.left
     margin-top: 3
@@ -185,7 +185,7 @@ House < UICheckBox
     id: statusDetail
     text-auto-resize: true
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     anchors.top: statusLabel.top
     anchors.left: statusState.right
     margin-left: 1
@@ -251,7 +251,7 @@ CharacterAppearance < Panel
     text-align: bottom
     text-wrap: true
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
 CyclopediaBlessButton < UIButton
   size: 12 12
@@ -315,7 +315,7 @@ CharacterGridItem < UIWidget
   Label
     id: amount
     !text: tr('0')
-    color: #C0C0C0
+    color: #dac7a2
     font: verdana-11px-rounded
     text-auto-resize: true
     anchors.bottom: parent.bottom
@@ -369,7 +369,7 @@ CharacterListItem < UIWidget
     id: name
     !text: tr('Boots')
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-auto-resize: true
     anchors.verticalCenter: ItemBackground.verticalCenter
     anchors.left: ItemBackground.right
@@ -391,7 +391,7 @@ CharacterListItem < UIWidget
     id: amount
     !text: tr('1')
     font: $var-cip-font-new
-    color: #C0C0C0
+    color: #dac7a2
     text-auto-resize: true
     anchors.verticalCenter: ItemBackground.verticalCenter
     anchors.left: separator.left
@@ -418,7 +418,7 @@ Achievement < UICheckBox
     id: title
     font: $var-cip-font-new
     text-align: center
-    color: #909090
+    color: #dac7a2
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -431,7 +431,7 @@ Achievement < UICheckBox
     id: date
     font: $var-cip-font-new
     text-auto-resize: true
-    color: #909090
+    color: #dac7a2
     anchors.top: title.top
     anchors.right: parent.right
     margin-right: 5
@@ -440,7 +440,7 @@ Achievement < UICheckBox
   Label
     id: description
     font: $var-cip-font-lowspace
-    color: #C0C0C0
+    color: #dac7a2
     text-wrap: true
     text-auto-resize: true
     anchors.top: title.bottom
@@ -469,9 +469,9 @@ CharacterDeath < UIWidget
     margin-left: 1
     margin-top: 1
     $on:
-      color: #F4F4F4
+      color: #f1e6d0
     $!on:
-      color: #C0C0C0
+      color: #dac7a2
   VerticalSeparatorFlat
     id: separator
     height: 16
@@ -491,9 +491,9 @@ CharacterDeath < UIWidget
     margin-left: 3
     margin-top: 1
     $on:
-      color: #F4F4F4
+      color: #f1e6d0
     $!on:
-      color: #C0C0C0
+      color: #dac7a2
 CharacterKill < UIWidget
   height: 16
   min-height: 16
@@ -513,9 +513,9 @@ CharacterKill < UIWidget
     margin-left: 1
     margin-top: 1
     $on:
-      color: #F4F4F4
+      color: #f1e6d0
     $!on:
-      color: #C0C0C0
+      color: #dac7a2
   VerticalSeparatorFlat
     id: separator
     height: 16
@@ -535,9 +535,9 @@ CharacterKill < UIWidget
     margin-left: 3
     margin-top: 1
     $on:
-      color: #F4F4F4
+      color: #f1e6d0
     $!on:
-      color: #C0C0C0
+      color: #dac7a2
   VerticalSeparatorFlat
     id: separatorTwo
     height: 16
@@ -564,7 +564,7 @@ CharacterElementReduction < UIWidget
     text-auto-resize: true
     anchors.top: parent.top
     anchors.left: parent.left
-    color: #C0C0C0
+    color: #dac7a2
   Label
     id: value
     !text: ('+5%')
@@ -611,7 +611,7 @@ SelectBossBossSlots < UICheckBox
   image-border: 5
   !text: tr('?')
   font: verdana-11px-monochrome
-  color: #909090
+  color: #dac7a2
   border: 0 white
   @onClick: modules.game_cyclopedia.Cyclopedia.bossSlotSelectBoss(self)
   $checked:
@@ -638,7 +638,7 @@ SlotBossSlots < UIWidget
   size: 223 360
   image-source: /images/ui/t2pixel-up-frame-borderimage
   image-border: 20
-  color: #929292
+  color: #dac7a2
   text-offset: 0 2
   text-align: top
   Label
@@ -649,7 +649,7 @@ SlotBossSlots < UIWidget
     font: verdana-11px-monochrome
     text-align: center
     margin-top: -10
-    color: #c0c0c0
+    color: #dac7a2
     visible: true
   UIWidget
     id: SelectBoss
@@ -719,7 +719,7 @@ SlotBossSlots < UIWidget
       !text: tr('Select')
       //font: verdana-bold-8px-antialiased
       text-offset: 0 0
-      color: #C0C0C0
+      color: #dac7a2
       enabled: false
       margin-bottom: 4
       margin-right: 2
@@ -760,7 +760,7 @@ SlotBossSlots < UIWidget
       text-auto-resize: true
       !text: tr('Total Kills')
       font: verdana-11px-monochrome
-      color: #c0c0c0
+      color: #dac7a2
       text-align: center
       text-offset: 0 4
     Label
@@ -770,7 +770,7 @@ SlotBossSlots < UIWidget
       text-auto-resize: true
       !text: ('Equipment loot bonus: 118%')
       font: verdana-11px-monochrome
-      color: #c0c0c0
+      color: #dac7a2
       text-align: center
       margin-top: 15
     ProgressBackground
@@ -805,7 +805,7 @@ SlotBossSlots < UIWidget
       !text: tr('Remove')
       //font: verdana-bold-8px-antialiased
       text-offset: 0 0
-      color: #C0C0C0
+      color: #dac7a2
 BossSlotProgress < UIWidget
   size: 140 35
   ProgressBackground
@@ -976,7 +976,7 @@ BossSlotProgress < UIWidget
     text-auto-resize: true
     !text: tr('0')
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
     text-offset: 0 2
 ProgressBackground < UIWidget
   image-source: /images/ui/1pixel-down-frame
@@ -994,25 +994,25 @@ BorderBox < UIWidget
   border-width-left: 1
   border-color-left: black
   border-width-bottom: 1
-  border-color-bottom: #747474
+  border-color-bottom: #765385
   border-width-right: 1
-  border-color-right: #747474
+  border-color-right: #765385
 SubPanel < UIWidget
   image-source: /images/ui/minipanel
   image-border: 3
   image-border-top: 22
-  color: #929292
+  color: #dac7a2
   text-offset: 0 3
   text-align: top
 ItemCategory < UIWidget
   font: $var-cip-font-new
   height: 16
-  color: #C0C0C0
+  color: #dac7a2
   text-align: left
   text-offset: 1 -1
   @onCheckChange: modules.game_cyclopedia.Cyclopedia.onCategoryChange(self)
   $checked:
-    color: #F6F6F6
+    color: #f1e6d0
 
 ItemsListBaseItem < UIWidget
   background-color: alpha
@@ -1022,7 +1022,7 @@ ItemsListBaseItem < UIWidget
     anchors.fill: parent
     margin-left: 1
     margin-bottom: -1
-    background-color: #00000000
+    background-color: #100a1d00
   UIWidget
     size: 34 34
     id: ItemBackground
@@ -1050,7 +1050,7 @@ ItemsListBaseItem < UIWidget
     text-align: left
     !text: tr('Item Name')
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
 ItemBasicDetail < UIWidget
   UIWidget
@@ -1062,7 +1062,7 @@ ItemBasicDetail < UIWidget
       margin-right: 40
       text: :
       text-auto-resize: true
-      color: #BDBDBD
+      color: #dac7a2
     Label
       id: name
       anchors.right: separator.left
@@ -1070,7 +1070,7 @@ ItemBasicDetail < UIWidget
       margin-right: 3
       !text: tr('Name')
       text-auto-resize: true
-      color: #BDBDBD
+      color: #dac7a2
     Label
       id: value
       anchors.left: separator.right
@@ -1078,7 +1078,7 @@ ItemBasicDetail < UIWidget
       margin-left: 10
       !text: tr('0')
       text-auto-resize: true
-      color: #BDBDBD
+      color: #dac7a2
 
 CharmItem < UICheckBox
   size: 149 95
@@ -1087,7 +1087,7 @@ CharmItem < UICheckBox
   image-source: /images/ui/t2pixel-up-frame-borderimage
   image-border: 3
   image-border-top: 22
-  color: #909090
+  color: #dac7a2
   text-offset: 0 2
   text-align: top
   border: 0 white
@@ -1106,7 +1106,7 @@ CharmItem < UICheckBox
     margin-right: 7
     image-source: /images/ui/1pixel-down-frame
     image-border: 10
-    background-color: #404040
+    background-color: #100a1d
     size: 66 66
     phantom: true
 
@@ -1215,7 +1215,7 @@ CharacterTitleListRow < UIWidget
     margin-left: 1
     margin-top: 3
     margin-right: 16
-    color: #C0C0C0
+    color: #dac7a2
     phantom: true
 
   UIWidget
@@ -1335,7 +1335,7 @@ CharacterCategoryItem < UIWidget
       text-auto-resize: true
       !text: tr('General Stats')
       font: cipsoftFont
-      color: #FFFFFF
+      color: #f1e6d0
       phantom: true
       $checked:
         text-offset: 1 1
@@ -1359,7 +1359,7 @@ BestiaryCategory < UIWidget
   image-border: 20
   !text: tr('Name')
   font: verdana-11px-monochrome
-  color: #909090
+  color: #dac7a2
   text-align: top
   text-offset: 0 2
 
@@ -1387,7 +1387,7 @@ BestiaryCategory < UIWidget
     font: verdana-11px-monochrome
     !text: tr('Known: ') .. '00'
     text-align: center
-    color: #C2C2C2
+    color: #dac7a2
   Label
     id: TotalValue
     anchors.bottom: KnownValue.top
@@ -1396,7 +1396,7 @@ BestiaryCategory < UIWidget
     font: verdana-11px-monochrome
     !text: tr('Total: ') .. '00'
     text-align: center
-    color: #C2C2C2
+    color: #dac7a2
 BosstiaryItem < UIWidget
   image-source: /images/ui/t2pixel-up-frame-borderimage
   image-border: 20
@@ -1404,7 +1404,7 @@ BosstiaryItem < UIWidget
   font: verdana-11px-monochrome
   text-align: top
   text-offset: 0 2
-  color: #909090
+  color: #dac7a2
   UIWidget
     id: TypeIcon
     anchors.left: parent.left
@@ -1471,7 +1471,7 @@ BosstiaryItem < UIWidget
     text-auto-resize: true
     !text: tr('0')
     font: verdana-11px-monochrome
-    color: #c0c0c0
+    color: #dac7a2
     text-offset: 0 3
   UIWidget
     id: bronzeStar
@@ -1598,7 +1598,7 @@ BosstiaryItem < UIWidget
     !text: tr('Total Kills')
     font: verdana-11px-monochrome
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
   CheckBox
     id: TrackCheck
     anchors.left: KillsLabel.right
@@ -1609,7 +1609,7 @@ BosstiaryItem < UIWidget
     text-offset: 16 0
     font: verdana-11px-monochrome
     text-auto-resize: true
-    color: #c0c0c0
+    color: #dac7a2
     @onCheckChange: |
       modules.game_cyclopedia.Cyclopedia.toggleBosstiaryTrackerCheck(self, self:isChecked())
   UICreature
@@ -1631,7 +1631,7 @@ BestiaryCreature < UIWidget
     anchors.right: parent.right
     text-align: center
     font: verdana-11px-monochrome
-    color: #909090
+    color: #dac7a2
     text-offset: 0 0
 
   UIWidget
@@ -1682,7 +1682,7 @@ BestiaryCreature < UIWidget
     !text: tr('?')
     text-auto-resize: true
     font: $var-cip-font-new
-    color: #C1C1C1
+    color: #dac7a2
 BestiaryResistProgress < UIWidget
   image-source: /game_cyclopedia/images/bestiary/barra
   UIWidget
@@ -1775,19 +1775,19 @@ BestiaryItemGroup < UIWidget
     margin-top: -3
     !text: tr('Common') .. ':'
     font: verdana-11px-monochrome
-    color: #C0C0C0
+    color: #dac7a2
     text-auto-resize: true
 
 CharmCreatureName < UICheckBox
   focusable: true
   font: $var-cip-font-new
-  color: #C0C0C0
+  color: #dac7a2
   text-offset: 1 0
-  background-color: #484848
+  background-color: #100a1d
   @onCheckChange: modules.game_cyclopedia.Cyclopedia.selectCreatureCharm(self, self:isChecked())
   $checked:
-    background-color: #585858
-    color: #f4f4f4
+    background-color: #100a1d
+    color: #f1e6d0
 
 InventoryItemCyclopedia < Item
   virtual: true
@@ -1883,7 +1883,7 @@ TrackerButton < Panel
     anchors.left: spacer.right
     anchors.top: creature.top
     text-auto-resize: true
-    color: #888888
+    color: #a295b7
     margin-left: 2
 
   Label
@@ -1891,7 +1891,7 @@ TrackerButton < Panel
     anchors.centerIn: ProgressBorder2
     text-align: center
     text-auto-resize: true
-    color: #888888
+    color: #a295b7
     margin-bottom: -1
 
   LifeProgressBar
@@ -1982,7 +1982,7 @@ BestiaryTracker < MiniWindow
     margin-right: 50
     font: verdana-11px-monochrome
     height: 13
-    color: #9d9d9dff
+    color: #dac7a2ff
 
   MiniWindowContents
     id: contentsPanel
@@ -2116,7 +2116,7 @@ HouseItemCard < UIWidget
     margin-left: 5
     margin-right: 4
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
     text-wrap: true
 
@@ -2126,7 +2126,7 @@ HouseItemCard < UIWidget
     anchors.left: lblName.left
     margin-top: 1
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     text-auto-resize: true
 
 BlessCreate < UIWidget
@@ -2134,7 +2134,7 @@ BlessCreate < UIWidget
   text-offset: 35 1
   focusable: true
   font: $var-cip-font-new
-  color: #c0c0c0
+  color: #dac7a2
   text-align: left
 
   Label
@@ -2145,7 +2145,7 @@ BlessCreate < UIWidget
     margin-top: 2
     margin-left: 3
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
 
   Label
     id: text1
@@ -2154,5 +2154,5 @@ BlessCreate < UIWidget
     anchors.verticalCenter: parent.verticalCenter
     focusable: false
     font: $var-cip-font-new
-    color: #c0c0c0
+    color: #dac7a2
     margin-top: 2

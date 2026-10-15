@@ -12,9 +12,9 @@ UIWidget
     !text: tr('Search')
     font: cipsoftFont
     text-offset: -1 1
-    color: #C0C0C0
+    color: #dac7a2
     $!disabled:
-      color: #FFFFFF
+      color: #f1e6d0
     @onClick: modules.game_cyclopedia.Cyclopedia.BestiarySearch()
 
   TextEdit
@@ -28,7 +28,7 @@ UIWidget
     placeholder: Type to search
     placeholder-color: #6E706F
     font: verdana-11px-monochrome
-    color: #C0C0C0
+    color: #dac7a2
     padding-top: 1
     shader: Map - Party
     @onTextChange: modules.game_cyclopedia.Cyclopedia.BestiarySearchText(self:getText())
@@ -43,7 +43,7 @@ UIWidget
     size: 50 20
     text-align: center
     !text: tr('1 / 1')
-    color: #C2C2C2
+    color: #dac7a2
     text-offset: 0 1
 
   Button
@@ -130,7 +130,7 @@ UIWidget
       !text: tr('Creature Name')
       text-align: top
       font: verdana-11px-monochrome
-      color: #909090
+      color: #dac7a2
       text-offset: 0 2
 
       UIWidget
@@ -167,7 +167,7 @@ UIWidget
           margin-bottom: -5
           !text: tr('Track Kills')
           font: verdana-11px-monochrome
-          color: #C0C0C0
+          color: #dac7a2
           text-offset: 16 0
           text-auto-resize: true
           @onCheckChange: |
@@ -254,7 +254,7 @@ UIWidget
         text-auto-resize: true
         !text: tr('0')
         font: verdana-11px-monochrome
-        color: #C0C0C0
+        color: #dac7a2
         margin-top: 1
 
       Label
@@ -264,7 +264,7 @@ UIWidget
         margin-bottom: 2
         !text: tr('Total Kills')
         font: verdana-11px-monochrome
-        color: #C0C0C0
+        color: #dac7a2
 
       UIWidget
         id: StarBase
@@ -403,7 +403,7 @@ UIWidget
         text-auto-resize: true
         !text: tr('?')
         font: verdana-11px-monochrome
-        color: #C0C0C0
+        color: #dac7a2
 
       UIWidget
         id: MajorCharm
@@ -481,7 +481,7 @@ UIWidget
         !text: tr('Assign Charm')
         //font: verdana-bold-8px-antialiased
         text-offset: 0 -1
-        color: #C0C0C0
+        color: #dac7a2
         enabled: false
         @onClick: modules.game_cyclopedia.Cyclopedia.onBestiaryAssignCharmClick()
 
@@ -492,7 +492,7 @@ UIWidget
         anchors.top: MajorCharm.top
         !text: tr('Clear Charm')
         text-offset: 0 0
-        color: #C0C0C0
+        color: #dac7a2
         enabled: false
         visible: false
         @onClick: modules.game_cyclopedia.Cyclopedia.onBestiaryClearCharmClick()
@@ -522,7 +522,7 @@ UIWidget
             id: Value
             height: 20
             font: $var-cip-font-new
-            color: #C0C0C0
+            color: #dac7a2
             !text: tr('0')
             text-offset: 0 4
             text-auto-resize: true
@@ -597,9 +597,9 @@ UIWidget
         text-auto-resize: true
         !text: tr('?')
         font: verdana-11px-monochrome
-        color: #C0C0C0
+        color: #dac7a2
         padding-bottom: -3
-        color: #C7C7C7
+        color: #dac7a2
 
       UIWidget
         id: Icon2
@@ -617,7 +617,7 @@ UIWidget
         text-auto-resize: true
         !text: tr('?')
         font: verdana-11px-monochrome
-        color: #C0C0C0
+        color: #dac7a2
         padding-bottom: -3
 
       UIWidget
@@ -636,7 +636,7 @@ UIWidget
         text-auto-resize: true
         !text: tr('?')
         font: verdana-11px-monochrome
-        color: #C0C0C0
+        color: #dac7a2
         padding-bottom: -3
 
       UIWidget
@@ -655,7 +655,7 @@ UIWidget
         text-auto-resize: true
         !text: tr('?')
         font: verdana-11px-monochrome
-        color: #C0C0C0
+        color: #dac7a2
         padding-bottom: -3
 
       UIWidget
@@ -674,7 +674,7 @@ UIWidget
         text-auto-resize: true
         !text: tr('?')
         font: verdana-11px-monochrome
-        color: #C0C0C0
+        color: #dac7a2
         padding-bottom: -3
 
       UIWidget
@@ -710,7 +710,7 @@ UIWidget
             text-wrap: true
             !text: '?'
             font: $var-cip-font-new
-            color: #C0C0C0
+            color: #dac7a2
 
         VerticalQtScrollBar
           id: TextlistScrollBar
@@ -730,7 +730,7 @@ UIWidget
         text-auto-resize: true
         !text: tr('Location(s)') .. ':'
         font: verdana-11px-monochrome
-        color: #C0C0C0
+        color: #dac7a2
 
       UIWidget
         id: PhysicalResist

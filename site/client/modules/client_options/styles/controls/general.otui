@@ -17,7 +17,7 @@ UIWidget
       !text: tr('Mouse Preset:')
       anchors.left: parent.left
       margin-left: -1
-      color: #c0c0c0ff
+      color: #dac7a2ff
       font: $var-cip-font
       anchors.verticalCenter: parent.verticalCenter
 
@@ -255,7 +255,7 @@ UIWidget
         anchors.left: parent.left
         anchors.verticalCenter: parent.verticalCenter
         text-auto-resize: true
-        color: #c0c0c0ff
+        color: #dac7a2ff
         font: $var-cip-font
         text-offset: 0 1
 

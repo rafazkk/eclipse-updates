@@ -24,10 +24,10 @@ StashWindow < MainWindowHigh
     border-width-left: 1
     border-width-right: 1
     border-width-bottom: 1
-    border-color-bottom: #808080
-    border-color-right: #808080
-    border-color-left: #131313
-    border-color-top: #131313
+    border-color-bottom: #765385
+    border-color-right: #765385
+    border-color-left: #765385
+    border-color-top: #765385
     margin-bottom: 42
     margin-top: 2
 
@@ -107,7 +107,7 @@ StashWindow < MainWindowHigh
       width: 190
       height: 20
       margin-left: 167
-      color: #c0c0c0
+      color: #dac7a2
       @onOptionChange: modules.game_stash.onShowFilterOptionChange(self)
       @onSetup: |
         self:setCurrentOption(tr('Show All'))
@@ -124,7 +124,7 @@ StashWindow < MainWindowHigh
       width: 190
       height: 20
       margin-left: 362
-      color: #c0c0c0
+      color: #dac7a2
       @onOptionChange: modules.game_stash.onShowTraderNpcOptionChange(self)
       @onSetup: |
         self:addOption(tr('No Trader Selected'))
@@ -239,7 +239,7 @@ StashSelectAmount < MainWindowHigh
     margin-top: -10
     width: 165
     height: 32
-    color: #c0c0c0
+    color: #dac7a2
     text-align: left
     text-wrap: true
     !text: tr('Set or type the number of items you want to retrieve')

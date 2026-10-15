@@ -27,7 +27,7 @@ MiniWindow
     font: verdana-11px-monochrome
     height: 13
     !text: tr('Skills')
-    color: #9d9d9dff
+    color: #dac7a2ff
 
   MiniWindowContents
     padding-left: 5
@@ -646,10 +646,10 @@ SkillsSubMenuOption < ThickCheckBox
   padding: 3 6
 
   $hover:
-    background-color: #ffffff1a
+    background-color: #2b193f1a
 
   $disabled:
-    color: #c0c0c0ff
+    color: #dac7a2ff
 
 SkillsListOption < UIButton
   text-align: left
@@ -660,10 +660,10 @@ SkillsListOption < UIButton
   margin-left: 5
 
   $hover:
-    background-color: #ffffff1a
+    background-color: #2b193f1a
 
   $disabled:
-    color: #c0c0c0ff
+    color: #dac7a2ff
 
 SkillsListSubMenu < PopupMenu
   id: skillsListSubMenu

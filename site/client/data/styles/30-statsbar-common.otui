@@ -25,7 +25,7 @@ StatsHorizontalBarGrade < UIWidget
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
-    background-color: #ffffffff
+    background-color: #2b193fff
     height: 1
     visible: false
     phantom: false
@@ -35,7 +35,7 @@ StatsHorizontalBarGrade < UIWidget
     anchors.bottom: parent.bottom
     anchors.left: parent.left
     anchors.right: parent.right
-    background-color: #ffffffff
+    background-color: #2b193fff
     height: 1
     visible: false
     phantom: false
@@ -45,7 +45,7 @@ StatsHorizontalBarGrade < UIWidget
     anchors.bottom: parent.bottom
     anchors.left: parent.left
     anchors.top: parent.top
-    background-color: #ffffffff
+    background-color: #2b193fff
     width: 1
     visible: false
     phantom: false
@@ -55,7 +55,7 @@ StatsHorizontalBarGrade < UIWidget
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     anchors.top: parent.top
-    background-color: #ffffffff
+    background-color: #2b193fff
     width: 1
     visible: false
     phantom: false
@@ -102,7 +102,7 @@ StatsVerticalLeftBarGrade < UIWidget
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
-    background-color: #ffffffff
+    background-color: #2b193fff
     height: 1
     visible: false
     phantom: false
@@ -112,7 +112,7 @@ StatsVerticalLeftBarGrade < UIWidget
     anchors.bottom: parent.bottom
     anchors.left: parent.left
     anchors.right: parent.right
-    background-color: #ffffffff
+    background-color: #2b193fff
     height: 1
     visible: false
     phantom: false
@@ -122,7 +122,7 @@ StatsVerticalLeftBarGrade < UIWidget
     anchors.bottom: parent.bottom
     anchors.left: parent.left
     anchors.top: parent.top
-    background-color: #ffffffff
+    background-color: #2b193fff
     width: 1
     visible: false
     phantom: false
@@ -132,7 +132,7 @@ StatsVerticalLeftBarGrade < UIWidget
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     anchors.top: parent.top
-    background-color: #ffffffff
+    background-color: #2b193fff
     width: 1
     visible: false
     phantom: false
@@ -267,7 +267,7 @@ StatsBarUpMana < UIStatsBar
         text-align: left
         text-auto-resize: true
         visible: true
-        color: #f0f0f0
+        color: #f1e6d0
         !text: '9999/9999 (9999/9999'
         font: $var-cip-font-new
 
@@ -285,7 +285,7 @@ StatsBarUpMana < UIStatsBar
         id: statsbarManaEnd
         text-align: left
         visible: true
-        color: #f0f0f0
+        color: #f1e6d0
         !text: ')'
         font: $var-cip-font-new
 
@@ -336,7 +336,7 @@ StatsBarUpManaPlain < UIStatsBar
         text-align: left
         text-auto-resize: true
         visible: true
-        color: #f0f0f0
+        color: #f1e6d0
         !text: '9999/9999 (9999/9999'
         font: $var-cip-font-new
 
@@ -354,7 +354,7 @@ StatsBarUpManaPlain < UIStatsBar
         id: statsbarManaEnd
         text-align: left
         visible: true
-        color: #f0f0f0
+        color: #f1e6d0
         !text: ')'
         font: $var-cip-font-new
 
@@ -405,7 +405,7 @@ StatsBarUpManaShieldBar < UIStatsBar
         text-align: left
         text-auto-resize: true
         visible: true
-        color: #f0f0f0
+        color: #f1e6d0
         !text: '9999/9999'
         font: $var-cip-font-new
 
@@ -478,7 +478,7 @@ StatsBarUpManaLtr < UIStatsBar
         text-align: left
         text-auto-resize: true
         visible: true
-        color: #f0f0f0
+        color: #f1e6d0
         !text: '9999/9999 (9999/9999'
         font: $var-cip-font-new
 
@@ -496,7 +496,7 @@ StatsBarUpManaLtr < UIStatsBar
         id: statsbarManaEnd
         text-align: left
         visible: true
-        color: #f0f0f0
+        color: #f1e6d0
         !text: ')'
         font: $var-cip-font-new
 

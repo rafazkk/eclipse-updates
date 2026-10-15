@@ -6,8 +6,8 @@ ActionSlotV < UIActionSlot
   margin-top: 3
   image-size: 34 34
   font: Verdana-8px-outline
-  color: #ffffff
-  border-color: #ffffff
+  color: #f1e6d0
+  border-color: #765385
   show-count: false
   always-show-count: false
   visible: false
@@ -25,7 +25,7 @@ ActionSlotV < UIActionSlot
     phantom: true
     text-auto-resize: true
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
     visible: false
 
   UIWidget
@@ -69,7 +69,7 @@ ActionSlotV < UIActionSlot
     text-auto-resize: true
     margin-right: 1
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
 
   Label
     id: text
@@ -79,7 +79,7 @@ ActionSlotV < UIActionSlot
     text-align: center
     margin-left: -1
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
 
   Label
     id: spellParameter
@@ -92,7 +92,7 @@ ActionSlotV < UIActionSlot
     text-auto-resize: false
     text-align: right
     font: Verdana-8px-outline
-    color: #ffffff
+    color: #f1e6d0
     visible: false
 
   UIWidget
