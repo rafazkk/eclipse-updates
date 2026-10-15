@@ -186,6 +186,7 @@ end
 
 function UIStatsBar:setValue(value, total)
 	bindStatsBarTextWidgets(self)
+	local eclipseFrame = self:getChildById("eclipseFrame")
 
 	local canDrawBar = value ~= nil and total ~= nil and total ~= 0 and self.statsType and self.statsSize and self.statsOrientation and self.bar
 
@@ -194,8 +195,13 @@ function UIStatsBar:setValue(value, total)
 		self.currentValue = value
 		self.currentTotal = total
 
+		if eclipseFrame then
+			self.bar:setMarginLeft(self.statsType == "health" and 26 or 12)
+			self.bar:setMarginRight(self.statsType == "health" and 12 or 26)
+		end
+
 		if self.statsOrientation == "horizontal" then
-			local maxW = math.max(0, self:getWidth() - 2)
+			local maxW = math.max(0, self:getWidth() - (eclipseFrame and 38 or 2))
 			local w = maxW * value / total
 			local roundedW = math.max(0, math.min(maxW, math.floor(w + 0.5)))
 
@@ -239,7 +245,10 @@ function UIStatsBar:setValue(value, total)
 			self.bar:setBackgroundColor("alpha")
 			self.bar:setImageColor("white")
 
-			if self.statsType == "health" then
+			if eclipseFrame and (self.statsType == "health" or self.statsType == "mana") then
+				local size = sizeKey == "large" and "large" or "small"
+				self.bar:setImageSource("/images/eclipse-bars/" .. self.statsType .. "-fill-" .. size)
+			elseif self.statsType == "health" then
 				if sizeKey == "grey_large" then
 					self.bar:setImageSource(progressbarImagePath(self, "progressbar-grey-large"))
 				else

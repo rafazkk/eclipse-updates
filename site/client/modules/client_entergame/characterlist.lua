@@ -694,6 +694,7 @@ function CharacterList.create(characters, account, otui)
 
 	for i, characterInfo in ipairs(sortedCharacters) do
 		local widget = g_ui.createWidget("CharacterWidget", characterList)
+		EclipseCharacters.apply(widget, characterInfo)
 
 		for key, value in pairs(characterInfo) do
 			local subWidget = widget:getChildById(key)
@@ -815,8 +816,8 @@ function CharacterList.create(characters, account, otui)
 
 	local listScrollBar = charactersWindow:getChildById("characterListScrollBar")
 
-	if listScrollBar and characterList.setVerticalScrollBar then
-		characterList:setVerticalScrollBar(listScrollBar)
+	if listScrollBar and characterList.setHorizontalScrollBar then
+		characterList:setHorizontalScrollBar(listScrollBar)
 	end
 
 	if characterList.updateScrollBars then
@@ -884,6 +885,33 @@ function CharacterList.create(characters, account, otui)
 	else
 		accountStatusLabel:setOn(false)
 	end
+	EclipseCharacters.selectClass(charactersWindow, 'guardian')
+	EclipseCharacters.selectTab(charactersWindow, 'characters')
+	CharacterList.resize()
+end
+
+function CharacterList.resize()
+	if not charactersWindow or charactersWindow.eclipseResizing then return end
+	charactersWindow.eclipseResizing = true
+	EclipseCharacters.resize(charactersWindow)
+	charactersWindow.eclipseResizing = nil
+end
+
+function CharacterList.selectTab(tab)
+	if tab == 'lore' then removeAutoReconnectEvent() end
+	if charactersWindow then EclipseCharacters.selectTab(charactersWindow, tab) end
+end
+
+function CharacterList.selectLoreClass(id)
+	if charactersWindow then EclipseCharacters.selectClass(charactersWindow, id) end
+end
+
+function CharacterList.moveSelection(direction)
+	local lore = charactersWindow and charactersWindow:getChildById('lorePanel')
+	if not characterList or (lore and lore:isVisible()) then return end
+	if direction < 0 then characterList:focusPreviousChild(KeyboardFocusReason)
+	else characterList:focusNextChild(KeyboardFocusReason) end
+	characterList:ensureChildVisible(characterList:getFocusedChild())
 end
 
 function CharacterList.toggleSortOrder()
@@ -954,6 +982,8 @@ function CharacterList.show()
 	end
 
 	-- Fade the window in (appear effect). Hiding stays synchronous so ESC->login works.
+	EclipseCharacters.selectTab(charactersWindow, 'characters')
+	CharacterList.resize()
 	charactersWindow:show()
 	charactersWindow:raise()
 	charactersWindow:focus()
@@ -1012,6 +1042,8 @@ function CharacterList.isVisible()
 end
 
 function CharacterList.doLogin(fromAutoReconnect)
+	local lore = charactersWindow and charactersWindow:getChildById('lorePanel')
+	if lore and lore:isVisible() then return end
 	cancelRestoreCharacterListEvent()
 	removeAutoReconnectEvent()
 
@@ -1172,7 +1204,7 @@ function toggleShowOutfit(checked)
 	for _, child in ipairs(characterList:getChildren()) do
 		local outfit = child:getChildById("outfit")
 
-		outfit:setWidth(checked and outfit.baseWidth or 0)
+		outfit:setVisible(checked and g_game.getFeature(GameEnterGameShowAppearance))
 	end
 end
 

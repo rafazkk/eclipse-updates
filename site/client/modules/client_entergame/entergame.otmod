@@ -7,7 +7,7 @@ Module
     - game_features
     - game_things
 
-  scripts: [ eclipse_config, eclipse, entergame, characterlist, createAccount ]
+  scripts: [ eclipse_config, eclipse, eclipse_characters, entergame, characterlist, createAccount ]
 
   @onLoad: |
     EnterGame.init()

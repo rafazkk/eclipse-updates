@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "files": [
     {
       "path": "PlayTC_gl_x64.exe",
@@ -20132,6 +20132,48 @@
       "sha256": "7bcd17ec31ba36d4e69f6d3b19e5e58b9353ba1bc5220b98e9a1a684ef189e7a"
     },
     {
+      "path": "data/images/eclipse-bars/emblem.png",
+      "url": "client/data/images/eclipse-bars/emblem.png",
+      "size": 2081,
+      "sha256": "8d2e4eba12755389cc6f3e4eddcb23a402787d2c44c946abab892906caeda9a8"
+    },
+    {
+      "path": "data/images/eclipse-bars/health-fill-large.png",
+      "url": "client/data/images/eclipse-bars/health-fill-large.png",
+      "size": 113,
+      "sha256": "c42e6e32503c8b95b5608d73def347721467873552e93304631eff2e43b99206"
+    },
+    {
+      "path": "data/images/eclipse-bars/health-fill-small.png",
+      "url": "client/data/images/eclipse-bars/health-fill-small.png",
+      "size": 104,
+      "sha256": "ffba91d6b3254830500c09e44323d50d16f889f3f9ade0648388fa5f48108d1f"
+    },
+    {
+      "path": "data/images/eclipse-bars/health-frame.png",
+      "url": "client/data/images/eclipse-bars/health-frame.png",
+      "size": 6698,
+      "sha256": "45ac31688825ba7e9f9712faf11a8cef2551066a235f7ac6fb0e7d1724aa7689"
+    },
+    {
+      "path": "data/images/eclipse-bars/mana-fill-large.png",
+      "url": "client/data/images/eclipse-bars/mana-fill-large.png",
+      "size": 114,
+      "sha256": "f1808cefa602e78c5638d61375dca3a01f796b7fd7d2b8f748915fd6c792742a"
+    },
+    {
+      "path": "data/images/eclipse-bars/mana-fill-small.png",
+      "url": "client/data/images/eclipse-bars/mana-fill-small.png",
+      "size": 97,
+      "sha256": "15d5525160646f40950284e4bf8fef3aa332e38ec813265d1d129a84929ebaf8"
+    },
+    {
+      "path": "data/images/eclipse-bars/mana-frame.png",
+      "url": "client/data/images/eclipse-bars/mana-frame.png",
+      "size": 6469,
+      "sha256": "e827082cf3e69c9d67c2c2abbc5340f8a718f4c9bdab4b6eebccecc68ed9730d"
+    },
+    {
       "path": "data/images/eclipse-login/account.png",
       "url": "client/data/images/eclipse-login/account.png",
       "size": 647,
@@ -20220,6 +20262,48 @@
       "url": "client/data/images/eclipse-login/youtube.png",
       "size": 1450,
       "sha256": "1c08efc39e77bb94ae9e0844fcfad62f97531399958a3025e8d4ee6617709fbf"
+    },
+    {
+      "path": "data/images/eclipse-selection/arcanist.png",
+      "url": "client/data/images/eclipse-selection/arcanist.png",
+      "size": 384331,
+      "sha256": "cf47a094a7c1988680ce7d85a5a19c451eaa0e812ec3fc68608a404cad8af252"
+    },
+    {
+      "path": "data/images/eclipse-selection/background.png",
+      "url": "client/data/images/eclipse-selection/background.png",
+      "size": 1742096,
+      "sha256": "ee7c0494db2a3b849825ff994b82dc20671097c2ac33a37fb6ffcc5c9c1ce0b7"
+    },
+    {
+      "path": "data/images/eclipse-selection/god.png",
+      "url": "client/data/images/eclipse-selection/god.png",
+      "size": 425495,
+      "sha256": "bfd6b35b91dc61e691ad48bfd780820535e1cc4691c030213d16fab6769699aa"
+    },
+    {
+      "path": "data/images/eclipse-selection/guardian.png",
+      "url": "client/data/images/eclipse-selection/guardian.png",
+      "size": 369530,
+      "sha256": "7277c45cb7d8e7c898580b2a7f23a7fd696931ce6a926683c8c95cb62abe3116"
+    },
+    {
+      "path": "data/images/eclipse-selection/mystic.png",
+      "url": "client/data/images/eclipse-selection/mystic.png",
+      "size": 407368,
+      "sha256": "8cbd90d99702cb15e8952a1bf748d20e275bbd781b8ea17892b5fd55284ecba3"
+    },
+    {
+      "path": "data/images/eclipse-selection/ranger.png",
+      "url": "client/data/images/eclipse-selection/ranger.png",
+      "size": 374853,
+      "sha256": "145e1a878275bf8bdb5f042f15dfc6efcec5faff7f1f422ea735811aa8dc207f"
+    },
+    {
+      "path": "data/images/eclipse-selection/slayer.png",
+      "url": "client/data/images/eclipse-selection/slayer.png",
+      "size": 368869,
+      "sha256": "b68560e4fa653bbe545fd9abf8899d223ba3f4e658d48fccf0c2993bd4ee633d"
     },
     {
       "path": "data/images/eclipse_logo.png",
@@ -57994,8 +58078,8 @@
     {
       "path": "data/styles/statsbar_top.otui",
       "url": "client/data/styles/statsbar_top.otui",
-      "size": 24701,
-      "sha256": "042d4e44e5bdf241b8911cd1b98d7ac8683c24cabc5070b1bb0d80b25824cb73"
+      "size": 25675,
+      "sha256": "35f5901591c817547589678cb25d5716c52e746b72c3fc6a5f6dc9c82ee00958"
     },
     {
       "path": "data/things/1500/appearances-f5ae138aede9962203e5a83b2ffc6d44ba4fc6ab0f42a0855f433cd6d458474d.dat",
@@ -97492,14 +97576,14 @@
     {
       "path": "modules/client_entergame/characterlist.lua",
       "url": "client/modules/client_entergame/characterlist.lua",
-      "size": 26688,
-      "sha256": "5104ec218e96fa58e50569f923fb7355ee7779936c9c172a83eaa65c17d99a21"
+      "size": 28074,
+      "sha256": "3b989b0a0b9b2ba831952467bb32d27620aeafa9ed1c869430feb367d4a4b626"
     },
     {
       "path": "modules/client_entergame/characterlist.otui",
       "url": "client/modules/client_entergame/characterlist.otui",
-      "size": 16579,
-      "sha256": "d2e596db0babef8c3441cf9ec8e8cae8380659334a3047931dff85bd52c5e9bc"
+      "size": 12125,
+      "sha256": "645cd5f9fc5ef4abbec305d1a86299e5deb366710d99df3504b66a36176b357d"
     },
     {
       "path": "modules/client_entergame/createAccount.lua",
@@ -97516,8 +97600,14 @@
     {
       "path": "modules/client_entergame/eclipse.lua",
       "url": "client/modules/client_entergame/eclipse.lua",
-      "size": 7939,
-      "sha256": "2ff5b2569a5e50ecfda2d126ece55f93ec1a8c0e234b0a040a5bda9e88448b2d"
+      "size": 7972,
+      "sha256": "3001b6cf2f237917035abd7a84c6060a8102a5cfd9e352d93633d8142eb382f7"
+    },
+    {
+      "path": "modules/client_entergame/eclipse_characters.lua",
+      "url": "client/modules/client_entergame/eclipse_characters.lua",
+      "size": 6295,
+      "sha256": "fb37212604f9f1549ec3e257edeb8dc2465fbd97df059a75dd0f9188e80bb4de"
     },
     {
       "path": "modules/client_entergame/eclipse_config.lua",
@@ -97528,14 +97618,14 @@
     {
       "path": "modules/client_entergame/entergame.lua",
       "url": "client/modules/client_entergame/entergame.lua",
-      "size": 20949,
-      "sha256": "995279baafe05ba8561acd14fc9ab0d4684963ce1f917105e050d2972d1adab7"
+      "size": 20987,
+      "sha256": "b5dfe4d52dc1ba94644e434ae92599ec705c12d6dbd0d26d83ed7f3fd374ffb2"
     },
     {
       "path": "modules/client_entergame/entergame.otmod",
       "url": "client/modules/client_entergame/entergame.otmod",
-      "size": 379,
-      "sha256": "68aa06296cb410c2172983499e4ba2f5335f49951a0ef602b8556a8d384e1fa6"
+      "size": 399,
+      "sha256": "e6a56295b40f8b832bf64ad3f9d64b5f503d11f39a46758c708a3f99508e12e4"
     },
     {
       "path": "modules/client_entergame/entergame.otui",
@@ -98152,8 +98242,8 @@
     {
       "path": "modules/corelib/ui/uistatsbar.lua",
       "url": "client/modules/corelib/ui/uistatsbar.lua",
-      "size": 8307,
-      "sha256": "12ace56e62082efe1582932309b962ef519b238004e8e0a608ec777cd8b6d447"
+      "size": 8792,
+      "sha256": "d2c6c814542f8a8e53c498287798e25201de70ba3587b621cd75e70a9f2872bb"
     },
     {
       "path": "modules/corelib/ui/uitabbar.lua",

@@ -4,6 +4,36 @@
 
 // --- Shell (fundo + handles de resize do painel) ---
 
+EclipseHealthFrame < UIWidget
+  id: eclipseFrame
+  anchors.fill: parent
+  margin-top: -2
+  margin-bottom: -1
+  image-source: /images/eclipse-bars/health-frame
+  image-border-left: 26
+  image-border-right: 12
+  image-border-top: 3
+  image-border-bottom: 3
+  phantom: true
+  focusable: false
+
+EclipseManaFrame < EclipseHealthFrame
+  image-source: /images/eclipse-bars/mana-frame
+  image-border-left: 12
+  image-border-right: 26
+
+EclipseTopHealthBar < StatsBarUp
+  EclipseHealthFrame
+
+EclipseTopManaBar < StatsBarUpMana
+  EclipseManaFrame
+
+EclipseTopManaPlainBar < StatsBarUpManaPlain
+  EclipseManaFrame
+
+EclipseTopManaLtrBar < StatsBarUpManaLtr
+  EclipseManaFrame
+
 StatsBarTopWithShrink < UIWidget
   clipping: true
 
@@ -230,7 +260,7 @@ TopStatsBarLargeOnTop < UIWidget
         margin-left: 4
         image-source: /images/game/topbar/icon-serene-off
 
-  StatsBarUp
+  EclipseTopHealthBar
     id: health
     anchors.top: largeTopCenterRow.top
     anchors.left: parent.left
@@ -254,7 +284,7 @@ TopStatsBarLargeOnTop < UIWidget
     phantom: false
     clipping: false
 
-    StatsBarUpManaPlain
+    EclipseTopManaPlainBar
       id: mana
       anchors.top: parent.top
       anchors.left: parent.left
@@ -292,7 +322,7 @@ TopStatsBarParallelOnTop < UIWidget
   StatsBarTopWithShrink
     anchors.fill: parent
 
-  StatsBarUp
+  EclipseTopHealthBar
     id: health
     anchors.top: parent.top
     anchors.left: parent.left
@@ -306,7 +336,7 @@ TopStatsBarParallelOnTop < UIWidget
     margin-top: 4
     height: 14
 
-  StatsBarUpManaLtr
+  EclipseTopManaLtrBar
     id: mana
     anchors.top: health.bottom
     anchors.left: health.left
@@ -517,7 +547,18 @@ TopStatsBarDefaultOnTop < UIWidget
   StatsBarTopWithShrink
     anchors.fill: parent
 
-  StatsBarUp
+  UIWidget
+    id: eclipseEmblem
+    anchors.top: parent.top
+    anchors.horizontalCenter: parent.horizontalCenter
+    margin-top: 1
+    size: 36 30
+    image-source: /images/eclipse-bars/emblem
+    image-repeated: false
+    phantom: true
+    focusable: false
+
+  EclipseTopHealthBar
     id: health
     anchors.top: parent.top
     anchors.left: parent.left
@@ -527,11 +568,11 @@ TopStatsBarDefaultOnTop < UIWidget
     !statsbar-orientation: 'horizontal'
     statsbar-text: true
     margin-left: 12
-    margin-right: 2
+    margin-right: 22
     margin-top: 4
     height: 14
 
-  StatsBarUpMana
+  EclipseTopManaBar
     id: mana
     anchors.top: parent.top
     anchors.right: parent.right
@@ -541,7 +582,7 @@ TopStatsBarDefaultOnTop < UIWidget
     !statsbar-orientation: 'horizontal'
     statsbar-text: true
     margin-right: 12
-    margin-left: 4
+    margin-left: 22
     margin-top: 4
     height: 14
 
@@ -875,7 +916,7 @@ TopStatsBarCompactOnTop < UIWidget
         margin-left: 4
         image-source: /images/game/topbar/icon-serene-off
 
-  StatsBarUp
+  EclipseTopHealthBar
     id: health
     anchors.top: compactTopCenterRow.top
     anchors.left: parent.left
@@ -888,7 +929,7 @@ TopStatsBarCompactOnTop < UIWidget
     margin-right: 6
     height: 14
 
-  StatsBarUpMana
+  EclipseTopManaBar
     id: mana
     anchors.top: compactTopCenterRow.top
     anchors.left: compactTopCenterRow.right

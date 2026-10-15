@@ -1,617 +1,504 @@
 EclipseCharacterButton < UIButton
   image-source: /images/eclipse-login/button-secondary
   image-repeated: false
+  image-smooth: true
   ttf-font: /fonts/ttf/Cinzel-Regular.ttf
   ttf-font-size: 12
-  color: #e6d4ec
+  color: #e7d7b4
   text-align: center
   cursor: pointer
   $hover:
     image-color: #ebc9ffff
-    color: #f1e6d0
+    color: #fff1d0
   $pressed:
     image-color: #ab83cbff
+  $on:
+    image-color: #ce9deaff
+    color: #fff1d0
+
+EclipseCharacterText < UILabel
+  ttf-font: /fonts/ttf/Verdana.ttf
+  ttf-font-size: 11
+  color: #ddcfe5
+  phantom: true
 
 CharacterWidget < UIWidget
-  height: 20
-  &updateOnStates: |
-    function(self)
-      local children = self:getChildren()
-      for i=1,#children do
-        children[i]:setOn(self:isFocused())
-      end
-      local parent = self:getParent()
-      for i, children in ipairs(parent:getChildren()) do
-        if i % 2 == 1 and not children:isFocused() then
-          children:setBackgroundColor("#21122bdc")
-        elseif children:isFocused() then
-          children:setBackgroundColor("#784496cc")
-        else
-          children:setBackgroundColor("#100b18d8")
-        end
-      end
-    end
-  @onFocusChange: self:updateOnStates()
-  @onSetup: |
-    self:updateOnStates()
-    if g_game.getFeature(GameEnterGameShowAppearance) then
-      self:setHeight(66)
-    end
+  size: 296 360
+  margin-right: 12
+  border-width: 1
+  border-color: #6b4d83
+  background-color: #100d1855
+  focusable: true
+  cursor: pointer
+  $focus:
+    border-color: #dbc08e
+    background-color: #402b5066
+  $hover !focus:
+    border-color: #ae7ccd
+
+  UIWidget
+    id: heroArt
+    anchors.horizontalCenter: parent.horizontalCenter
+    anchors.bottom: parent.bottom
+    margin-bottom: 8
+    size: 152 228
+    image-repeated: false
+    image-smooth: true
+    phantom: true
+
+  UIWidget
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    height: 120
+    background-color: #100b17d9
+    phantom: true
+
+  EclipseCharacterText
+    id: name
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: parent.top
+    margin: 10 26 0 12
+    height: 34
+    ttf-font: /fonts/ttf/verdana-bold.ttf
+    ttf-font-size: 14
+    color: #f1e0b9
+    text-wrap: true
+
+  EclipseCharacterText
+    id: level
+    anchors.top: name.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-left: 12
+    margin-top: 4
+    height: 14
+    &baseText: 'Nível: %s'
+
+  EclipseCharacterText
+    id: vocation
+    anchors.top: level.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-left: 12
+    height: 14
+    &baseText: 'Vocação: %s'
+
+  EclipseCharacterText
+    id: worldName
+    anchors.top: vocation.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-left: 12
+    height: 14
+    &baseText: 'Mundo: %s'
+
+  EclipseCharacterText
+    id: worldPvpType
+    anchors.top: worldName.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-left: 12
+    height: 14
+    color: #bfa8cf
+
+  EclipseCharacterText
+    id: presentationBadge
+    anchors.top: worldPvpType.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-left: 12
+    height: 14
+    ttf-font-size: 10
 
   UIWidget
     id: outfit
-    size: 70 70
-    &baseWidth: 70
-    anchors.top: parent.top
-    anchors.left: parent.left
+    size: 56 56
+    &baseWidth: 56
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    margin-right: 8
+    margin-bottom: 8
+    background-color: #160d23c9
+    border-width: 1
+    border-color: #9873aa
+    phantom: true
 
     UICreature
       id: outfitCreatureBox
-      size: 64 64
-      anchors.horizontalCenter: parent.horizontalCenter
-      anchors.verticalCenter: parent.verticalCenter
-      creatureDisplay:setCreature(creature)
-      margin-left: -2
-      margin-top: -1
+      size: 54 54
+      anchors.centerIn: parent
       fixed-creature-size: true
-      @onSetup: |
-        if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-          self:hide()
-        end
+      phantom: true
 
-  Label
-    id: name
-    anchors.top: parent.top
-    anchors.left: prev.right
-    color: #ebdbee
-    ttf-font: /fonts/ttf/verdana-bold.ttf
-    ttf-font-size: 12
-    text-auto-resize: true
-    background-color: alpha
-    margin-left: -2
-
-    $on:
-      color: #f1e6d0
-
-  Label
+  UIWidget
     id: mainCharacter
     size: 9 8
     anchors.top: parent.top
-    anchors.left: prev.right
-    margin-left: 3
-    margin-top: 4
-    image-source: /images/game/entergame/maincharacter
+    anchors.right: parent.right
+    margin: 10 10 0 0
     image-clip: 0 0 9 8
+    phantom: true
 
   UIWidget
     id: characterPin
     size: 12 12
     image-source: /images/ui/fix-button
-    image-size: 12 12
-    anchors.top: parent.top
-    anchors.left: parent.left
-    margin-left: 264
-    margin-top: 2
+    anchors.top: mainCharacter.bottom
+    anchors.right: parent.right
+    margin-right: 8
+    margin-top: 8
     visible: false
     focusable: false
-    @onSetup: |
-      if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-        self:hide()
-      end
+    cursor: pointer
 
-  Label
+  UIWidget
     id: statusDailyReward
     size: 11 19
-    anchors.top: parent.top
-    anchors.left: parent.left
-    margin-left: 281
-    margin-top: 2
-    image-source: /images/game/entergame/dailyreward_collected
+    anchors.top: characterPin.bottom
+    anchors.right: parent.right
+    margin-right: 8
+    margin-top: 8
     image-clip: 0 0 11 19
-    @onSetup: |
-      if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-        self:hide()
-      end
+    phantom: true
 
-  Label
+  UIWidget
     id: statusHidden
     size: 11 19
-    anchors.top: parent.top
-    anchors.left: parent.left
-    margin-left: 281
-    margin-top: 2
-    image-source: /images/game/entergame/hidden
+    anchors.top: statusDailyReward.bottom
+    anchors.right: parent.right
+    margin-right: 8
+    margin-top: 8
     image-clip: 0 0 11 19
-    @onSetup: |
-      if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-        self:hide()
-      end
-
-  Label
-    id: level
-    anchors.top: parent.top
-    anchors.left: parent.left
-    margin-left: 335
-    color: #d7c5e1
-    ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 11
-    text-auto-resize: true
-    background-color: alpha
-    @onSetup: |
-      if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-        self:hide()
-      end
-
-    $on:
-      color: #f1e6d0
-
-  Label
-    id: vocation
-    anchors.top: parent.top
-    anchors.left: parent.left
-    margin-left: 385
-    color: #d7c5e1
-    ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 11
-    text-auto-resize: true
-    background-color: alpha
-    @onSetup: |
-      if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-        self:hide()
-      end
-
-    $on:
-      color: #f1e6d0
-
-  Label
-    id: worldName
-    anchors.top: parent.top
-    anchors.left: parent.left
-    margin-left: 500
-    color: #e1c993
-    ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 11
-    text-auto-resize: true
-    background-color: alpha
-    &baseText: '(%s)'
-    @onSetup: |
-      self:addAnchor(AnchorLeft, 'parent', AnchorLeft)
-      self:setMarginLeft(500)
-      self.baseText = '%s'
-
-    $on:
-      color: #f1e6d0
-
-  Label
-    id: worldPvpType
-    anchors.top: prev.bottom
-    color: #ba9ec6
-    ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 10
-    text-auto-resize: true
-    background-color: alpha
-    &baseText: '(%s)'
-    @onSetup: |
-      self:addAnchor(AnchorLeft, 'parent', AnchorLeft)
-      self:setMarginTop(-1)
-      self:setMarginLeft(500)
-      self.baseText = '%s'
-
-    $on:
-      color: #f1e6d0
+    phantom: true
 
 UIWindow
   id: charactersWindow
   visible: false
   anchors.centerIn: parent
-  size: 785 525
+  size: 1000 660
   draggable: false
-  image-source: /images/eclipse-login/panel
-  image-border: 24
-  padding-left: 26
-  padding-right: 26
-  padding-top: 72
-  padding-bottom: 32
+  image-source: /images/eclipse-selection/background
+  image-repeated: false
+  image-smooth: true
   @onEnter: CharacterList.doLogin()
   @onEscape: CharacterList.hide(true)
+  @onGeometryChange: CharacterList.resize()
   @onSetup: |
-    g_keyboard.bindKeyPress('Up', function()
-      local list = self:recursiveGetChildById('characters')
-      if not list then return end
-      list:focusPreviousChild(KeyboardFocusReason)
-      local focused = list:getFocusedChild()
-      if focused then list:ensureChildVisible(focused) end
-    end, self)
-    g_keyboard.bindKeyPress('Down', function()
-      local list = self:recursiveGetChildById('characters')
-      if not list then return end
-      list:focusNextChild(KeyboardFocusReason)
-      local focused = list:getFocusedChild()
-      if focused then list:ensureChildVisible(focused) end
-    end, self)
-    if g_game.getFeature(GamePreviewState) then
-      if g_game.getFeature(GameEnterGameShowAppearance) then
-        self:setSize({width = 785, height = 525})
-      else
-        self:setSize({width = 470, height = 450})
-      end
-    else
-      self:setSize({width = 470, height = 450})
+    for _, key in ipairs({'Left', 'Up'}) do
+      g_keyboard.bindKeyPress(key, function() CharacterList.moveSelection(-1) end, self)
     end
-
-  UIWidget
-    anchors.top: parent.top
-    anchors.horizontalCenter: parent.horizontalCenter
-    margin-top: -42
-    size: 36 35
-    image-source: /images/eclipse-login/news-welcome
-    phantom: true
+    for _, key in ipairs({'Right', 'Down'}) do
+      g_keyboard.bindKeyPress(key, function() CharacterList.moveSelection(1) end, self)
+    end
 
   UILabel
     text: ESCOLHA SEU PERSONAGEM
     anchors.top: parent.top
     anchors.horizontalCenter: parent.horizontalCenter
-    margin-top: -12
-    size: 370 26
+    margin-top: 84
+    size: 680 28
     text-align: center
     ttf-font: /fonts/ttf/Cinzel-Regular.ttf
-    ttf-font-size: 19
-    color: #e9d3a4
+    ttf-font-size: 23
+    color: #ead8b2
     phantom: true
 
-  Label
-    id: recoverySetupLabel
-    anchors.left: parent.left
+  EclipseCharacterText
+    text: BEM-VINDO AO MUNDO ECLIPSE
+    anchors.top: prev.bottom
+    anchors.horizontalCenter: parent.horizontalCenter
+    size: 430 18
+    text-align: center
+    color: #d5c6a6
+
+  EclipseCharacterButton
+    id: charactersTab
+    text: PERSONAGENS
     anchors.top: parent.top
-    height: 0
-    margin-top: 3
-    text-align: left
-    ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 11
-    color: #FF9854
+    anchors.left: parent.left
+    margin: 24 0 0 32
+    size: 142 32
+    @onClick: CharacterList.selectTab('characters')
+
+  EclipseCharacterButton
+    id: loreTab
+    text: VOCAÇÕES
+    @onSetup: self:setText(EclipseLogin.toClientText(self:getText()))
+    anchors.top: charactersTab.bottom
+    anchors.left: charactersTab.left
+    margin-top: 4
+    size: 142 32
+    @onClick: CharacterList.selectTab('lore')
+
+  EclipseCharacterText
+    id: recoverySetupLabel
+    anchors.top: parent.top
+    anchors.horizontalCenter: parent.horizontalCenter
+    margin-top: 128
+    size: 650 18
+    text-align: center
+    color: #ffb270
     visible: false
 
   UIWidget
     id: charactersListFrame
-    background-color: #0d0919e8
-    border-width: 1
-    border-color: #87569d
-    @onSetup: |
-      self:breakAnchors()
-      if g_game.getFeature(GameEnterGameShowAppearance) then
-        self:setSize({ width = 713, height = 263 })
-        self:addAnchor(AnchorTop, 'recoverySetupLabel', AnchorBottom)
-        self:addAnchor(AnchorLeft, 'parent', AnchorLeft)
-        self:setMarginTop(8)
-        self:setMarginLeft(1)
-        self:setMarginBottom(0)
-      else
-        self:addAnchor(AnchorTop, 'recoverySetupLabel', AnchorBottom)
-        self:addAnchor(AnchorLeft, 'parent', AnchorLeft)
-        self:addAnchor(AnchorRight, 'characterListScrollBar', AnchorLeft)
-        self:addAnchor(AnchorBottom, 'accountStatusCaption', AnchorTop)
-        self:setMarginTop(8)
-        self:setMarginLeft(1)
-        self:setMarginBottom(5)
-      end
-
-    UIWidget
-      id: charactersListInner
-      anchors.fill: parent
-      margin: 1
-      background-color: #0c0817e8
-      @onSetup: |
-        if not g_game.getFeature(GameEnterGameShowAppearance) then
-          local header = self:getChildById('charactersTableHeader')
-          local sep = self:getChildById('charactersHeaderSeparator')
-          local list = self:getChildById('characters')
-          if header then
-            header:setVisible(false)
-            header:setHeight(0)
-          end
-          if sep then
-            sep:setVisible(false)
-            sep:setHeight(0)
-          end
-          if list then
-            list:breakAnchors()
-            list:addAnchor(AnchorTop, 'parent', AnchorTop)
-            list:addAnchor(AnchorLeft, 'parent', AnchorLeft)
-            list:addAnchor(AnchorRight, 'parent', AnchorRight)
-            list:addAnchor(AnchorBottom, 'parent', AnchorBottom)
-          end
-        end
-
-      UIWidget
-        id: charactersTableHeader
-        height: 24
-        anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.right: parent.right
-        background-color: #281632
-
-        Label
-          margin-left: 68
-          anchors.left: parent.left
-          anchors.verticalCenter: parent.verticalCenter
-          text: PERSONAGEM
-          ttf-font: /fonts/ttf/verdana-bold.ttf
-          ttf-font-size: 10
-          color: #e7d19f
-          text-align: center
-          text-offset: 0 0
-
-        Label
-          margin-left: 281
-          anchors.left: parent.left
-          anchors.verticalCenter: parent.verticalCenter
-          text: STATUS
-          ttf-font: /fonts/ttf/verdana-bold.ttf
-          ttf-font-size: 10
-          color: #e7d19f
-          text-align: center
-
-        Label
-          margin-left: 336
-          anchors.left: parent.left
-          anchors.verticalCenter: parent.verticalCenter
-          text: NÍVEL
-          @onSetup: self:setText(EclipseLogin.toClientText(self:getText()))
-          ttf-font: /fonts/ttf/verdana-bold.ttf
-          ttf-font-size: 10
-          color: #e7d19f
-          text-align: center
-
-        Label
-          id: vocationHeader
-          margin-left: 386
-          anchors.left: parent.left
-          anchors.verticalCenter: parent.verticalCenter
-          text: VOCAÇÃO
-          @onSetup: self:setText(EclipseLogin.toClientText(self:getText()))
-          ttf-font: /fonts/ttf/verdana-bold.ttf
-          ttf-font-size: 10
-          color: #e7d19f
-          text-align: center
-
-        Label
-          margin-left: 501
-          anchors.left: parent.left
-          anchors.verticalCenter: parent.verticalCenter
-          text: MUNDO
-          ttf-font: /fonts/ttf/verdana-bold.ttf
-          ttf-font-size: 10
-          color: #e7d19f
-          text-align: center
-
-        // A-Z sorting / server order (disabled for now)
-        //Button
-        //  id: sortOrderButton
-        //  anchors.right: parent.right
-        //  anchors.verticalCenter: parent.verticalCenter
-        //  margin-right: 2
-        //  size: 30 14
-        //  text: 'Srv'
-        //  text-offset: 0 -1
-        //  font: $var-cip-font
-        //  tooltip: tr('Sorted by server order')
-
-      TextList
-        id: characters
-        anchors.top: charactersHeaderSeparator.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        border-width: 0
-        padding: 0
-        focusable: false
-        auto-focus: first
-        @onSetup: |
-          if g_game.getFeature(GameEnterGameShowAppearance) then
-            self:setBackgroundColor("#0c0817e8")
-          else
-            self:setBackgroundColor("#0c0817e8")
-          end
-
-      VerticalSeparator
-        image-color: #805898
-        anchors.left: parent.left
-        anchors.top: charactersTableHeader.top
-        anchors.bottom: characters.bottom
-        margin-left: 277
-        @onSetup: |
-          if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-            self:hide()
-          end
-
-      VerticalSeparator
-        image-color: #805898
-        anchors.left: parent.left
-        anchors.top: charactersTableHeader.top
-        anchors.bottom: characters.bottom
-        margin-left: 332
-        @onSetup: |
-          if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-            self:hide()
-          end
-
-      VerticalSeparator
-        image-color: #805898
-        anchors.left: parent.left
-        anchors.top: charactersTableHeader.top
-        anchors.bottom: characters.bottom
-        margin-left: 382
-        @onSetup: |
-          if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-            self:hide()
-          end
-
-      VerticalSeparator
-        image-color: #805898
-        anchors.left: parent.left
-        anchors.top: charactersTableHeader.top
-        anchors.bottom: characters.bottom
-        margin-left: 497
-        @onSetup: |
-          if not(g_game.getFeature(GameEnterGameShowAppearance)) then
-            self:hide()
-          end
-
-      HorizontalSeparator
-        id: charactersHeaderSeparator
-        image-color: #805898
-        anchors.top: charactersTableHeader.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        margin-left: 0
-        margin-right: 0
-        z-index: 2
-
-  VerticalQtScrollBar
-    id: characterListScrollBar
-    anchors.top: charactersListFrame.top
-    anchors.bottom: charactersListFrame.bottom
+    anchors.top: parent.top
+    anchors.left: parent.left
     anchors.right: parent.right
-    margin-bottom: 1
-    margin-top: 1
-    margin-right: 1
-    step: 20
+    anchors.bottom: parent.bottom
+    margin: 155 32 145 32
+
+    HorizontalList
+      id: characters
+      anchors.fill: parent
+      padding: 1
+      border-width: 0
+      background-color: alpha
+      focusable: false
+      auto-focus: first
+
+  HorizontalQtScrollBar
+    id: characterListScrollBar
+    anchors.left: charactersListFrame.left
+    anchors.right: charactersListFrame.right
+    anchors.top: charactersListFrame.bottom
+    margin-top: 4
+    height: 12
+    step: 308
     pixels-scroll: true
     parent-scroll: false
 
-  UIButton
+  UIWidget
+    id: lorePanel
+    visible: false
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    margin: 155 32 126 32
+    background-color: #110a1bef
+    border-width: 1
+    border-color: #8f699e
+
+    EclipseCharacterButton
+      id: guardianButton
+      text: GUARDIAN
+      anchors.top: parent.top
+      anchors.left: parent.left
+      margin: 10 0 0 18
+      size: 174 30
+      @onClick: CharacterList.selectLoreClass('guardian')
+
+    EclipseCharacterButton
+      id: slayerButton
+      text: SLAYER
+      anchors.top: prev.top
+      anchors.left: prev.right
+      margin-left: 6
+      size: 174 30
+      @onClick: CharacterList.selectLoreClass('slayer')
+
+    EclipseCharacterButton
+      id: arcanistButton
+      text: ARCANIST
+      anchors.top: prev.top
+      anchors.left: prev.right
+      margin-left: 6
+      size: 174 30
+      @onClick: CharacterList.selectLoreClass('arcanist')
+
+    EclipseCharacterButton
+      id: mysticButton
+      text: MYSTIC
+      anchors.top: prev.top
+      anchors.left: prev.right
+      margin-left: 6
+      size: 174 30
+      @onClick: CharacterList.selectLoreClass('mystic')
+
+    EclipseCharacterButton
+      id: rangerButton
+      text: RANGER
+      anchors.top: prev.top
+      anchors.left: prev.right
+      margin-left: 6
+      size: 174 30
+      @onClick: CharacterList.selectLoreClass('ranger')
+
+    UIWidget
+      id: loreArt
+      anchors.top: guardianButton.bottom
+      anchors.left: parent.left
+      margin: 12 0 12 24
+      size: 120 318
+      image-repeated: false
+      image-smooth: true
+      phantom: true
+
+    EclipseCharacterText
+      id: loreName
+      anchors.top: loreArt.top
+      anchors.left: loreArt.right
+      anchors.right: parent.right
+      margin: 4 24 0 26
+      height: 32
+      ttf-font: /fonts/ttf/Cinzel-Regular.ttf
+      ttf-font-size: 26
+
+    EclipseCharacterText
+      id: loreRole
+      anchors.top: loreName.bottom
+      anchors.left: loreName.left
+      anchors.right: loreName.right
+      height: 22
+      color: #dec38f
+      ttf-font-size: 13
+
+    EclipseCharacterText
+      id: loreQuote
+      anchors.top: loreRole.bottom
+      anchors.left: loreName.left
+      anchors.right: loreName.right
+      margin-top: 6
+      height: 32
+      text-wrap: true
+      color: #bdadce
+
+    EclipseCharacterText
+      id: loreDescription
+      anchors.top: loreQuote.bottom
+      anchors.left: loreName.left
+      anchors.right: loreName.right
+      margin-top: 6
+      height: 92
+      text-wrap: true
+      text-align: topLeft
+      ttf-font-size: 12
+
+    EclipseCharacterText
+      text: PRINCIPAIS ATRIBUTOS
+      anchors.top: loreDescription.bottom
+      anchors.left: loreName.left
+      height: 22
+      color: #dec38f
+
+    EclipseCharacterText
+      id: loreAttributes
+      anchors.top: prev.bottom
+      anchors.left: loreName.left
+      anchors.right: loreName.right
+      height: 24
+
+    EclipseCharacterText
+      text: ESPECIALIZAÇÕES
+      @onSetup: self:setText(EclipseLogin.toClientText(self:getText()))
+      anchors.top: loreAttributes.bottom
+      anchors.left: loreName.left
+      height: 22
+      color: #dec38f
+
+    EclipseCharacterText
+      id: loreSpecializations
+      anchors.top: prev.bottom
+      anchors.left: loreName.left
+      anchors.right: loreName.right
+      height: 24
+
+  EclipseCharacterText
+    id: accountStatusCaption
+    text: STATUS DA CONTA
+    anchors.bottom: accountStatusLabel.top
+    anchors.horizontalCenter: parent.horizontalCenter
+    margin-bottom: 3
+    size: 240 18
+    text-align: center
+    color: #ddc393
+
+  EclipseCharacterText
+    id: accountStatusLabel
+    anchors.bottom: parent.bottom
+    anchors.horizontalCenter: parent.horizontalCenter
+    margin-bottom: 83
+    size: 410 18
+    text-align: center
+
+  UIWidget
+    id: accountStatusIcon
+    anchors.right: accountStatusLabel.left
+    anchors.verticalCenter: accountStatusLabel.verticalCenter
+    size: 22 20
+    image-clip: 0 0 22 20
+    phantom: true
+
+  EclipseCharacterButton
     id: getPremiumButton
     anchors.right: parent.right
-    anchors.bottom: separator.top
-    margin-bottom: 12
-    image-repeated: false
-    cursor: pointer
+    anchors.verticalCenter: accountStatusLabel.verticalCenter
+    margin-right: 35
+    size: 110 28
     image-source: /images/eclipse-login/button-secondary
-    size: 110 27
-    text: "PREMIUM"
-    text-offset: 0 1
-    ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 10
+    image-repeated: false
     visible: false
+    text: PREMIUM
     @onClick: EclipseLogin.openLink('premium')
-
-    $pressed:
-      image-color: #ab83cbff
-      text-offset: 1 2
-
-  Label
-    id: accountStatusCaption
-    text: STATUS DA CONTA:
-    anchors.left: parent.left
-    anchors.bottom: next.top
-    color: #d9c8df
-    ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 11
-    @onSetup: |
-      self:setMarginBottom(6)
-
-  Label
-    id: accountStatusIcon
-    size: 22 20
-    anchors.left: parent.left
-    anchors.bottom: next.bottom
-    margin-bottom: 1
-    margin-left: 1
-    image-source: /images/game/entergame/premium
-    image-clip: 0 0 22 20
-
-  Label
-    id: accountStatusLabel
-    !text: tr('Free Account')
-    anchors.left: parent.left
-    text-auto-resize: true
-    ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 11
-    color: #e5d2b2
-    @onSetup: |
-      self:setMarginBottom(10)
-      self:setPaddingBottom(4)
-      self:setTextOffset({x = 27, y = 0})
-      self:addAnchor(AnchorBottom, 'next', AnchorBottom)
-
-  HorizontalSeparator
-    id: separator
-    image-color: #805898
-    anchors.left: parent.left
-    anchors.right: parent.right
-    margin-left: 1
-    anchors.bottom: next.top
-    margin-bottom: 11
 
   UIWidget
     id: characterBoxBackground
-    size: 184 22
-    background-color: #1a1127
-    border-width: 1
-    border-color: #6e4b83
-    margin-left: 1
-    margin-bottom: 45
     anchors.left: parent.left
     anchors.bottom: parent.bottom
+    margin-left: 34
+    margin-bottom: 55
+    size: 242 22
+    background-color: #120d20bf
 
   QtCheckBox
     id: hiddenCharacterBox
-    text: Mostrar ocultos
-    anchors.verticalCenter: characterBoxBackground.verticalCenter
-    anchors.horizontalCenter: characterBoxBackground.horizontalCenter
-    margin-left: 2
-    margin-top: -1
-    text-offset: 16 0
-    width: 180
-    color: #d9c8df
-    image-color: #ba92dd
+    text: Exibir personagens ocultos
+    anchors.fill: characterBoxBackground
     ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 10
+    ttf-font-size: 11
+    color: #d9c8df
+    text-offset: 18 0
     @onCheckChange: modules.client_entergame.toggleHiddenCharacters(self:isChecked())
 
   UIWidget
     id: outfitBoxBackground
-    size: 107 22
-    background-color: #1a1127
-    border-width: 1
-    border-color: #6e4b83
-    margin-left: 11
-    margin-bottom: 45
-    anchors.left: characterBoxBackground.right
-    anchors.bottom: parent.bottom
+    anchors.left: characterBoxBackground.left
+    anchors.top: characterBoxBackground.bottom
+    margin-top: 4
+    size: 242 22
+    background-color: #120d20bf
 
   QtCheckBox
     id: showOutfitBox
-    text: Mostrar outfits
-    anchors.verticalCenter: outfitBoxBackground.verticalCenter
-    anchors.horizontalCenter: outfitBoxBackground.horizontalCenter
-    width: 100
-    margin-top: -1
-    text-offset: 16 0
-    color: #d9c8df
-    image-color: #ba92dd
+    text: Visualizar outfits
+    anchors.fill: outfitBoxBackground
     ttf-font: /fonts/ttf/Verdana.ttf
-    ttf-font-size: 10
+    ttf-font-size: 11
+    color: #d9c8df
+    text-offset: 18 0
     checked: true
     @onCheckChange: modules.client_entergame.toggleShowOutfit(self:isChecked())
 
   EclipseCharacterButton
     id: buttonOk
     text: ENTRAR
-    size: 100 30
-    anchors.right: next.left
+    image-source: /images/eclipse-login/button-primary
+    anchors.right: buttonCancel.left
     anchors.bottom: parent.bottom
-    margin-bottom: 1
-    margin-right: 11
-    text-offset: 0 0
+    margin-right: 12
+    margin-bottom: 33
+    size: 140 36
     @onClick: CharacterList.doLogin()
 
   EclipseCharacterButton
     id: buttonCancel
     text: VOLTAR
-    size: 100 30
     anchors.right: parent.right
     anchors.bottom: parent.bottom
-    margin-bottom: 1
-    text-offset: 0 0
+    margin-right: 34
+    margin-bottom: 33
+    size: 140 36
     @onClick: CharacterList.hide(true)

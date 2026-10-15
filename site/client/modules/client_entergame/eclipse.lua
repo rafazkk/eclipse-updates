@@ -13,7 +13,7 @@ local metricProperties = {
   'padding', 'padding-top', 'padding-right', 'padding-bottom', 'padding-left', 'text-offset', 'ttf-font-size'
 }
 
-local function scaleWidget(widget, scale)
+function EclipseLogin.scaleWidget(widget, scale)
   if not widget.eclipseMetrics then widget.eclipseMetrics = widget:getStyle() or {} end
   if widget.eclipseScale ~= scale then
     local style = {}
@@ -31,7 +31,7 @@ local function scaleWidget(widget, scale)
     widget.eclipseScale = scale
     widget:mergeStyle(style)
   end
-  for _, child in ipairs(widget:getChildren()) do scaleWidget(child, scale) end
+  for _, child in ipairs(widget:getChildren()) do EclipseLogin.scaleWidget(child, scale) end
 end
 
 local linkLabels = {
@@ -126,7 +126,7 @@ function EclipseLogin.resize()
   if not screen then return end
   local size = screen:getSize()
   local scale = math.max(0.8, math.min(1.6, size.width / 1124, size.height / 732))
-  for _, child in ipairs(screen:getChildren()) do scaleWidget(child, scale) end
+  for _, child in ipairs(screen:getChildren()) do EclipseLogin.scaleWidget(child, scale) end
   local compact = size.width < 950 * scale
   local frame = screen:getChildById('loginFrame')
   frame:setMarginTop(math.floor(60 * scale))
